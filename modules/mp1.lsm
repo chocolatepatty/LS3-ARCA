@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<logicsim version="3">
+    <info>
+        <description>abc</description>
+    </info>
+    <gates>
+        <gate type="modin" x="150" y="100"/>
+        <gate type="modout" x="650" y="100"/>
+        <gate module="true" type="4bit_multipexer_one_optional_input" x="360" y="100"/>
+    </gates>
+    <wires>
+        <wire>
+            <from id="modin@150:100" number="64"/>
+            <to id="4bit_multipexer_one_optional_input@360:100" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="modin@150:100" number="65"/>
+            <to id="4bit_multipexer_one_optional_input@360:100" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="modin@150:100" number="66"/>
+            <to id="4bit_multipexer_one_optional_input@360:100" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="modin@150:100" number="67"/>
+            <to id="4bit_multipexer_one_optional_input@360:100" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="modin@150:100" number="68"/>
+            <to id="4bit_multipexer_one_optional_input@360:100" number="4" type="gate"/>
+        </wire>
+        <wire>
+            <from id="modin@150:100" number="69"/>
+            <to id="4bit_multipexer_one_optional_input@360:100" number="5" type="gate"/>
+        </wire>
+        <wire>
+            <from id="modin@150:100" number="70"/>
+            <to id="4bit_multipexer_one_optional_input@360:100" number="6" type="gate"/>
+        </wire>
+        <wire>
+            <from id="modin@150:100" number="71"/>
+            <to id="4bit_multipexer_one_optional_input@360:100" number="7" type="gate"/>
+        </wire>
+        <wire>
+            <from id="modin@150:100" number="74"/>
+            <to id="4bit_multipexer_one_optional_input@360:100" number="10" type="gate"/>
+        </wire>
+        <wire>
+            <from id="modin@150:100" number="75"/>
+            <to id="4bit_multipexer_one_optional_input@360:100" number="11" type="gate"/>
+        </wire>
+        <wire>
+            <from id="modin@150:100" number="76"/>
+            <to id="4bit_multipexer_one_optional_input@360:100" number="12" type="gate"/>
+        </wire>
+        <wire>
+            <from id="modin@150:100" number="77"/>
+            <to id="4bit_multipexer_one_optional_input@360:100" number="13" type="gate"/>
+        </wire>
+        <wire>
+            <from id="modin@150:100" number="78"/>
+            <to id="4bit_multipexer_one_optional_input@360:100" number="14" type="gate"/>
+        </wire>
+        <wire>
+            <from id="modin@150:100" number="79"/>
+            <to id="4bit_multipexer_one_optional_input@360:100" number="15" type="gate"/>
+        </wire>
+        <wire>
+            <from id="modin@150:100" number="80"/>
+            <to id="4bit_multipexer_one_optional_input@360:100" number="16" type="gate"/>
+        </wire>
+        <wire>
+            <from id="modin@150:100" number="81"/>
+            <to id="4bit_multipexer_one_optional_input@360:100" number="17" type="gate"/>
+        </wire>
+        <wire>
+            <from id="modin@150:100" number="84"/>
+            <to id="4bit_multipexer_one_optional_input@360:100" number="20" type="gate"/>
+        </wire>
+        <wire>
+            <from id="modin@150:100" number="85"/>
+            <to id="4bit_multipexer_one_optional_input@360:100" number="21" type="gate"/>
+        </wire>
+        <wire>
+            <from id="4bit_multipexer_one_optional_input@360:100" number="64"/>
+            <to id="modout@650:100" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="4bit_multipexer_one_optional_input@360:100" number="65"/>
+            <to id="modout@650:100" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="4bit_multipexer_one_optional_input@360:100" number="66"/>
+            <to id="modout@650:100" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="4bit_multipexer_one_optional_input@360:100" number="67"/>
+            <to id="modout@650:100" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="4bit_multipexer_one_optional_input@360:100" number="68"/>
+            <to id="modout@650:100" number="4" type="gate"/>
+        </wire>
+        <wire>
+            <from id="4bit_multipexer_one_optional_input@360:100" number="69"/>
+            <to id="modout@650:100" number="5" type="gate"/>
+        </wire>
+        <wire>
+            <from id="4bit_multipexer_one_optional_input@360:100" number="70"/>
+            <to id="modout@650:100" number="6" type="gate"/>
+        </wire>
+        <wire>
+            <from id="4bit_multipexer_one_optional_input@360:100" number="71"/>
+            <to id="modout@650:100" number="7" type="gate"/>
+        </wire>
+    </wires>
+</logicsim>

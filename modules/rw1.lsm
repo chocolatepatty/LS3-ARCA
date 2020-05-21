@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<logicsim version="3">
+    <info>
+        <description>blob</description>
+    </info>
+    <gates>
+        <gate type="modin" x="270" y="110">
+            <io iotype="input" number="8">
+                <properties>
+                    <property key="text">MreadRack</property>
+                </properties>
+            </io>
+            <io iotype="input" number="9">
+                <properties>
+                    <property key="text">MreadLreq</property>
+                </properties>
+            </io>
+            <io iotype="input" number="10">
+                <properties>
+                    <property key="text">Minit</property>
+                </properties>
+            </io>
+            <io iotype="input" number="11">
+                <properties>
+                    <property key="text">MwriteLreq</property>
+                </properties>
+            </io>
+            <io iotype="input" number="12">
+                <properties>
+                    <property key="text">MwriteLdata4_1</property>
+                </properties>
+            </io>
+            <io iotype="input" number="13">
+                <properties>
+                    <property key="text">MwriteLdata4_0</property>
+                </properties>
+            </io>
+            <io iotype="input" number="14">
+                <properties>
+                    <property key="text">MwriteLdata3_1</property>
+                </properties>
+            </io>
+            <io iotype="input" number="15">
+                <properties>
+                    <property key="text">MwriteLdata3_0</property>
+                </properties>
+            </io>
+            <io iotype="input" number="16">
+                <properties>
+                    <property key="text">MwriteLdata2_1</property>
+                </properties>
+            </io>
+            <io iotype="input" number="17">
+                <properties>
+                    <property key="text">MwriteLdata2_0</property>
+                </properties>
+            </io>
+            <io iotype="input" number="18">
+                <properties>
+                    <property key="text">MwriteLdata1_1</property>
+                </properties>
+            </io>
+            <io iotype="input" number="19">
+                <properties>
+                    <property key="text">MwriteLdata1_0</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="modout" x="1660" y="80"/>
+        <gate type="arbuffer8" x="680" y="480"/>
+    </gates>
+    <wires>
+        <wire>
+            <from id="modin@270:110" number="83"/>
+            <to id="arbuffer8@680:480" number="7" type="gate"/>
+            <point node="false" number="0" x="350" y="310"/>
+            <point node="false" number="1" x="350" y="700"/>
+        </wire>
+        <wire>
+            <from id="modin@270:110" number="82"/>
+            <to id="arbuffer8@680:480" number="6" type="gate"/>
+            <point node="false" number="0" x="360" y="300"/>
+            <point node="false" number="1" x="360" y="690"/>
+        </wire>
+        <wire>
+            <from id="modin@270:110" number="81"/>
+            <to id="arbuffer8@680:480" number="5" type="gate"/>
+            <point node="false" number="0" x="370" y="290"/>
+            <point node="false" number="1" x="370" y="660"/>
+        </wire>
+        <wire>
+            <from id="modin@270:110" number="80"/>
+            <to id="arbuffer8@680:480" number="4" type="gate"/>
+            <point node="false" number="0" x="380" y="280"/>
+            <point node="false" number="1" x="380" y="650"/>
+        </wire>
+        <wire>
+            <from id="modin@270:110" number="79"/>
+            <to id="arbuffer8@680:480" number="3" type="gate"/>
+            <point node="false" number="0" x="390" y="270"/>
+            <point node="false" number="1" x="390" y="620"/>
+        </wire>
+        <wire>
+            <from id="modin@270:110" number="78"/>
+            <to id="arbuffer8@680:480" number="2" type="gate"/>
+            <point node="false" number="0" x="400" y="260"/>
+            <point node="false" number="1" x="400" y="610"/>
+        </wire>
+        <wire>
+            <from id="modin@270:110" number="77"/>
+            <to id="arbuffer8@680:480" number="1" type="gate"/>
+            <point node="false" number="0" x="410" y="250"/>
+            <point node="false" number="1" x="410" y="580"/>
+        </wire>
+        <wire>
+            <from id="modin@270:110" number="76"/>
+            <to id="arbuffer8@680:480" number="0" type="gate"/>
+            <point node="false" number="0" x="420" y="240"/>
+            <point node="false" number="1" x="420" y="570"/>
+        </wire>
+        <wire>
+            <from id="modin@270:110" number="75"/>
+            <to id="arbuffer8@680:480" number="8" type="gate"/>
+            <point node="false" number="0" x="430" y="230"/>
+            <point node="false" number="1" x="430" y="480"/>
+        </wire>
+    </wires>
+</logicsim>

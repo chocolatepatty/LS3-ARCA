@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<logicsim version="3">
+    <info>
+        <description/>
+    </info>
+    <gates>
+        <gate type="modin" x="150" y="100">
+            <io iotype="input" number="0">
+                <properties>
+                    <property key="text">A4_1</property>
+                </properties>
+            </io>
+            <io iotype="input" number="1">
+                <properties>
+                    <property key="text">A4_0</property>
+                </properties>
+            </io>
+            <io iotype="input" number="2">
+                <properties>
+                    <property key="text">A3_1</property>
+                </properties>
+            </io>
+            <io iotype="input" number="3">
+                <properties>
+                    <property key="text">A3_0</property>
+                </properties>
+            </io>
+            <io iotype="input" number="4">
+                <properties>
+                    <property key="text">A2_1</property>
+                </properties>
+            </io>
+            <io iotype="input" number="5">
+                <properties>
+                    <property key="text">A2_0</property>
+                </properties>
+            </io>
+            <io iotype="input" number="6">
+                <properties>
+                    <property key="text">A1_1</property>
+                </properties>
+            </io>
+            <io iotype="input" number="7">
+                <properties>
+                    <property key="text">A1_0</property>
+                </properties>
+            </io>
+            <io iotype="input" number="10">
+                <properties>
+                    <property key="text">B4_1</property>
+                </properties>
+            </io>
+            <io iotype="input" number="11">
+                <properties>
+                    <property key="text">B4_0</property>
+                </properties>
+            </io>
+            <io iotype="input" number="12">
+                <properties>
+                    <property key="text">B3_1</property>
+                </properties>
+            </io>
+            <io iotype="input" number="13">
+                <properties>
+                    <property key="text">B3_0</property>
+                </properties>
+            </io>
+            <io iotype="input" number="14">
+                <properties>
+                    <property key="text">B2_1</property>
+                </properties>
+            </io>
+            <io iotype="input" number="15">
+                <properties>
+                    <property key="text">B2_0</property>
+                </properties>
+            </io>
+            <io iotype="input" number="16">
+                <properties>
+                    <property key="text">B1_1</property>
+                </properties>
+            </io>
+            <io iotype="input" number="17">
+                <properties>
+                    <property key="text">B1_0</property>
+                </properties>
+            </io>
+            <io iotype="input" number="20">
+                <properties>
+                    <property key="text">PA</property>
+                </properties>
+            </io>
+            <io iotype="input" number="21">
+                <properties>
+                    <property key="text">PB</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="modout" x="1060" y="110">
+            <io iotype="output" number="64">
+                <properties>
+                    <property key="text">out4_1</property>
+                </properties>
+            </io>
+            <io iotype="output" number="65">
+                <properties>
+                    <property key="text">out4_0</property>
+                </properties>
+            </io>
+            <io iotype="output" number="66">
+                <properties>
+                    <property key="text">out3_1</property>
+                </properties>
+            </io>
+            <io iotype="output" number="67">
+                <properties>
+                    <property key="text">out3_0</property>
+                </properties>
+            </io>
+            <io iotype="output" number="68">
+                <properties>
+                    <property key="text">out2_1</property>
+                </properties>
+            </io>
+            <io iotype="output" number="69">
+                <properties>
+                    <property key="text">out2_0</property>
+                </properties>
+            </io>
+            <io iotype="output" number="70">
+                <properties>
+                    <property key="text">out1_1</property>
+                </properties>
+            </io>
+            <io iotype="output" number="71">
+                <properties>
+                    <property key="text">out1_0</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="dr_and" x="360" y="180">
+            <io iotype="input" label="B1" number="0">
+                <properties>
+                    <property key="text">A1_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B0" number="1">
+                <properties>
+                    <property key="text">A1_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A1" number="2">
+                <properties>
+                    <property key="text">PA</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A0" number="3">
+                <properties>
+                    <property key="text">PB</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="dr_and" x="360" y="110">
+            <io iotype="input" label="B1" number="0">
+                <properties>
+                    <property key="text">A2_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B0" number="1">
+                <properties>
+                    <property key="text">A2_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A1" number="2">
+                <properties>
+                    <property key="text">PA</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A0" number="3">
+                <properties>
+                    <property key="text">PB</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="dr_and" x="360" y="40">
+            <io iotype="input" label="B1" number="0">
+                <properties>
+                    <property key="text">A3_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B0" number="1">
+                <properties>
+                    <property key="text">A3_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A1" number="2">
+                <properties>
+                    <property key="text">PA</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A0" number="3">
+                <properties>
+                    <property key="text">PB</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="dr_and" x="360" y="-30">
+            <io iotype="input" label="B1" number="0">
+                <properties>
+                    <property key="text">A4_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B0" number="1">
+                <properties>
+                    <property key="text">A4_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A1" number="2">
+                <properties>
+                    <property key="text">PA</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A0" number="3">
+                <properties>
+                    <property key="text">PB</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="dr_and" x="360" y="550">
+            <io iotype="input" label="B1" number="0">
+                <properties>
+                    <property key="text">A1_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B0" number="1">
+                <properties>
+                    <property key="text">A1_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A1" number="2">
+                <properties>
+                    <property key="text">PB</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A0" number="3">
+                <properties>
+                    <property key="text">PA</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="dr_and" x="360" y="470">
+            <io iotype="input" label="B1" number="0">
+                <properties>
+                    <property key="text">A2_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B0" number="1">
+                <properties>
+                    <property key="text">A2_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A1" number="2">
+                <properties>
+                    <property key="text">PB</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A0" number="3">
+                <properties>
+                    <property key="text">PA</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="dr_and" x="360" y="390">
+            <io iotype="input" label="B1" number="0">
+                <properties>
+                    <property key="text">A3_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B0" number="1">
+                <properties>
+                    <property key="text">A3_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A1" number="2">
+                <properties>
+                    <property key="text">PB</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A0" number="3">
+                <properties>
+                    <property key="text">PA</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="dr_and" x="360" y="310">
+            <io iotype="input" label="B1" number="0">
+                <properties>
+                    <property key="text">B4_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B0" number="1">
+                <properties>
+                    <property key="text">A4_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A1" number="2">
+                <properties>
+                    <property key="text">PB</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A0" number="3">
+                <properties>
+                    <property key="text">PA</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="dr_or" x="670" y="20">
+            <io iotype="output" label="S1" number="4">
+                <properties>
+                    <property key="text">out4_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="S0" number="5">
+                <properties>
+                    <property key="text">out4_0</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="dr_or" x="670" y="110">
+            <io iotype="output" label="S1" number="4">
+                <properties>
+                    <property key="text">out3_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="S0" number="5">
+                <properties>
+                    <property key="text">out3_0</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="dr_or" x="670" y="190">
+            <io iotype="output" label="S1" number="4">
+                <properties>
+                    <property key="text">out2_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="S0" number="5">
+                <properties>
+                    <property key="text">out2_0</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="dr_or" x="670" y="270">
+            <io iotype="output" label="S1" number="4">
+                <properties>
+                    <property key="text">out1_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="S0" number="5">
+                <properties>
+                    <property key="text">out1_0</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="or" x="590" y="80">
+            <io iotype="input" number="1">
+                <properties>
+                    <property key="text">PA</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="or" x="590" y="160">
+            <io iotype="input" number="1">
+                <properties>
+                    <property key="text">PA</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="or" x="600" y="240">
+            <io iotype="input" number="1">
+                <properties>
+                    <property key="text">PA</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="or" x="600" y="320">
+            <io iotype="input" number="1">
+                <properties>
+                    <property key="text">PA</property>
+                </properties>
+            </io>
+        </gate>
+    </gates>
+    <wires>
+        <wire>
+            <from id="modin@150:100" number="64"/>
+            <to id="dr_and@360:-30" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="modin@150:100" number="66"/>
+            <to id="dr_and@360:40" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="modin@150:100" number="65"/>
+            <to id="dr_and@360:-30" number="1" type="gate"/>
+            <properties>
+                <property key="text">A4_0</property>
+            </properties>
+        </wire>
+        <wire>
+            <from id="modin@150:100" number="67"/>
+            <to id="dr_and@360:40" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="modin@150:100" number="68"/>
+            <to id="dr_and@360:110" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="modin@150:100" number="69"/>
+            <to id="dr_and@360:110" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="modin@150:100" number="70"/>
+            <to id="dr_and@360:180" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="modin@150:100" number="71"/>
+            <to id="dr_and@360:180" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="modin@150:100" number="74"/>
+            <to id="dr_and@360:310" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="modin@150:100" number="75"/>
+            <to id="dr_and@360:310" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="modin@150:100" number="76"/>
+            <to id="dr_and@360:390" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="modin@150:100" number="77"/>
+            <to id="dr_and@360:390" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="modin@150:100" number="78"/>
+            <to id="dr_and@360:470" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="modin@150:100" number="79"/>
+            <to id="dr_and@360:470" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="modin@150:100" number="80"/>
+            <to id="dr_and@360:550" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="modin@150:100" number="81"/>
+            <to id="dr_and@360:550" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="modin@150:100" number="84"/>
+            <to id="dr_and@360:-30" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="modin@150:100" number="85"/>
+            <to id="dr_and@360:-30" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="modin@150:100" number="84"/>
+            <to id="dr_and@360:40" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="modin@150:100" number="85"/>
+            <to id="dr_and@360:40" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="modin@150:100" number="84"/>
+            <to id="dr_and@360:110" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="modin@150:100" number="85"/>
+            <to id="dr_and@360:110" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="modin@150:100" number="84"/>
+            <to id="dr_and@360:180" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="modin@150:100" number="85"/>
+            <to id="dr_and@360:180" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="modin@150:100" number="84"/>
+            <to id="dr_and@360:310" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="modin@150:100" number="85"/>
+            <to id="dr_and@360:310" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="modin@150:100" number="84"/>
+            <to id="dr_and@360:390" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="modin@150:100" number="85"/>
+            <to id="dr_and@360:390" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="modin@150:100" number="84"/>
+            <to id="dr_and@360:470" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="modin@150:100" number="85"/>
+            <to id="dr_and@360:470" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="modin@150:100" number="84"/>
+            <to id="dr_and@360:550" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="modin@150:100" number="85"/>
+            <to id="dr_and@360:550" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="or@590:80" number="0"/>
+            <to id="dr_or@670:20" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="or@590:160" number="0"/>
+            <to id="dr_or@670:110" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="or@600:240" number="0"/>
+            <to id="dr_or@670:190" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="or@600:320" number="0"/>
+            <to id="dr_or@670:270" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_and@360:-30" number="4"/>
+            <to id="dr_or@670:20" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_and@360:-30" number="5"/>
+            <to id="dr_or@670:20" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_and@360:40" number="4"/>
+            <to id="dr_or@670:110" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_and@360:40" number="5"/>
+            <to id="dr_or@670:110" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_and@360:110" number="4"/>
+            <to id="dr_or@670:190" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_and@360:110" number="5"/>
+            <to id="dr_or@670:190" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_and@360:180" number="4"/>
+            <to id="dr_or@670:270" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_and@360:180" number="5"/>
+            <to id="dr_or@670:270" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_and@360:550" number="5"/>
+            <to id="or@600:320" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_and@360:470" number="5"/>
+            <to id="or@600:240" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_and@360:390" number="5"/>
+            <to id="or@590:160" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_and@360:310" number="5"/>
+            <to id="or@590:80" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_and@360:310" number="4"/>
+            <to id="dr_or@670:20" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_and@360:390" number="4"/>
+            <to id="dr_or@670:110" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_and@360:470" number="4"/>
+            <to id="dr_or@670:190" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_and@360:550" number="4"/>
+            <to id="dr_or@670:270" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="modin@150:100" number="84"/>
+            <to id="or@590:80" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="modin@150:100" number="84"/>
+            <to id="or@590:160" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="modin@150:100" number="84"/>
+            <to id="or@600:240" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="modin@150:100" number="84"/>
+            <to id="or@600:320" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_or@670:20" number="4"/>
+            <to id="modout@1060:110" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_or@670:20" number="5"/>
+            <to id="modout@1060:110" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_or@670:110" number="4"/>
+            <to id="modout@1060:110" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_or@670:110" number="5"/>
+            <to id="modout@1060:110" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_or@670:190" number="4"/>
+            <to id="modout@1060:110" number="4" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_or@670:190" number="5"/>
+            <to id="modout@1060:110" number="5" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_or@670:270" number="4"/>
+            <to id="modout@1060:110" number="6" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_or@670:270" number="5"/>
+            <to id="modout@1060:110" number="7" type="gate"/>
+        </wire>
+    </wires>
+</logicsim>
