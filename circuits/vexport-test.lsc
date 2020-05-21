@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<logicsim version="3">
+    <info/>
+    <gates>
+        <gate type="dr_nand" x="20" y="20">
+            <io iotype="input" number="0">
+                <properties>
+                    <property key="text">a</property>
+                </properties>
+            </io>
+            <io iotype="input" number="1">
+                <properties>
+                    <property key="text">EEEEEE</property>
+                </properties>
+            </io>
+            <io iotype="input" number="2" type="high"/>
+        </gate>
+        <gate type="dr_nand" x="120" y="50"/>
+        <gate type="arbuffer" x="120" y="140">
+            <properties>
+                <property key="text">asdf</property>
+            </properties>
+            <io iotype="input" number="0" type="inv">
+                <properties>
+                    <property key="text">AAAAAA</property>
+                </properties>
+            </io>
+            <io iotype="output" number="9">
+                <properties>
+                    <property key="text">BBBBBBBb</property>
+                </properties>
+            </io>
+        </gate>
+    </gates>
+    <wires>
+        <wire>
+            <from id="dr_nand@20:20" number="4"/>
+            <to id="dr_nand@120:50" number="0" type="gate"/>
+            <properties>
+                <property key="text">d</property>
+            </properties>
+        </wire>
+        <wire>
+            <from id="dr_nand@20:20" number="5"/>
+            <to id="dr_nand@120:50" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer@120:140" number="6"/>
+            <to id="arbuffer@120:140" number="4" type="gate"/>
+        </wire>
+    </wires>
+</logicsim>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<logicsim version="3">
+    <info/>
+    <gates>
+        <gate type="celement" x="510" y="380">
+            <properties>
+                <property key="text">c1</property>
+            </properties>
+        </gate>
+        <gate type="arbuffer" x="240" y="60">
+            <properties>
+                <property key="text">ar1</property>
+            </properties>
+        </gate>
+    </gates>
+    <wires>
+        <wire>
+            <from id="arbuffer@240:60" number="5"/>
+            <to id="celement@510:380" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer@240:60" number="4"/>
+            <to id="celement@510:380" number="1" type="gate"/>
+        </wire>
+    </wires>
+</logicsim>

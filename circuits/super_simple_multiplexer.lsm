@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<logicsim version="3">
+    <info/>
+    <gates>
+        <gate type="and" x="290" y="860"/>
+        <gate type="and" x="290" y="950">
+            <io iotype="input" number="2" type="inv"/>
+        </gate>
+        <gate type="buffer" x="160" y="920">
+            <io iotype="input" number="0" type="high"/>
+        </gate>
+        <gate type="buffer" x="160" y="870"/>
+        <gate type="buffer" x="160" y="980"/>
+        <gate type="or" x="400" y="900"/>
+        <gate type="led" x="520" y="870"/>
+    </gates>
+    <wires>
+        <wire>
+            <from id="buffer@160:870" number="1"/>
+            <to id="and@290:860" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@160:920" number="1"/>
+            <to id="and@290:950" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@160:980" number="1"/>
+            <to id="and@290:860" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@160:980" number="1"/>
+            <to id="and@290:950" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="and@290:860" number="0"/>
+            <to id="or@400:900" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="and@290:950" number="0"/>
+            <to id="or@400:900" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="or@400:900" number="0"/>
+            <to id="led@520:870" number="0" type="gate"/>
+        </wire>
+    </wires>
+</logicsim>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<logicsim version="3">
+    <info/>
+    <gates>
+        <gate type="nor" x="20" y="20"/>
+        <gate type="nor" x="60" y="60"/>
+        <gate type="nor" x="100" y="100"/>
+        <gate type="nor" x="140" y="140"/>
+        <gate type="buffer" x="180" y="180"/>
+    </gates>
+    <wires/>
+</logicsim>
