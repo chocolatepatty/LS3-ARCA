@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<logicsim version="3">
+    <info/>
+    <gates>
+        <gate type="modin" x="70" y="210">
+            <io iotype="input" number="0">
+                <properties>
+                    <property key="text">&lt;Label&gt;</property>
+                </properties>
+            </io>
+            <io iotype="input" number="8" type="low">
+                <properties>
+                    <property key="text">MreadRack</property>
+                </properties>
+            </io>
+            <io iotype="input" number="9" type="low">
+                <properties>
+                    <property key="text">MreadLreq</property>
+                </properties>
+            </io>
+            <io iotype="input" number="10" type="low">
+                <properties>
+                    <property key="text">Minit</property>
+                </properties>
+            </io>
+            <io iotype="input" number="11" type="low">
+                <properties>
+                    <property key="text">MwriteLReq</property>
+                </properties>
+            </io>
+            <io iotype="input" number="12" type="low">
+                <properties>
+                    <property key="text">MwriteLdata4_1</property>
+                </properties>
+            </io>
+            <io iotype="input" number="13" type="low">
+                <properties>
+                    <property key="text">MwriteLdata4_0</property>
+                </properties>
+            </io>
+            <io iotype="input" number="14" type="low">
+                <properties>
+                    <property key="text">MwriteLdata3_1</property>
+                </properties>
+            </io>
+            <io iotype="input" number="15" type="low">
+                <properties>
+                    <property key="text">MwriteLdata3_0</property>
+                </properties>
+            </io>
+            <io iotype="input" number="16" type="low">
+                <properties>
+                    <property key="text">MwriteLdata2_1</property>
+                </properties>
+            </io>
+            <io iotype="input" number="17" type="low">
+                <properties>
+                    <property key="text">MwriteLdata2_0</property>
+                </properties>
+            </io>
+            <io iotype="input" number="18" type="low">
+                <properties>
+                    <property key="text">MwriteLdata1_1</property>
+                </properties>
+            </io>
+            <io iotype="input" number="19" type="low">
+                <properties>
+                    <property key="text">MwriteLdata1_0</property>
+                </properties>
+            </io>
+            <io iotype="input" number="63">
+                <properties>
+                    <property key="text">&lt;Label&gt;</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="modout" x="2080" y="250">
+            <io iotype="output" number="64">
+                <properties>
+                    <property key="text">MRdata4_1</property>
+                </properties>
+            </io>
+            <io iotype="output" number="65">
+                <properties>
+                    <property key="text">MRdata4_0</property>
+                </properties>
+            </io>
+            <io iotype="output" number="66">
+                <properties>
+                    <property key="text">MRdata3_1</property>
+                </properties>
+            </io>
+            <io iotype="output" number="67">
+                <properties>
+                    <property key="text">MRdata3_0</property>
+                </properties>
+            </io>
+            <io iotype="output" number="68">
+                <properties>
+                    <property key="text">MRdata2_1</property>
+                </properties>
+            </io>
+            <io iotype="output" number="69">
+                <properties>
+                    <property key="text">MRdata2_0</property>
+                </properties>
+            </io>
+            <io iotype="output" number="70">
+                <properties>
+                    <property key="text">MRdata1_1</property>
+                </properties>
+            </io>
+            <io iotype="output" number="71">
+                <properties>
+                    <property key="text">MRdata1_0</property>
+                </properties>
+            </io>
+            <io iotype="output" number="72">
+                <properties>
+                    <property key="text">MreadLack</property>
+                </properties>
+            </io>
+            <io iotype="output" number="73">
+                <properties>
+                    <property key="text">MreadRreq</property>
+                </properties>
+            </io>
+            <io iotype="output" number="74">
+                <properties>
+                    <property key="text">MwriteLack</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="arbuffer8" x="1640" y="370"/>
+        <gate type="arbuffer8" x="710" y="370"/>
+        <gate type="arbuffer8" x="450" y="370"/>
+        <gate rotate="270" type="celement" x="1180" y="680"/>
+        <gate type="or" x="630" y="440"/>
+        <gate type="or" x="630" y="520"/>
+        <gate type="or" x="630" y="670"/>
+        <gate type="or" x="630" y="610"/>
+        <gate type="or" x="630" y="380"/>
+        <gate type="celement" x="770" y="660"/>
+        <gate type="arbuffer8" x="1250" y="370"/>
+        <gate type="celement" x="630" y="770"/>
+        <gate module="true" type="4bit_multipexer_one_optional_input" x="980" y="460"/>
+        <gate type="or" x="930" y="800"/>
+        <gate type="celement" x="1300" y="690"/>
+        <gate rotate="270" type="or" x="1240" y="830"/>
+        <gate type="celement" x="1560" y="760"/>
+    </gates>
+    <wires>
+        <wire>
+            <from id="arbuffer8@450:370" number="19"/>
+            <to id="arbuffer8@450:370" number="19" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@450:370" number="18"/>
+            <to id="celement@1180:680" number="0" type="gate"/>
+            <point node="false" number="0" x="470" y="650"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@710:370" number="18"/>
+            <to id="arbuffer8@450:370" number="9" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@1640:370" number="18"/>
+            <to id="modout@2080:250" number="8" type="gate"/>
+            <point node="false" number="0" x="1720" y="710"/>
+            <point node="false" number="1" x="1800" y="660"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@1640:370" number="19"/>
+            <to id="modout@2080:250" number="9" type="gate"/>
+            <point node="false" number="0" x="1790" y="710"/>
+            <point node="false" number="1" x="1810" y="690"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@1640:370" number="10"/>
+            <to id="modout@2080:250" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@1640:370" number="11"/>
+            <to id="modout@2080:250" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@1640:370" number="12"/>
+            <to id="modout@2080:250" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@1640:370" number="13"/>
+            <to id="modout@2080:250" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@1640:370" number="14"/>
+            <to id="modout@2080:250" number="4" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@1640:370" number="15"/>
+            <to id="modout@2080:250" number="5" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@1640:370" number="16"/>
+            <to id="modout@2080:250" number="6" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@1640:370" number="17"/>
+            <to id="modout@2080:250" number="7" type="gate"/>
+        </wire>
+        <wire>
+            <from id="or@630:440" number="0"/>
+            <to id="arbuffer8@710:370" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="or@630:670" number="0"/>
+            <to id="arbuffer8@710:370" number="7" type="gate"/>
+        </wire>
+        <wire>
+            <from id="or@630:520" number="0"/>
+            <to id="arbuffer8@710:370" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="or@630:380" number="0"/>
+            <to id="arbuffer8@710:370" number="8" type="gate"/>
+            <point node="false" number="0" x="720" y="360"/>
+            <point node="false" number="1" x="780" y="360"/>
+        </wire>
+        <wire>
+            <from id="modin@70:210" number="74"/>
+            <to id="or@630:380" number="2" type="gate"/>
+            <point node="false" number="0" x="260" y="320"/>
+            <point node="false" number="1" x="260" y="690"/>
+            <point node="false" number="2" x="550" y="690"/>
+        </wire>
+        <wire>
+            <from id="modin@70:210" number="74"/>
+            <to id="or@630:440" number="2" type="gate"/>
+            <point node="false" number="0" x="270" y="320"/>
+            <point node="false" number="1" x="270" y="700"/>
+            <point node="false" number="2" x="560" y="700"/>
+        </wire>
+        <wire>
+            <from id="modin@70:210" number="74"/>
+            <to id="or@630:520" number="2" type="gate"/>
+            <point node="false" number="0" x="280" y="320"/>
+            <point node="false" number="1" x="280" y="710"/>
+            <point node="false" number="2" x="570" y="710"/>
+        </wire>
+        <wire>
+            <from id="modin@70:210" number="74"/>
+            <to id="or@630:610" number="2" type="gate"/>
+            <point node="false" number="0" x="290" y="320"/>
+            <point node="false" number="1" x="290" y="720"/>
+            <point node="false" number="2" x="580" y="720"/>
+        </wire>
+        <wire>
+            <from id="modin@70:210" number="74"/>
+            <to id="or@630:670" number="2" type="gate"/>
+            <point node="false" number="0" x="300" y="320"/>
+            <point node="false" number="1" x="300" y="730"/>
+            <point node="false" number="2" x="590" y="730"/>
+        </wire>
+        <wire>
+            <from id="or@630:610" number="0"/>
+            <to id="arbuffer8@710:370" number="5" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@450:370" number="11"/>
+            <to id="or@630:440" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@450:370" number="10"/>
+            <to id="arbuffer8@710:370" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@450:370" number="19"/>
+            <to id="or@630:380" number="1" type="gate"/>
+            <point node="false" number="0" x="510" y="640"/>
+            <point node="false" number="1" x="590" y="640"/>
+            <point node="false" number="2" x="590" y="390"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@450:370" number="16"/>
+            <to id="arbuffer8@710:370" number="6" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@450:370" number="14"/>
+            <to id="arbuffer8@710:370" number="4" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@450:370" number="12"/>
+            <to id="arbuffer8@710:370" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@450:370" number="15"/>
+            <to id="or@630:610" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@450:370" number="13"/>
+            <to id="or@630:520" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@450:370" number="17"/>
+            <to id="or@630:670" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="modin@70:210" number="73"/>
+            <to id="celement@770:660" number="1" type="gate"/>
+            <point node="false" number="0" x="310" y="310"/>
+            <point node="false" number="1" x="310" y="750"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@1250:370" number="10"/>
+            <to id="arbuffer8@1640:370" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@1250:370" number="11"/>
+            <to id="arbuffer8@1640:370" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@1250:370" number="12"/>
+            <to id="arbuffer8@1640:370" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@1250:370" number="13"/>
+            <to id="arbuffer8@1640:370" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@1250:370" number="14"/>
+            <to id="arbuffer8@1640:370" number="4" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@1250:370" number="15"/>
+            <to id="arbuffer8@1640:370" number="5" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@1250:370" number="16"/>
+            <to id="arbuffer8@1640:370" number="6" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@1250:370" number="17"/>
+            <to id="arbuffer8@1640:370" number="7" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@1250:370" number="18"/>
+            <to id="arbuffer8@710:370" number="9" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@1250:370" number="18"/>
+            <to id="arbuffer8@1250:370" number="18" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@710:370" number="10"/>
+            <to id="4bit_multipexer_one_optional_input@980:460" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@710:370" number="11"/>
+            <to id="4bit_multipexer_one_optional_input@980:460" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@710:370" number="12"/>
+            <to id="4bit_multipexer_one_optional_input@980:460" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@710:370" number="13"/>
+            <to id="4bit_multipexer_one_optional_input@980:460" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@710:370" number="14"/>
+            <to id="4bit_multipexer_one_optional_input@980:460" number="4" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@710:370" number="15"/>
+            <to id="4bit_multipexer_one_optional_input@980:460" number="5" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@710:370" number="16"/>
+            <to id="4bit_multipexer_one_optional_input@980:460" number="6" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@710:370" number="17"/>
+            <to id="4bit_multipexer_one_optional_input@980:460" number="7" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@630:770" number="2"/>
+            <to id="4bit_multipexer_one_optional_input@980:460" number="21" type="gate"/>
+        </wire>
+        <wire>
+            <from id="4bit_multipexer_one_optional_input@980:460" number="64"/>
+            <to id="arbuffer8@1250:370" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="4bit_multipexer_one_optional_input@980:460" number="65"/>
+            <to id="arbuffer8@1250:370" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="4bit_multipexer_one_optional_input@980:460" number="66"/>
+            <to id="arbuffer8@1250:370" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="4bit_multipexer_one_optional_input@980:460" number="67"/>
+            <to id="arbuffer8@1250:370" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="4bit_multipexer_one_optional_input@980:460" number="68"/>
+            <to id="arbuffer8@1250:370" number="4" type="gate"/>
+        </wire>
+        <wire>
+            <from id="4bit_multipexer_one_optional_input@980:460" number="69"/>
+            <to id="arbuffer8@1250:370" number="5" type="gate"/>
+        </wire>
+        <wire>
+            <from id="4bit_multipexer_one_optional_input@980:460" number="70"/>
+            <to id="arbuffer8@1250:370" number="6" type="gate"/>
+        </wire>
+        <wire>
+            <from id="4bit_multipexer_one_optional_input@980:460" number="71"/>
+            <to id="arbuffer8@1250:370" number="7" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@710:370" number="19"/>
+            <to id="celement@770:660" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@710:370" number="19"/>
+            <to id="celement@630:770" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@770:660" number="2"/>
+            <to id="4bit_multipexer_one_optional_input@980:460" number="20" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@1250:370" number="10"/>
+            <to id="arbuffer8@450:370" number="0" type="gate"/>
+            <point node="false" number="0" x="1390" y="440"/>
+            <point node="false" number="1" x="1390" y="260"/>
+            <point node="false" number="2" x="340" y="260"/>
+            <point node="false" number="3" x="340" y="460"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@1250:370" number="11"/>
+            <to id="arbuffer8@450:370" number="1" type="gate"/>
+            <point node="false" number="0" x="1400" y="440"/>
+            <point node="false" number="1" x="1400" y="270"/>
+            <point node="false" number="2" x="350" y="270"/>
+            <point node="false" number="3" x="350" y="470"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@1250:370" number="12"/>
+            <to id="arbuffer8@450:370" number="2" type="gate"/>
+            <point node="false" number="0" x="1410" y="440"/>
+            <point node="false" number="1" x="1410" y="280"/>
+            <point node="false" number="2" x="360" y="280"/>
+            <point node="false" number="3" x="360" y="500"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@1250:370" number="13"/>
+            <to id="arbuffer8@450:370" number="3" type="gate"/>
+            <point node="false" number="0" x="1420" y="440"/>
+            <point node="false" number="1" x="1420" y="290"/>
+            <point node="false" number="2" x="370" y="290"/>
+            <point node="false" number="3" x="370" y="510"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@1250:370" number="14"/>
+            <to id="arbuffer8@450:370" number="4" type="gate"/>
+            <point node="false" number="0" x="1430" y="450"/>
+            <point node="false" number="1" x="1430" y="300"/>
+            <point node="false" number="2" x="380" y="300"/>
+            <point node="false" number="3" x="380" y="540"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@1250:370" number="15"/>
+            <to id="arbuffer8@450:370" number="5" type="gate"/>
+            <point node="false" number="0" x="1440" y="450"/>
+            <point node="false" number="1" x="1440" y="310"/>
+            <point node="false" number="2" x="390" y="310"/>
+            <point node="false" number="3" x="390" y="550"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@1250:370" number="16"/>
+            <to id="arbuffer8@450:370" number="6" type="gate"/>
+            <point node="false" number="0" x="1450" y="450"/>
+            <point node="false" number="1" x="1450" y="320"/>
+            <point node="false" number="2" x="400" y="320"/>
+            <point node="false" number="3" x="400" y="580"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@1250:370" number="17"/>
+            <to id="arbuffer8@450:370" number="7" type="gate"/>
+            <point node="false" number="0" x="1460" y="450"/>
+            <point node="false" number="1" x="1460" y="330"/>
+            <point node="false" number="2" x="410" y="330"/>
+            <point node="false" number="3" x="410" y="590"/>
+        </wire>
+        <wire>
+            <from id="or@930:800" number="0"/>
+            <to id="arbuffer8@1250:370" number="8" type="gate"/>
+            <point node="false" number="0" x="1060" y="880"/>
+            <point node="false" number="1" x="1060" y="370"/>
+        </wire>
+        <wire>
+            <from id="celement@630:770" number="2"/>
+            <to id="or@930:800" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@1250:370" number="19"/>
+            <to id="celement@1300:690" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="modin@70:210" number="73"/>
+            <to id="celement@1300:690" number="1" type="gate"/>
+            <point node="false" number="0" x="320" y="310"/>
+            <point node="false" number="1" x="320" y="1130"/>
+            <point node="false" number="2" x="1310" y="1130"/>
+        </wire>
+        <wire>
+            <from id="celement@1300:690" number="2"/>
+            <to id="arbuffer8@1640:370" number="8" type="gate"/>
+            <point node="false" number="0" x="1570" y="630"/>
+            <point node="false" number="1" x="1570" y="370"/>
+        </wire>
+        <wire>
+            <from id="celement@1180:680" number="2"/>
+            <to id="arbuffer8@1250:370" number="9" type="gate"/>
+        </wire>
+        <wire>
+            <from id="modin@70:210" number="72"/>
+            <to id="arbuffer8@1640:370" number="9" type="gate"/>
+            <point node="false" number="0" x="300" y="240"/>
+            <point node="false" number="1" x="1800" y="240"/>
+            <point node="false" number="2" x="1800" y="630"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@1640:370" number="18"/>
+            <to id="or@1240:830" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@1250:370" number="19"/>
+            <to id="arbuffer8@450:370" number="8" type="gate"/>
+            <point node="false" number="0" x="1210" y="650"/>
+            <point node="false" number="1" x="1190" y="650"/>
+            <point node="false" number="2" x="1190" y="350"/>
+            <point node="false" number="3" x="510" y="350"/>
+        </wire>
+        <wire>
+            <from id="or@1240:830" number="0"/>
+            <to id="celement@1180:680" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@1250:370" number="19"/>
+            <to id="celement@1560:760" number="0" type="gate"/>
+            <point node="false" number="0" x="1310" y="670"/>
+            <point node="false" number="1" x="1560" y="670"/>
+        </wire>
+        <wire>
+            <from id="celement@1560:760" number="2"/>
+            <to id="or@1240:830" number="1" type="gate"/>
+            <point node="false" number="0" x="1670" y="810"/>
+            <point node="false" number="1" x="1670" y="970"/>
+            <point node="false" number="2" x="1250" y="970"/>
+        </wire>
+        <wire>
+            <from id="celement@1560:760" number="2"/>
+            <to id="modout@2080:250" number="10" type="gate"/>
+            <point node="false" number="0" x="1800" y="810"/>
+        </wire>
+        <wire>
+            <from id="modin@70:210" number="75"/>
+            <to id="celement@630:770" number="1" type="gate"/>
+            <point node="false" number="0" x="250" y="330"/>
+            <point node="false" number="1" x="250" y="860"/>
+        </wire>
+        <wire>
+            <from id="modin@70:210" number="76"/>
+            <to id="4bit_multipexer_one_optional_input@980:460" number="10" type="gate"/>
+            <point node="false" number="0" x="240" y="340"/>
+            <point node="false" number="1" x="240" y="880"/>
+            <point node="false" number="2" x="760" y="880"/>
+        </wire>
+        <wire>
+            <from id="modin@70:210" number="77"/>
+            <to id="4bit_multipexer_one_optional_input@980:460" number="11" type="gate"/>
+            <point node="false" number="0" x="230" y="350"/>
+            <point node="false" number="1" x="230" y="890"/>
+            <point node="false" number="2" x="760" y="890"/>
+        </wire>
+        <wire>
+            <from id="modin@70:210" number="78"/>
+            <to id="4bit_multipexer_one_optional_input@980:460" number="12" type="gate"/>
+            <point node="false" number="0" x="220" y="360"/>
+            <point node="false" number="1" x="220" y="920"/>
+            <point node="false" number="2" x="760" y="920"/>
+        </wire>
+        <wire>
+            <from id="modin@70:210" number="79"/>
+            <to id="4bit_multipexer_one_optional_input@980:460" number="13" type="gate"/>
+            <point node="false" number="0" x="210" y="370"/>
+            <point node="false" number="1" x="210" y="930"/>
+            <point node="false" number="2" x="760" y="930"/>
+        </wire>
+        <wire>
+            <from id="modin@70:210" number="80"/>
+            <to id="4bit_multipexer_one_optional_input@980:460" number="14" type="gate"/>
+            <point node="false" number="0" x="200" y="380"/>
+            <point node="false" number="1" x="200" y="960"/>
+            <point node="false" number="2" x="760" y="960"/>
+        </wire>
+        <wire>
+            <from id="modin@70:210" number="81"/>
+            <to id="4bit_multipexer_one_optional_input@980:460" number="15" type="gate"/>
+            <point node="false" number="0" x="190" y="390"/>
+            <point node="false" number="1" x="190" y="970"/>
+            <point node="false" number="2" x="760" y="970"/>
+        </wire>
+        <wire>
+            <from id="modin@70:210" number="82"/>
+            <to id="4bit_multipexer_one_optional_input@980:460" number="16" type="gate"/>
+            <point node="false" number="0" x="180" y="400"/>
+            <point node="false" number="1" x="180" y="1000"/>
+            <point node="false" number="2" x="760" y="1000"/>
+        </wire>
+        <wire>
+            <from id="modin@70:210" number="83"/>
+            <to id="4bit_multipexer_one_optional_input@980:460" number="17" type="gate"/>
+            <point node="false" number="0" x="170" y="410"/>
+            <point node="false" number="1" x="170" y="1010"/>
+            <point node="false" number="2" x="760" y="1010"/>
+        </wire>
+        <wire>
+            <from id="modin@70:210" number="75"/>
+            <to id="celement@1560:760" number="1" type="gate"/>
+            <point node="false" number="0" x="330" y="330"/>
+            <point node="false" number="1" x="330" y="1120"/>
+            <point node="false" number="2" x="1560" y="1120"/>
+        </wire>
+        <wire>
+            <from id="celement@770:660" number="2"/>
+            <to id="or@930:800" number="1" type="gate"/>
+        </wire>
+    </wires>
+</logicsim>

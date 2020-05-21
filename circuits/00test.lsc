@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<logicsim version="3">
+    <info/>
+    <gates>
+        <gate type="muxEight_fourWay" x="130" y="-30">
+            <io iotype="input" label="AA4_1" number="0" type="high"/>
+            <io iotype="input" label="AA3_1" number="2" type="high"/>
+            <io iotype="input" label="AA2_1" number="4" type="high"/>
+            <io iotype="input" label="AA1_1" number="6" type="high"/>
+            <io iotype="input" label="AB4_1" number="8" type="high"/>
+            <io iotype="input" label="AB3_1" number="10" type="high"/>
+            <io iotype="input" label="AB2_1" number="12" type="high"/>
+            <io iotype="input" label="AB1_0" number="15" type="high"/>
+            <io iotype="input" label="BA4_1" number="16" type="high"/>
+            <io iotype="input" label="BA3_1" number="18" type="high"/>
+            <io iotype="input" label="BA2_0" number="21" type="high"/>
+            <io iotype="input" label="BA1_1" number="22" type="high"/>
+            <io iotype="input" label="BB4_1" number="24" type="high"/>
+            <io iotype="input" label="BB3_1" number="26" type="high"/>
+            <io iotype="input" label="BB2_0" number="29" type="high"/>
+            <io iotype="input" label="BB1_0" number="31" type="high"/>
+            <io iotype="input" label="PAX" number="32" type="high"/>
+            <io iotype="input" label="PXA" number="34" type="high"/>
+        </gate>
+        <gate type="muxEight" x="620" y="70"/>
+    </gates>
+    <wires>
+        <wire>
+            <from id="muxEight_fourWay@130:-30" number="36"/>
+            <to id="muxEight@620:70" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight_fourWay@130:-30" number="37"/>
+            <to id="muxEight@620:70" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight_fourWay@130:-30" number="38"/>
+            <to id="muxEight@620:70" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight_fourWay@130:-30" number="39"/>
+            <to id="muxEight@620:70" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight_fourWay@130:-30" number="40"/>
+            <to id="muxEight@620:70" number="4" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight_fourWay@130:-30" number="41"/>
+            <to id="muxEight@620:70" number="5" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight_fourWay@130:-30" number="42"/>
+            <to id="muxEight@620:70" number="6" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight_fourWay@130:-30" number="43"/>
+            <to id="muxEight@620:70" number="7" type="gate"/>
+        </wire>
+    </wires>
+</logicsim>

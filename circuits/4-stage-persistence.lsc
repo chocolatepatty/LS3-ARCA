@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<logicsim version="3">
+    <info/>
+    <gates>
+        <gate type="arbuffer2" x="700" y="580"/>
+        <gate type="arbuffer2" x="900" y="580"/>
+        <gate type="arbuffer2" x="1240" y="580"/>
+        <gate type="celement" x="920" y="860">
+            <io iotype="input" label="B" number="1" type="low"/>
+        </gate>
+        <gate type="arbuffer2" x="710" y="1690"/>
+        <gate type="arbuffer2" x="930" y="1690"/>
+        <gate type="celement" x="1020" y="1360"/>
+        <gate type="arbuffer2" x="1120" y="1690"/>
+        <gate type="arbuffer2" x="1070" y="580"/>
+    </gates>
+    <wires>
+        <wire>
+            <from id="arbuffer2@1240:580" number="4"/>
+            <to id="arbuffer2@700:580" number="0" type="gate"/>
+            <point node="false" number="0" x="1380" y="670"/>
+            <point node="false" number="1" x="1380" y="500"/>
+            <point node="false" number="2" x="650" y="500"/>
+            <point node="false" number="3" x="650" y="660"/>
+            <point node="false" number="4" x="650" y="670"/>
+        </wire>
+        <wire>
+            <from id="arbuffer2@1240:580" number="5"/>
+            <to id="arbuffer2@700:580" number="1" type="gate"/>
+            <point node="false" number="0" x="1370" y="680"/>
+            <point node="false" number="1" x="1370" y="510"/>
+            <point node="false" number="2" x="640" y="510"/>
+            <point node="false" number="3" x="640" y="680"/>
+        </wire>
+        <wire>
+            <from id="arbuffer2@900:580" number="6"/>
+            <to id="arbuffer2@700:580" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer2@900:580" number="7"/>
+            <to id="celement@920:860" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer2@700:580" number="6"/>
+            <to id="arbuffer2@1240:580" number="3" type="gate"/>
+            <point node="false" number="0" x="720" y="1280"/>
+            <point node="false" number="1" x="1280" y="1280"/>
+        </wire>
+        <wire>
+            <from id="arbuffer2@1240:580" number="7"/>
+            <to id="arbuffer2@700:580" number="2" type="gate"/>
+            <point node="false" number="0" x="1300" y="850"/>
+            <point node="false" number="1" x="1490" y="850"/>
+            <point node="false" number="2" x="1490" y="520"/>
+            <point node="false" number="3" x="820" y="520"/>
+        </wire>
+        <wire>
+            <from id="arbuffer2@700:580" number="4"/>
+            <to id="arbuffer2@900:580" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer2@700:580" number="5"/>
+            <to id="arbuffer2@900:580" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer2@700:580" number="7"/>
+            <to id="arbuffer2@900:580" number="2" type="gate"/>
+            <point node="false" number="0" x="760" y="850"/>
+            <point node="false" number="1" x="880" y="850"/>
+            <point node="false" number="2" x="880" y="550"/>
+            <point node="false" number="3" x="1010" y="550"/>
+        </wire>
+        <wire>
+            <from id="arbuffer2@710:1690" number="7"/>
+            <to id="arbuffer2@930:1690" number="2" type="gate"/>
+            <point node="false" number="0" x="770" y="1960"/>
+            <point node="false" number="1" x="870" y="1960"/>
+            <point node="false" number="2" x="870" y="1660"/>
+            <point node="false" number="3" x="990" y="1660"/>
+        </wire>
+        <wire>
+            <from id="arbuffer2@930:1690" number="6"/>
+            <to id="arbuffer2@710:1690" number="3" type="gate"/>
+            <point node="false" number="0" x="820" y="1930"/>
+        </wire>
+        <wire>
+            <from id="arbuffer2@930:1690" number="4"/>
+            <to id="arbuffer2@1120:1690" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer2@930:1690" number="5"/>
+            <to id="arbuffer2@1120:1690" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer2@1120:1690" number="6"/>
+            <to id="arbuffer2@930:1690" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@1020:1360" number="2"/>
+            <to id="arbuffer2@1120:1690" number="2" type="gate"/>
+            <point node="false" number="0" x="1180" y="1410"/>
+        </wire>
+        <wire>
+            <from id="arbuffer2@930:1690" number="7"/>
+            <to id="celement@1020:1360" number="1" type="gate"/>
+            <point node="false" number="0" x="990" y="1970"/>
+            <point node="false" number="1" x="1080" y="1970"/>
+            <point node="false" number="2" x="1080" y="1530"/>
+            <point node="false" number="3" x="1020" y="1530"/>
+        </wire>
+        <wire>
+            <from id="arbuffer2@1120:1690" number="4"/>
+            <to id="arbuffer2@710:1690" number="0" type="gate"/>
+            <point node="false" number="0" x="1280" y="1780"/>
+            <point node="false" number="1" x="1280" y="1580"/>
+            <point node="false" number="2" x="680" y="1580"/>
+            <point node="false" number="3" x="680" y="1780"/>
+        </wire>
+        <wire>
+            <from id="arbuffer2@1120:1690" number="5"/>
+            <to id="arbuffer2@710:1690" number="1" type="gate"/>
+            <point node="false" number="0" x="1290" y="1790"/>
+            <point node="false" number="1" x="1290" y="1570"/>
+            <point node="false" number="2" x="670" y="1570"/>
+            <point node="false" number="3" x="670" y="1790"/>
+        </wire>
+        <wire>
+            <from id="arbuffer2@710:1690" number="6"/>
+            <to id="arbuffer2@1120:1690" number="3" type="gate"/>
+            <point node="false" number="0" x="730" y="2000"/>
+            <point node="false" number="1" x="1220" y="2000"/>
+        </wire>
+        <wire>
+            <from id="arbuffer2@1120:1690" number="7"/>
+            <to id="arbuffer2@710:1690" number="2" type="gate"/>
+            <point node="false" number="0" x="1180" y="1960"/>
+            <point node="false" number="1" x="1330" y="1960"/>
+            <point node="false" number="2" x="1330" y="1620"/>
+            <point node="false" number="3" x="770" y="1620"/>
+        </wire>
+        <wire>
+            <from id="arbuffer2@710:1690" number="4"/>
+            <to id="arbuffer2@930:1690" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer2@710:1690" number="5"/>
+            <to id="arbuffer2@930:1690" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer2@900:580" number="4"/>
+            <to id="arbuffer2@1070:580" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer2@900:580" number="5"/>
+            <to id="arbuffer2@1070:580" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer2@1070:580" number="6"/>
+            <to id="arbuffer2@900:580" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer2@1070:580" number="4"/>
+            <to id="arbuffer2@1240:580" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer2@1070:580" number="5"/>
+            <to id="arbuffer2@1240:580" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer2@1240:580" number="6"/>
+            <to id="arbuffer2@1070:580" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@920:860" number="2"/>
+            <to id="arbuffer2@1070:580" number="2" type="gate"/>
+            <point node="false" number="0" x="1050" y="900"/>
+            <point node="false" number="1" x="1040" y="570"/>
+            <point node="false" number="2" x="1140" y="580"/>
+        </wire>
+        <wire>
+            <from id="arbuffer2@1070:580" number="7"/>
+            <to id="arbuffer2@1240:580" number="2" type="gate"/>
+            <point node="false" number="0" x="1130" y="860"/>
+            <point node="false" number="1" x="1220" y="860"/>
+            <point node="false" number="2" x="1230" y="570"/>
+            <point node="false" number="3" x="1300" y="570"/>
+        </wire>
+    </wires>
+</logicsim>
