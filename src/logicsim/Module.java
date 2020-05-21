@@ -21,6 +21,7 @@ public class Module extends Gate {
 	private MODIN moduleIn = null;
 	private MODOUT moduleOut = null;
 	transient LogicSimFile lsFile = new LogicSimFile(null);
+	int ioNo = 64;
 
 	private boolean embedded = true;
 
@@ -28,12 +29,16 @@ public class Module extends Gate {
 		super();
 		this.type = type;
 		loadModule();
+		height = ioNo*10 + 10;
+		width = 160;
 	}
 
 	public Module(String type, boolean embedded) {
 		super();
 		this.type = type;
 		this.embedded = embedded;
+		height = ioNo*10 + 10;
+		width = 160;
 		loadModule();
 	}
 
@@ -70,11 +75,16 @@ public class Module extends Gate {
 					// add MODIN's input-connectors to module:
 					// check if MODIN's outputs are connected
 					if (c.isConnected()) {
-						Pin newIn = new Pin(getX(), getY() + 10 + (c.number - 16) * 10, this, c.number - 16);
+						Pin newIn = new Pin(getX(), getY() + 10 + (c.number - ioNo) * 10, this, c.number - ioNo);
 						newIn.ioType = Pin.INPUT;
 						newIn.levelType = Pin.NORMAL;
-						Pin in = moduleIn.getPin(c.number - 16);
-						newIn.label = in.label;
+						Pin in = moduleIn.getPin(c.number - ioNo);
+						if (in.text != "<Label>") {
+							newIn.label = in.text;
+						}
+						else {
+						    newIn.label = in.label;
+						}
 						pins.add(newIn);
 					}
 				}
@@ -87,12 +97,17 @@ public class Module extends Gate {
 				// check if MODOUT's inputs have a wire
 				for (Pin c : moduleOut.getInputs()) {
 					if (c.isConnected()) {
-						Pin newOut = new Pin(getX() + getWidth(), getY() + 10 + c.number * 10, this, c.number + 16);
+						Pin newOut = new Pin(getX() + getWidth(), getY() + 10 + c.number * 10, this, c.number + ioNo);
 						newOut.ioType = Pin.OUTPUT;
 						newOut.paintDirection = Pin.LEFT;
 						newOut.levelType = Pin.NORMAL;
-						Pin out = moduleOut.getPin(c.number + 16);
-						newOut.label = out.label;
+						Pin out = moduleOut.getPin(c.number + ioNo);
+						if (out.text != "<Label>") {
+							newOut.label = out.text;
+						}
+						else {
+							newOut.label = out.label;
+						}
 						pins.add(newOut);
 					}
 				}
@@ -101,13 +116,13 @@ public class Module extends Gate {
 			int numIn = getNumInputs();
 			int numOut = getNumOutputs();
 			int max = (numIn > numOut) ? numIn : numOut;
-			if (max > 5)
-				height = 10 * max * 10;
+			/*if (max > 5)
+				height = 10 * max * 10;*/
 			for (Pin c : getInputs()) {
 				c.setY(getY() + getConnectorPosition(c.number, numIn, Gate.VERTICAL));
 			}
 			for (Pin c : getOutputs()) {
-				c.setY(getY() + getConnectorPosition(c.number - 16, numOut, Gate.VERTICAL));
+				c.setY(getY() + getConnectorPosition(c.number - ioNo, numOut, Gate.VERTICAL));
 			}
 		}
 

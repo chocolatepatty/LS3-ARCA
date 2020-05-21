@@ -54,16 +54,17 @@ public abstract class CircuitPart implements LSLevelListener {
 	
 	public String TEXT = "text";
 
-	public String TEXT_DEFAULT = "";
+	public String TEXT_DEFAULT = "<Label>";
 
 	public String text;
 	
-	String type = "wire";
+	public String type;
 	
 	public CircuitPart(int x, int y) {
 		this.x = x;
 		this.y = y;
 		this.listeners = new ArrayList<LSLevelListener>();
+		loadProperties();
 	}
 	
 	protected Properties properties = new Properties();

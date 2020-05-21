@@ -130,19 +130,19 @@ public class XMLCreator {
 			node.appendChild(snode);
 
 		for (Pin c : g.getInputs()) {
-			if ((g instanceof MODIN && c.label != null) || (c.ioType == Pin.INPUT && c.levelType != Pin.NORMAL)) {
+			if ((g instanceof MODIN && c.label != null) || (c.ioType == Pin.INPUT && c.levelType != Pin.NORMAL) || (c.text != "<Label>")) {
 				node.appendChild(createInputNode(doc, c));
 			}
 		}
 		for (Pin c : g.getOutputs()) {
-			if ((g instanceof MODOUT && c.label != null) || (c.ioType == Pin.INPUT && c.levelType != Pin.NORMAL)) {
+			if ((g instanceof MODOUT && c.label != null) || (c.ioType == Pin.INPUT && c.levelType != Pin.NORMAL) || (c.text != "<Label>")) {
 				node.appendChild(createOutputNode(doc, c));
 			}
 		}
 		return node;
 	}
 
-	private static Node createSettingsNode(Document doc, Gate g) {
+	private static Node createSettingsNode(Document doc, CircuitPart g) {
 		if (g.getProperties().size() > 0) {
 			Element node = doc.createElement("properties");
 			Properties properties = g.getProperties();
@@ -165,6 +165,12 @@ public class XMLCreator {
 
 		if (output.label != null)
 			node.setAttribute("label", output.label);
+		
+		// settings
+		Node snode = createSettingsNode(doc, output);
+		if (snode != null)
+			node.appendChild(snode);
+		
 		return node;
 	}
 
@@ -186,6 +192,12 @@ public class XMLCreator {
 		if (input.label != null) {
 			node.setAttribute("label", input.label);
 		}
+
+		// settings
+		Node snode = createSettingsNode(doc, input);
+		if (snode != null)
+			node.appendChild(snode);
+		
 		return node;
 	}
 
@@ -221,7 +233,10 @@ public class XMLCreator {
 				point.setAttribute("y", String.valueOf(wp.getY()));
 				point.setAttribute("node", String.valueOf(wp.show));
 				n.appendChild(point);
-			}
+			}	
+			Node snode = createSettingsNode(doc, w);
+			if (snode != null)
+				n.appendChild(snode);
 			return n;
 		}
 		return null;

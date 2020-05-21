@@ -76,8 +76,6 @@ public class Gate extends CircuitPart {
 	 */
 	public int rotate90 = 0;
 
-	protected String type;
-
 	protected boolean variableInputCountSupported = false;
 
 	protected int width = 60;
@@ -219,6 +217,14 @@ public class Gate extends CircuitPart {
 			int sw = g2.getFontMetrics().stringWidth(lbl);
 			g2.drawString(lbl, getX() + getWidth() / 2 - sw / 2 + OffsetX,
 					getY() + getHeight() / 2 + (g2.getFont().getSize() / 2) - 2 + OffsetY);
+		}
+	}
+
+	protected void drawLabelWithOffsetFromCorner(Graphics2D g2, String lbl, Font font, int OffsetX, int OffsetY) {
+		if (lbl != null) {
+			g2.setFont(font);
+			int sw = g2.getFontMetrics().stringWidth(lbl);
+			g2.drawString(lbl, getX() + OffsetX, getY() + OffsetY);
 		}
 	}
 	

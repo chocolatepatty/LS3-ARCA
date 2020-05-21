@@ -1,7 +1,7 @@
 package logicsim;
 
 /**
- * Wire represention
+ * Wire representation
  * 
  * @author Andreas Tetzl
  * @author Peter Gabriel
@@ -26,6 +26,7 @@ public class Wire extends CircuitPart implements Cloneable {
 	 * Pin/Wire/WirePoint from which this wire is originating
 	 */
 	public CircuitPart from;
+	
 
 	/**
 	 * data structure to hold the wire points
@@ -49,9 +50,10 @@ public class Wire extends CircuitPart implements Cloneable {
 	 */
 	public Wire(Pin fromConn, Pin toConn) {
 		this(0, 0);
+		this.type = "wire";
 		this.from = fromConn;
 		this.to = toConn;
-		selected = true;
+		this.selected = true;
 		loadProperties();
 	}
 
@@ -60,7 +62,7 @@ public class Wire extends CircuitPart implements Cloneable {
 		loadProperties();
 	}
 	
-	@Override
+	/*@Override
 	protected void loadProperties() {
 		text = getPropertyWithDefault(TEXT, TEXT_DEFAULT);
 	}
@@ -79,7 +81,7 @@ public class Wire extends CircuitPart implements Cloneable {
 			setProperty(TEXT, text);
 		}
 		return true;
-	}
+	}*/
 
 	public void addPoint(int x, int y) {
 		// check if the point is not present
@@ -169,14 +171,17 @@ public class Wire extends CircuitPart implements Cloneable {
 
 		g2.setColor(Color.black);
 		
-		if (points.size() > 0) {
-			g2.drawString(text, (from.getX() + points.get(0).getX()) / 2, (from.getY() + points.get(0).getY()) / 2);
-		} else {
-			if (from != null && to == null && tempPoint != null) {
-				g2.drawString(text, (from.getX() + tempPoint.x) / 2, (from.getY() + tempPoint.y) / 2);
-			}
-			else if (from != null && to != null) {
-				g2.drawString(text, (from.getX() + to.getX()) / 2, (from.getY() + to.getY()) / 2);
+		if (text != "<Label>") {
+		
+			if (points.size() > 0) {
+				g2.drawString(text, (from.getX() + points.get(0).getX()) / 2, (from.getY() + points.get(0).getY()) / 2);
+			} else {
+				if (from != null && to == null && tempPoint != null) {
+					g2.drawString(text, (from.getX() + tempPoint.x) / 2, (from.getY() + tempPoint.y) / 2);
+				}
+				else if (from != null && to != null) {
+					g2.drawString(text, (from.getX() + to.getX()) / 2, (from.getY() + to.getY()) / 2);
+				}
 			}
 		}
 	}
@@ -328,35 +333,36 @@ public class Wire extends CircuitPart implements Cloneable {
 
 	@Override
 	public void mousePressed(LSMouseEvent e) {
-		super.mousePressed(e);
 
-		if (Simulation.getInstance().isRunning())
-			return;
-
-		int mx = e.getX();
-		int my = e.getY();
-
-		if (e.lsAction == LSPanel.ACTION_ADDPOINT) {
-			int p = isAt(mx, my);
-			if (p > -1) {
-				insertPointAfter(p, round(mx), round(my));
-				select();
-				notifyChanged();
-			}
-			notifyMessage("");
-			notifyAction(0);
-		} else if (e.lsAction == LSPanel.ACTION_DELPOINT) {
-			if (removePointAt(e.getX(), e.getY())) {
-				select();
-				notifyChanged();
-			}
-		} else {
-			select();
-			// call listener of fromGate
-			from.notifyRepaint();
-		}
 		if (e.isAltDown()) {
 			this.showPropertiesUI(null);
+		}
+		else {
+			if (Simulation.getInstance().isRunning())
+				return;
+	
+			int mx = e.getX();
+			int my = e.getY();
+	
+			if (e.lsAction == LSPanel.ACTION_ADDPOINT) {
+				int p = isAt(mx, my);
+				if (p > -1) {
+					insertPointAfter(p, round(mx), round(my));
+					select();
+					notifyChanged();
+				}
+				notifyMessage("");
+				notifyAction(0);
+			} else if (e.lsAction == LSPanel.ACTION_DELPOINT) {
+				if (removePointAt(e.getX(), e.getY())) {
+					select();
+					notifyChanged();
+				}
+			} else {
+				select();
+				// call listener of fromGate
+				from.notifyRepaint();
+			}
 		}
 //		// clicked CTRL on a Wire -> insert node
 //		if (e.isControlDown()) {

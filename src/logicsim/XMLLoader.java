@@ -92,11 +92,12 @@ public class XMLLoader {
 				// in/output nodes (labels, numbers)
 				for (Xml inode : gnode.children("io")) {
 					String ioType = inode.string("iotype");
+					int pinNumber = Integer.parseInt(inode.string("number"));
+					Pin iPin = gate.getPin(pinNumber);
 					if ("input".equals(ioType)) {
-						int inputNumber = Integer.parseInt(inode.string("number"));
 
 						String label = inode.optString("label");
-						gate.getPin(inputNumber).label = label;
+						iPin.label = label;
 
 						String inpType = inode.optString("type");
 						if (inpType != null) {
@@ -108,12 +109,20 @@ public class XMLLoader {
 							} else if ("inv".equals(inpType)) {
 								inputType = Pin.INVERTED;
 							}
-							gate.getPin(inputNumber).levelType = inputType;
+							iPin.levelType = inputType;
 						}
+						
 					} else {
-						int outputNumber = Integer.parseInt(inode.string("number"));
 						String label = inode.optString("label");
-						gate.getPin(outputNumber).label = label;
+						iPin.label = label;
+					}
+					Xml isnode = inode.optChild("properties");
+					if (isnode != null) {
+						for (Xml n : isnode.children("property")) {
+							String key = n.string("key");
+							iPin.setProperty(key, n.content());
+						}
+						iPin.loadProperties();
 					}
 				}
 				node = doc.optChild("properties");
@@ -157,6 +166,17 @@ public class XMLLoader {
 					WirePoint wp = new WirePoint(xp, yp, b);
 					wire.points.add(wp);
 				}
+
+				// settings
+				Xml snode = wnode.optChild("properties");
+				if (snode != null) {
+					for (Xml n : snode.children("property")) {
+						String key = n.string("key");
+						wire.setProperty(key, n.content());
+					}
+					wire.loadProperties();
+				}
+				
 				wire.selected = false;
 				// connect wire to gates
 				wires.add(wire);
