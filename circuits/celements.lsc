@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<logicsim version="3">
+    <info/>
+    <gates>
+        <gate type="celement" x="220" y="110">
+            <properties>
+                <property key="text">c1</property>
+            </properties>
+            <io iotype="input" label="A" number="0">
+                <properties>
+                    <property key="text">A1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B" number="1">
+                <properties>
+                    <property key="text">B1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="S" number="2">
+                <properties>
+                    <property key="text">s_11</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="celement" x="230" y="480">
+            <properties>
+                <property key="text">c4</property>
+            </properties>
+            <io iotype="input" label="A" number="0">
+                <properties>
+                    <property key="text">A0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B" number="1">
+                <properties>
+                    <property key="text">B0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="S" number="2">
+                <properties>
+                    <property key="text">s_00</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="celement" x="230" y="360">
+            <properties>
+                <property key="text">c3</property>
+            </properties>
+            <io iotype="input" label="A" number="0">
+                <properties>
+                    <property key="text">A0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B" number="1">
+                <properties>
+                    <property key="text">B1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="S" number="2">
+                <properties>
+                    <property key="text">s_01</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="celement" x="230" y="240">
+            <properties>
+                <property key="text">c2</property>
+            </properties>
+            <io iotype="input" label="A" number="0">
+                <properties>
+                    <property key="text">A1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B" number="1">
+                <properties>
+                    <property key="text">B0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="S" number="2">
+                <properties>
+                    <property key="text">s_10</property>
+                </properties>
+            </io>
+        </gate>
+    </gates>
+    <wires/>
+</logicsim>

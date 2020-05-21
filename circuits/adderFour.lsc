@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<logicsim version="3">
+    <info/>
+    <gates>
+        <gate type="dr_xor" x="560" y="210"/>
+        <gate type="dr_xor" x="720" y="430">
+            <io iotype="output" label="S1" number="4">
+                <properties>
+                    <property key="text">out1_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="S0" number="5">
+                <properties>
+                    <property key="text">out1_0</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="dr_and" x="560" y="540"/>
+        <gate type="dr_xor" x="730" y="300">
+            <io iotype="output" label="S1" number="4">
+                <properties>
+                    <property key="text">out2_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="S0" number="5">
+                <properties>
+                    <property key="text">out2_0</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="buffer" x="220" y="180">
+            <io iotype="input" number="0">
+                <properties>
+                    <property key="text">A2_1_in</property>
+                </properties>
+            </io>
+            <io iotype="output" number="1">
+                <properties>
+                    <property key="text">A2_1</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="buffer" x="220" y="320">
+            <io iotype="input" number="0">
+                <properties>
+                    <property key="text">A1_0_in</property>
+                </properties>
+            </io>
+            <io iotype="output" number="1">
+                <properties>
+                    <property key="text">A1_0</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="buffer" x="220" y="280">
+            <io iotype="input" number="0">
+                <properties>
+                    <property key="text">A1_1_in</property>
+                </properties>
+            </io>
+            <io iotype="output" number="1">
+                <properties>
+                    <property key="text">A1_1</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="buffer" x="220" y="220">
+            <io iotype="input" number="0">
+                <properties>
+                    <property key="text">A2_0_in</property>
+                </properties>
+            </io>
+            <io iotype="output" number="1">
+                <properties>
+                    <property key="text">A2_0</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="buffer" x="220" y="430">
+            <io iotype="input" number="0">
+                <properties>
+                    <property key="text">B2_1_in</property>
+                </properties>
+            </io>
+            <io iotype="output" number="1">
+                <properties>
+                    <property key="text">B2_1</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="buffer" x="220" y="470">
+            <io iotype="input" number="0">
+                <properties>
+                    <property key="text">B2_0_in</property>
+                </properties>
+            </io>
+            <io iotype="output" number="1">
+                <properties>
+                    <property key="text">B2_0</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="buffer" x="220" y="520">
+            <io iotype="input" number="0">
+                <properties>
+                    <property key="text">B1_1_in</property>
+                </properties>
+            </io>
+            <io iotype="output" number="1">
+                <properties>
+                    <property key="text">B1_1</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="buffer" x="220" y="560">
+            <io iotype="input" number="0">
+                <properties>
+                    <property key="text">B1_0_in</property>
+                </properties>
+            </io>
+            <io iotype="output" number="1">
+                <properties>
+                    <property key="text">B1_0</property>
+                </properties>
+            </io>
+        </gate>
+    </gates>
+    <wires>
+        <wire>
+            <from id="dr_and@560:540" number="4"/>
+            <to id="dr_xor@730:300" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_and@560:540" number="5"/>
+            <to id="dr_xor@730:300" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_xor@560:210" number="4"/>
+            <to id="dr_xor@730:300" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_xor@560:210" number="5"/>
+            <to id="dr_xor@730:300" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@220:180" number="1"/>
+            <to id="dr_xor@560:210" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@220:220" number="1"/>
+            <to id="dr_xor@560:210" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@220:280" number="1"/>
+            <to id="dr_xor@720:430" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@220:320" number="1"/>
+            <to id="dr_xor@720:430" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@220:280" number="1"/>
+            <to id="dr_and@560:540" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@220:320" number="1"/>
+            <to id="dr_and@560:540" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@220:430" number="1"/>
+            <to id="dr_xor@560:210" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@220:470" number="1"/>
+            <to id="dr_xor@560:210" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@220:520" number="1"/>
+            <to id="dr_xor@720:430" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@220:560" number="1"/>
+            <to id="dr_xor@720:430" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@220:520" number="1"/>
+            <to id="dr_and@560:540" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@220:560" number="1"/>
+            <to id="dr_and@560:540" number="3" type="gate"/>
+        </wire>
+    </wires>
+</logicsim>

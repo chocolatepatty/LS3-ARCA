@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<logicsim version="3">
+    <info/>
+    <gates>
+        <gate type="or" x="110" y="120">
+            <properties>
+                <property key="text">b</property>
+            </properties>
+        </gate>
+        <gate type="or" x="280" y="150">
+            <properties>
+                <property key="text">d</property>
+            </properties>
+        </gate>
+        <gate type="arbuffer" x="-120" y="-120">
+            <properties>
+                <property key="text">XXX</property>
+            </properties>
+        </gate>
+    </gates>
+    <wires>
+        <wire>
+            <from id="or@110:120" number="0"/>
+            <to id="or@280:150" number="1" type="gate"/>
+            <point node="false" number="0" x="210" y="210"/>
+        </wire>
+    </wires>
+</logicsim>

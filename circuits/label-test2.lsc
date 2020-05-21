@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<logicsim version="3">
+    <info/>
+    <gates>
+        <gate type="xor" x="20" y="20"/>
+        <gate type="xor" x="340" y="150"/>
+    </gates>
+    <wires>
+        <wire>
+            <from id="xor@20:20" number="0"/>
+            <to id="xor@340:150" number="1" type="gate"/>
+            <properties>
+                <property key="text">VVVVVV</property>
+            </properties>
+        </wire>
+    </wires>
+</logicsim>

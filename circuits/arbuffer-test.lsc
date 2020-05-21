@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<logicsim version="3">
+    <info/>
+    <gates>
+        <gate type="arbuffer4" x="190" y="110">
+            <io iotype="input" number="0" type="high"/>
+            <io iotype="input" number="1" type="low"/>
+            <io iotype="input" number="2" type="low"/>
+            <io iotype="input" number="3" type="high"/>
+            <io iotype="input" label="Lreq" number="4" type="low"/>
+            <io iotype="input" label="Rack" number="5" type="low"/>
+        </gate>
+        <gate type="led" x="360" y="180"/>
+        <gate type="led" x="390" y="190"/>
+        <gate type="led" x="390" y="230"/>
+        <gate type="led" x="360" y="220"/>
+        <gate rotate="90" type="led" x="190" y="350"/>
+        <gate rotate="90" type="led" x="230" y="350"/>
+    </gates>
+    <wires>
+        <wire>
+            <from id="arbuffer4@190:110" number="6"/>
+            <to id="led@360:180" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@190:110" number="7"/>
+            <to id="led@390:190" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@190:110" number="9"/>
+            <to id="led@390:230" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@190:110" number="8"/>
+            <to id="led@360:220" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@190:110" number="10"/>
+            <to id="led@190:350" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@190:110" number="11"/>
+            <to id="led@230:350" number="0" type="gate"/>
+        </wire>
+    </wires>
+</logicsim>

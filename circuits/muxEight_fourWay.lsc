@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<logicsim version="3">
+    <info/>
+    <gates>
+        <gate type="muxEight" x="310" y="70">
+            <io iotype="input" label="A4_1" number="0">
+                <properties>
+                    <property key="text">AA4_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A4_0" number="1">
+                <properties>
+                    <property key="text">AA4_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A3_1" number="2">
+                <properties>
+                    <property key="text">AA3_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A3_0" number="3">
+                <properties>
+                    <property key="text">AA3_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A2_1" number="4">
+                <properties>
+                    <property key="text">AA2_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A2_0" number="5">
+                <properties>
+                    <property key="text">AA2_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A1_1" number="6">
+                <properties>
+                    <property key="text">AA1_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A1_0" number="7">
+                <properties>
+                    <property key="text">AA1_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B4_1" number="8">
+                <properties>
+                    <property key="text">AB4_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B4_0" number="9">
+                <properties>
+                    <property key="text">AB4_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B3_1" number="10">
+                <properties>
+                    <property key="text">AB3_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B3_0" number="11">
+                <properties>
+                    <property key="text">AB3_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B2_1" number="12">
+                <properties>
+                    <property key="text">AB2_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B2_0" number="13">
+                <properties>
+                    <property key="text">AB2_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B1_1" number="14">
+                <properties>
+                    <property key="text">AB1_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B1_0" number="15">
+                <properties>
+                    <property key="text">AB1_0</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="muxEight" x="310" y="370">
+            <io iotype="input" label="A4_1" number="0">
+                <properties>
+                    <property key="text">BA4_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A4_0" number="1">
+                <properties>
+                    <property key="text">BA4_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A3_1" number="2">
+                <properties>
+                    <property key="text">BA3_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A3_0" number="3">
+                <properties>
+                    <property key="text">BA3_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A2_1" number="4">
+                <properties>
+                    <property key="text">BA2_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A2_0" number="5">
+                <properties>
+                    <property key="text">BA2_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A1_1" number="6">
+                <properties>
+                    <property key="text">BA1_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A1_0" number="7">
+                <properties>
+                    <property key="text">BA1_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B4_1" number="8">
+                <properties>
+                    <property key="text">BB4_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B4_0" number="9">
+                <properties>
+                    <property key="text">BB4_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B3_1" number="10">
+                <properties>
+                    <property key="text">BB3_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B3_0" number="11">
+                <properties>
+                    <property key="text">BB3_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B2_1" number="12">
+                <properties>
+                    <property key="text">BB2_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B2_0" number="13">
+                <properties>
+                    <property key="text">BB2_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B1_1" number="14">
+                <properties>
+                    <property key="text">BB1_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B1_0" number="15">
+                <properties>
+                    <property key="text">BB1_0</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="buffer" x="-200" y="100">
+            <properties>
+                <property key="text">fawef</property>
+            </properties>
+            <io iotype="input" number="0">
+                <properties>
+                    <property key="text">PAAin</property>
+                </properties>
+            </io>
+            <io iotype="output" number="1">
+                <properties>
+                    <property key="text">PAA</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="buffer" x="-200" y="210">
+            <io iotype="input" number="0">
+                <properties>
+                    <property key="text">PABin</property>
+                </properties>
+            </io>
+            <io iotype="output" number="1">
+                <properties>
+                    <property key="text">PAB</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="buffer" x="-200" y="400">
+            <properties>
+                <property key="text">fweafew</property>
+            </properties>
+            <io iotype="input" number="0">
+                <properties>
+                    <property key="text">PBAin</property>
+                </properties>
+            </io>
+            <io iotype="output" number="1">
+                <properties>
+                    <property key="text">PBA</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="buffer" x="-200" y="510">
+            <io iotype="input" number="0">
+                <properties>
+                    <property key="text">PBBin</property>
+                </properties>
+            </io>
+            <io iotype="output" number="1">
+                <properties>
+                    <property key="text">PBB</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="celement" x="-60" y="450"/>
+        <gate type="celement" x="-60" y="340"/>
+        <gate type="celement" x="-60" y="120"/>
+        <gate type="celement" x="-60" y="230"/>
+        <gate type="or" x="220" y="700"/>
+        <gate type="or" x="220" y="610"/>
+        <gate type="muxEight" x="770" y="70">
+            <io iotype="output" label="out4_1" number="18">
+                <properties>
+                    <property key="text">out4_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="out4_0" number="19">
+                <properties>
+                    <property key="text">out4_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="out3_1" number="20">
+                <properties>
+                    <property key="text">out3_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="out3_0" number="21">
+                <properties>
+                    <property key="text">out3_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="out2_1" number="22">
+                <properties>
+                    <property key="text">out2_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="out2_0" number="23">
+                <properties>
+                    <property key="text">out2_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="out1_1" number="24">
+                <properties>
+                    <property key="text">out1_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="out1_0" number="25">
+                <properties>
+                    <property key="text">out1_0</property>
+                </properties>
+            </io>
+        </gate>
+    </gates>
+    <wires>
+        <wire>
+            <from id="buffer@-200:100" number="1"/>
+            <to id="celement@-60:120" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-200:400" number="1"/>
+            <to id="celement@-60:120" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-200:100" number="1"/>
+            <to id="celement@-60:230" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-200:510" number="1"/>
+            <to id="celement@-60:230" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-200:210" number="1"/>
+            <to id="celement@-60:340" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-200:400" number="1"/>
+            <to id="celement@-60:340" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-200:210" number="1"/>
+            <to id="celement@-60:450" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-200:510" number="1"/>
+            <to id="celement@-60:450" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-60:120" number="2"/>
+            <to id="or@220:610" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-60:230" number="2"/>
+            <to id="or@220:610" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-60:340" number="2"/>
+            <to id="or@220:700" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-60:450" number="2"/>
+            <to id="or@220:700" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@310:70" number="18"/>
+            <to id="muxEight@770:70" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@310:70" number="19"/>
+            <to id="muxEight@770:70" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@310:70" number="20"/>
+            <to id="muxEight@770:70" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@310:70" number="21"/>
+            <to id="muxEight@770:70" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@310:70" number="22"/>
+            <to id="muxEight@770:70" number="4" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@310:70" number="23"/>
+            <to id="muxEight@770:70" number="5" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@310:70" number="24"/>
+            <to id="muxEight@770:70" number="6" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@310:70" number="25"/>
+            <to id="muxEight@770:70" number="7" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@310:370" number="18"/>
+            <to id="muxEight@770:70" number="8" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@310:370" number="19"/>
+            <to id="muxEight@770:70" number="9" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@310:370" number="20"/>
+            <to id="muxEight@770:70" number="10" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@310:370" number="21"/>
+            <to id="muxEight@770:70" number="11" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@310:370" number="22"/>
+            <to id="muxEight@770:70" number="12" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@310:370" number="23"/>
+            <to id="muxEight@770:70" number="13" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@310:370" number="24"/>
+            <to id="muxEight@770:70" number="14" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@310:370" number="25"/>
+            <to id="muxEight@770:70" number="15" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-60:120" number="2"/>
+            <to id="muxEight@310:70" number="16" type="gate"/>
+            <point node="false" number="0" x="210" y="170"/>
+            <point node="false" number="1" x="210" y="240"/>
+        </wire>
+        <wire>
+            <from id="celement@-60:230" number="2"/>
+            <to id="muxEight@310:70" number="17" type="gate"/>
+            <point node="false" number="0" x="210" y="280"/>
+            <point node="false" number="1" x="210" y="250"/>
+        </wire>
+        <wire>
+            <from id="celement@-60:340" number="2"/>
+            <to id="muxEight@310:370" number="16" type="gate"/>
+            <point node="false" number="0" x="210" y="390"/>
+            <point node="false" number="1" x="210" y="540"/>
+        </wire>
+        <wire>
+            <from id="celement@-60:450" number="2"/>
+            <to id="muxEight@310:370" number="17" type="gate"/>
+            <point node="false" number="0" x="200" y="500"/>
+            <point node="false" number="1" x="200" y="550"/>
+        </wire>
+        <wire>
+            <from id="or@220:610" number="0"/>
+            <to id="muxEight@770:70" number="16" type="gate"/>
+            <point node="false" number="0" x="600" y="640"/>
+            <point node="false" number="1" x="600" y="450"/>
+        </wire>
+        <wire>
+            <from id="or@220:700" number="0"/>
+            <to id="muxEight@770:70" number="17" type="gate"/>
+            <point node="false" number="0" x="610" y="730"/>
+            <point node="false" number="1" x="610" y="450"/>
+        </wire>
+    </wires>
+</logicsim>

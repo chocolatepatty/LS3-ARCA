@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<logicsim version="3">
+    <info/>
+    <gates>
+        <gate type="celement" x="970" y="340">
+            <io iotype="input" label="B" number="1">
+                <properties>
+                    <property key="text">in4_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="S" number="2">
+                <properties>
+                    <property key="text">Mout4_1</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="celement" x="990" y="390">
+            <io iotype="input" label="B" number="1">
+                <properties>
+                    <property key="text">in4_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="S" number="2">
+                <properties>
+                    <property key="text">Mout4_0</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="celement" x="960" y="530">
+            <io iotype="input" label="B" number="1">
+                <properties>
+                    <property key="text">in3_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="S" number="2">
+                <properties>
+                    <property key="text">Mout3_1</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="celement" x="980" y="580">
+            <io iotype="input" label="B" number="1">
+                <properties>
+                    <property key="text">in3_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="S" number="2">
+                <properties>
+                    <property key="text">Mout3_0</property>
+                </properties>
+            </io>
+        </gate>
+        <gate rotate="90" type="celement" x="770" y="310">
+            <io iotype="input" label="A" number="0" type="inv">
+                <properties>
+                    <property key="text">Rack</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B" number="1">
+                <properties>
+                    <property key="text">Lreq</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="celement" x="960" y="730">
+            <io iotype="input" label="B" number="1">
+                <properties>
+                    <property key="text">in2_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="S" number="2">
+                <properties>
+                    <property key="text">Mout2_1</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="celement" x="980" y="780">
+            <io iotype="input" label="B" number="1">
+                <properties>
+                    <property key="text">in2_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="S" number="2">
+                <properties>
+                    <property key="text">Mout2_0</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="celement" x="970" y="930">
+            <io iotype="input" label="B" number="1">
+                <properties>
+                    <property key="text">in1_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="S" number="2">
+                <properties>
+                    <property key="text">Mout1_1</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="celement" x="990" y="980">
+            <io iotype="input" label="B" number="1">
+                <properties>
+                    <property key="text">in1_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="S" number="2">
+                <properties>
+                    <property key="text">Mout1_0</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="or" x="1160" y="400"/>
+        <gate type="or" x="1160" y="600"/>
+        <gate type="or" x="1160" y="800"/>
+        <gate type="or" x="1170" y="1000"/>
+        <gate type="celement" x="1250" y="530"/>
+        <gate type="celement" x="1250" y="840"/>
+        <gate rotate="90" type="celement" x="1350" y="980">
+            <io iotype="output" label="S" number="2">
+                <properties>
+                    <property key="text">Lack, Rreq</property>
+                </properties>
+            </io>
+        </gate>
+    </gates>
+    <wires>
+        <wire>
+            <from id="celement@770:310" number="2"/>
+            <to id="celement@970:340" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@770:310" number="2"/>
+            <to id="celement@990:390" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@770:310" number="2"/>
+            <to id="celement@960:530" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@770:310" number="2"/>
+            <to id="celement@980:580" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@770:310" number="2"/>
+            <to id="celement@960:730" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@770:310" number="2"/>
+            <to id="celement@980:780" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@770:310" number="2"/>
+            <to id="celement@970:930" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@770:310" number="2"/>
+            <to id="celement@990:980" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@990:390" number="2"/>
+            <to id="or@1160:400" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@970:340" number="2"/>
+            <to id="or@1160:400" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@960:530" number="2"/>
+            <to id="or@1160:600" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@980:580" number="2"/>
+            <to id="or@1160:600" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@960:730" number="2"/>
+            <to id="or@1160:800" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@980:780" number="2"/>
+            <to id="or@1160:800" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@970:930" number="2"/>
+            <to id="or@1170:1000" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@990:980" number="2"/>
+            <to id="or@1170:1000" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="or@1160:400" number="0"/>
+            <to id="celement@1250:530" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="or@1160:600" number="0"/>
+            <to id="celement@1250:530" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="or@1160:800" number="0"/>
+            <to id="celement@1250:840" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="or@1170:1000" number="0"/>
+            <to id="celement@1250:840" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@1250:530" number="2"/>
+            <to id="celement@1350:980" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@1250:840" number="2"/>
+            <to id="celement@1350:980" number="1" type="gate"/>
+        </wire>
+    </wires>
+</logicsim>

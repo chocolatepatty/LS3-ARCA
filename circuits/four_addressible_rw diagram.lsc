@@ -1,0 +1,791 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<logicsim version="3">
+    <info/>
+    <gates>
+        <gate type="demuxEight_fourWay" x="-140" y="100">
+            <properties>
+                <property key="text">demux</property>
+            </properties>
+            <io iotype="input" label="in4_1" number="0" type="high">
+                <properties>
+                    <property key="text">write4_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="in4_0" number="1">
+                <properties>
+                    <property key="text">write4_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="in3_1" number="2" type="high">
+                <properties>
+                    <property key="text">write3_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="in3_0" number="3">
+                <properties>
+                    <property key="text">write3_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="in2_1" number="4" type="high">
+                <properties>
+                    <property key="text">write2_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="in2_0" number="5">
+                <properties>
+                    <property key="text">write2_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="in1_1" number="6" type="low">
+                <properties>
+                    <property key="text">write1_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="in1_0" number="7">
+                <properties>
+                    <property key="text">write1_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="RAX" number="8" type="low">
+                <properties>
+                    <property key="text">writeaddr2_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="RBX" number="9">
+                <properties>
+                    <property key="text">writeaddr2_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="RXA" number="10">
+                <properties>
+                    <property key="text">writeaddr1_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="RXB" number="11" type="low">
+                <properties>
+                    <property key="text">writeaddr1_0</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="rwEight" x="450" y="-50">
+            <properties>
+                <property key="text">reg1</property>
+            </properties>
+            <io iotype="output" label="MreadLack" number="20">
+                <properties>
+                    <property key="text">nullout</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="rwEight" x="450" y="110">
+            <properties>
+                <property key="text">reg2</property>
+            </properties>
+            <io iotype="output" label="MreadLack" number="20">
+                <properties>
+                    <property key="text">nullout</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="rwEight" x="450" y="270">
+            <properties>
+                <property key="text">reg3</property>
+            </properties>
+            <io iotype="output" label="MreadLack" number="20">
+                <properties>
+                    <property key="text">nullout</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="rwEight" x="450" y="430">
+            <properties>
+                <property key="text">reg4</property>
+            </properties>
+            <io iotype="output" label="MreadLack" number="20">
+                <properties>
+                    <property key="text">nullout</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="muxEight_fourWay" x="1040" y="100">
+            <properties>
+                <property key="text">mux</property>
+            </properties>
+        </gate>
+        <gate type="or" x="990" y="-380"/>
+        <gate type="or" x="910" y="-320"/>
+        <gate type="or" x="910" y="-440"/>
+        <gate type="or" x="990" y="-140">
+            <io iotype="output" number="0">
+                <properties>
+                    <property key="text">writeLack</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="or" x="910" y="-80"/>
+        <gate type="or" x="910" y="-200"/>
+        <gate type="arbuffer8" x="1410" y="-10">
+            <properties>
+                <property key="text">read_out_buf</property>
+            </properties>
+            <io iotype="input" label="Rack" number="9" type="high">
+                <properties>
+                    <property key="text">readRack</property>
+                </properties>
+            </io>
+            <io iotype="output" label="Rdata4_1" number="10">
+                <properties>
+                    <property key="text">readout4_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="Rdata4_0" number="11">
+                <properties>
+                    <property key="text">readout4_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="Rdata3_1" number="12">
+                <properties>
+                    <property key="text">readout3_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="Rdata3_0" number="13">
+                <properties>
+                    <property key="text">readout3_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="Rdata2_1" number="14">
+                <properties>
+                    <property key="text">readout2_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="Rdata2_0" number="15">
+                <properties>
+                    <property key="text">readout2_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="Rdata1_1" number="16">
+                <properties>
+                    <property key="text">readout1_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="Rdata1_0" number="17">
+                <properties>
+                    <property key="text">readout1_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="Lack" number="18">
+                <properties>
+                    <property key="text">MLack</property>
+                </properties>
+            </io>
+            <io iotype="output" label="Rreq" number="19">
+                <properties>
+                    <property key="text">readRreq</property>
+                </properties>
+            </io>
+            <io iotype="output" number="20">
+                <properties>
+                    <property key="text">_c</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="celement" x="50" y="560">
+            <properties>
+                <property key="text">mini_demux_c1</property>
+            </properties>
+        </gate>
+        <gate type="celement" x="50" y="670">
+            <properties>
+                <property key="text">mini_demux_c2</property>
+            </properties>
+        </gate>
+        <gate type="celement" x="50" y="780">
+            <properties>
+                <property key="text">mini_demux_c3</property>
+            </properties>
+        </gate>
+        <gate type="buffer" x="-150" y="1040">
+            <io iotype="input" number="0" type="low">
+                <properties>
+                    <property key="text">readaddr2_1_in</property>
+                </properties>
+            </io>
+            <io iotype="output" number="1">
+                <properties>
+                    <property key="text">readaddr2_1</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="buffer" x="-150" y="1100">
+            <io iotype="input" number="0">
+                <properties>
+                    <property key="text">readaddr2_0_in</property>
+                </properties>
+            </io>
+            <io iotype="output" number="1">
+                <properties>
+                    <property key="text">readaddr2_0</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="buffer" x="-150" y="1160">
+            <io iotype="input" number="0" type="low">
+                <properties>
+                    <property key="text">readaddr1_1_in</property>
+                </properties>
+            </io>
+            <io iotype="output" number="1">
+                <properties>
+                    <property key="text">readaddr1_1</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="buffer" x="-150" y="1220">
+            <io iotype="input" number="0">
+                <properties>
+                    <property key="text">readaddr1_0_in</property>
+                </properties>
+            </io>
+            <io iotype="output" number="1">
+                <properties>
+                    <property key="text">readaddr1_0</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="celement" x="50" y="890">
+            <properties>
+                <property key="text">mini_demux_c4</property>
+            </properties>
+        </gate>
+        <gate type="buffer" x="190" y="-150">
+            <properties>
+                <property key="text">feawfae</property>
+            </properties>
+            <io iotype="input" number="0">
+                <properties>
+                    <property key="text">meminit_in</property>
+                </properties>
+            </io>
+            <io iotype="output" number="1">
+                <properties>
+                    <property key="text">meminit</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="or" x="350" y="710"/>
+        <gate type="or" x="460" y="780"/>
+        <gate type="or" x="350" y="860"/>
+        <gate type="celement" x="1210" y="-240"/>
+    </gates>
+    <wires>
+        <wire>
+            <from id="demuxEight_fourWay@-140:100" number="12"/>
+            <to id="rwEight@450:-50" number="4" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-140:100" number="13"/>
+            <to id="rwEight@450:-50" number="5" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-140:100" number="14"/>
+            <to id="rwEight@450:-50" number="6" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-140:100" number="15"/>
+            <to id="rwEight@450:-50" number="7" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-140:100" number="16"/>
+            <to id="rwEight@450:-50" number="8" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-140:100" number="17"/>
+            <to id="rwEight@450:-50" number="9" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-140:100" number="18"/>
+            <to id="rwEight@450:-50" number="10" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-140:100" number="19"/>
+            <to id="rwEight@450:-50" number="11" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-140:100" number="20"/>
+            <to id="rwEight@450:110" number="4" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-140:100" number="21"/>
+            <to id="rwEight@450:110" number="5" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-140:100" number="22"/>
+            <to id="rwEight@450:110" number="6" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-140:100" number="23"/>
+            <to id="rwEight@450:110" number="7" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-140:100" number="24"/>
+            <to id="rwEight@450:110" number="8" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-140:100" number="25"/>
+            <to id="rwEight@450:110" number="9" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-140:100" number="26"/>
+            <to id="rwEight@450:110" number="10" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-140:100" number="27"/>
+            <to id="rwEight@450:110" number="11" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-140:100" number="28"/>
+            <to id="rwEight@450:270" number="4" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-140:100" number="29"/>
+            <to id="rwEight@450:270" number="5" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-140:100" number="30"/>
+            <to id="rwEight@450:270" number="6" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-140:100" number="31"/>
+            <to id="rwEight@450:270" number="7" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-140:100" number="32"/>
+            <to id="rwEight@450:270" number="8" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-140:100" number="33"/>
+            <to id="rwEight@450:270" number="9" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-140:100" number="34"/>
+            <to id="rwEight@450:270" number="10" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-140:100" number="35"/>
+            <to id="rwEight@450:270" number="11" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-140:100" number="36"/>
+            <to id="rwEight@450:430" number="4" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-140:100" number="37"/>
+            <to id="rwEight@450:430" number="5" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-140:100" number="38"/>
+            <to id="rwEight@450:430" number="6" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-140:100" number="39"/>
+            <to id="rwEight@450:430" number="7" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-140:100" number="40"/>
+            <to id="rwEight@450:430" number="8" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-140:100" number="41"/>
+            <to id="rwEight@450:430" number="9" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-140:100" number="42"/>
+            <to id="rwEight@450:430" number="10" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-140:100" number="43"/>
+            <to id="rwEight@450:430" number="11" type="gate"/>
+        </wire>
+        <wire>
+            <from id="rwEight@450:430" number="12"/>
+            <to id="muxEight_fourWay@1040:100" number="24" type="gate"/>
+        </wire>
+        <wire>
+            <from id="rwEight@450:430" number="13"/>
+            <to id="muxEight_fourWay@1040:100" number="25" type="gate"/>
+        </wire>
+        <wire>
+            <from id="rwEight@450:430" number="14"/>
+            <to id="muxEight_fourWay@1040:100" number="26" type="gate"/>
+        </wire>
+        <wire>
+            <from id="rwEight@450:430" number="15"/>
+            <to id="muxEight_fourWay@1040:100" number="27" type="gate"/>
+        </wire>
+        <wire>
+            <from id="rwEight@450:430" number="16"/>
+            <to id="muxEight_fourWay@1040:100" number="28" type="gate"/>
+        </wire>
+        <wire>
+            <from id="rwEight@450:430" number="17"/>
+            <to id="muxEight_fourWay@1040:100" number="29" type="gate"/>
+        </wire>
+        <wire>
+            <from id="rwEight@450:430" number="18"/>
+            <to id="muxEight_fourWay@1040:100" number="30" type="gate"/>
+        </wire>
+        <wire>
+            <from id="rwEight@450:430" number="19"/>
+            <to id="muxEight_fourWay@1040:100" number="31" type="gate"/>
+        </wire>
+        <wire>
+            <from id="rwEight@450:270" number="12"/>
+            <to id="muxEight_fourWay@1040:100" number="16" type="gate"/>
+        </wire>
+        <wire>
+            <from id="rwEight@450:270" number="13"/>
+            <to id="muxEight_fourWay@1040:100" number="17" type="gate"/>
+        </wire>
+        <wire>
+            <from id="rwEight@450:270" number="14"/>
+            <to id="muxEight_fourWay@1040:100" number="18" type="gate"/>
+        </wire>
+        <wire>
+            <from id="rwEight@450:270" number="15"/>
+            <to id="muxEight_fourWay@1040:100" number="19" type="gate"/>
+        </wire>
+        <wire>
+            <from id="rwEight@450:270" number="16"/>
+            <to id="muxEight_fourWay@1040:100" number="20" type="gate"/>
+        </wire>
+        <wire>
+            <from id="rwEight@450:270" number="17"/>
+            <to id="muxEight_fourWay@1040:100" number="21" type="gate"/>
+        </wire>
+        <wire>
+            <from id="rwEight@450:270" number="18"/>
+            <to id="muxEight_fourWay@1040:100" number="22" type="gate"/>
+        </wire>
+        <wire>
+            <from id="rwEight@450:270" number="19"/>
+            <to id="muxEight_fourWay@1040:100" number="23" type="gate"/>
+        </wire>
+        <wire>
+            <from id="rwEight@450:110" number="12"/>
+            <to id="muxEight_fourWay@1040:100" number="8" type="gate"/>
+        </wire>
+        <wire>
+            <from id="rwEight@450:110" number="13"/>
+            <to id="muxEight_fourWay@1040:100" number="9" type="gate"/>
+        </wire>
+        <wire>
+            <from id="rwEight@450:110" number="14"/>
+            <to id="muxEight_fourWay@1040:100" number="10" type="gate"/>
+        </wire>
+        <wire>
+            <from id="rwEight@450:110" number="15"/>
+            <to id="muxEight_fourWay@1040:100" number="11" type="gate"/>
+        </wire>
+        <wire>
+            <from id="rwEight@450:110" number="16"/>
+            <to id="muxEight_fourWay@1040:100" number="12" type="gate"/>
+        </wire>
+        <wire>
+            <from id="rwEight@450:110" number="17"/>
+            <to id="muxEight_fourWay@1040:100" number="13" type="gate"/>
+        </wire>
+        <wire>
+            <from id="rwEight@450:110" number="18"/>
+            <to id="muxEight_fourWay@1040:100" number="14" type="gate"/>
+        </wire>
+        <wire>
+            <from id="rwEight@450:110" number="19"/>
+            <to id="muxEight_fourWay@1040:100" number="15" type="gate"/>
+        </wire>
+        <wire>
+            <from id="rwEight@450:-50" number="12"/>
+            <to id="muxEight_fourWay@1040:100" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="rwEight@450:-50" number="13"/>
+            <to id="muxEight_fourWay@1040:100" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="rwEight@450:-50" number="14"/>
+            <to id="muxEight_fourWay@1040:100" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="rwEight@450:-50" number="15"/>
+            <to id="muxEight_fourWay@1040:100" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="rwEight@450:-50" number="16"/>
+            <to id="muxEight_fourWay@1040:100" number="4" type="gate"/>
+        </wire>
+        <wire>
+            <from id="rwEight@450:-50" number="17"/>
+            <to id="muxEight_fourWay@1040:100" number="5" type="gate"/>
+        </wire>
+        <wire>
+            <from id="rwEight@450:-50" number="18"/>
+            <to id="muxEight_fourWay@1040:100" number="6" type="gate"/>
+        </wire>
+        <wire>
+            <from id="rwEight@450:-50" number="19"/>
+            <to id="muxEight_fourWay@1040:100" number="7" type="gate"/>
+        </wire>
+        <wire>
+            <from id="or@910:-440" number="0"/>
+            <to id="or@990:-380" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="or@910:-320" number="0"/>
+            <to id="or@990:-380" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="or@910:-200" number="0"/>
+            <to id="or@990:-140" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="or@910:-80" number="0"/>
+            <to id="or@990:-140" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight_fourWay@1040:100" number="36"/>
+            <to id="arbuffer8@1410:-10" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight_fourWay@1040:100" number="37"/>
+            <to id="arbuffer8@1410:-10" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight_fourWay@1040:100" number="38"/>
+            <to id="arbuffer8@1410:-10" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight_fourWay@1040:100" number="39"/>
+            <to id="arbuffer8@1410:-10" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight_fourWay@1040:100" number="40"/>
+            <to id="arbuffer8@1410:-10" number="4" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight_fourWay@1040:100" number="41"/>
+            <to id="arbuffer8@1410:-10" number="5" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight_fourWay@1040:100" number="42"/>
+            <to id="arbuffer8@1410:-10" number="6" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight_fourWay@1040:100" number="43"/>
+            <to id="arbuffer8@1410:-10" number="7" type="gate"/>
+        </wire>
+        <wire>
+            <from id="rwEight@450:-50" number="21"/>
+            <to id="or@910:-440" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="rwEight@450:110" number="21"/>
+            <to id="or@910:-440" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="rwEight@450:270" number="21"/>
+            <to id="or@910:-320" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="rwEight@450:430" number="21"/>
+            <to id="or@910:-320" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="rwEight@450:-50" number="22"/>
+            <to id="or@910:-200" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="rwEight@450:110" number="22"/>
+            <to id="or@910:-200" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="rwEight@450:270" number="22"/>
+            <to id="or@910:-80" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="rwEight@450:430" number="22"/>
+            <to id="or@910:-80" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-140:100" number="44"/>
+            <to id="rwEight@450:-50" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-140:100" number="45"/>
+            <to id="rwEight@450:110" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-140:100" number="46"/>
+            <to id="rwEight@450:270" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-140:100" number="47"/>
+            <to id="rwEight@450:430" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-150:1040" number="1"/>
+            <to id="celement@50:560" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-150:1040" number="1"/>
+            <to id="celement@50:670" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-150:1100" number="1"/>
+            <to id="celement@50:780" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-150:1100" number="1"/>
+            <to id="celement@50:890" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-150:1160" number="1"/>
+            <to id="celement@50:780" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-150:1220" number="1"/>
+            <to id="celement@50:890" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-150:1160" number="1"/>
+            <to id="celement@50:560" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-150:1220" number="1"/>
+            <to id="celement@50:670" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@50:560" number="2"/>
+            <to id="rwEight@450:-50" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@50:670" number="2"/>
+            <to id="rwEight@450:110" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@50:780" number="2"/>
+            <to id="rwEight@450:270" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@50:890" number="2"/>
+            <to id="rwEight@450:430" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@1410:-10" number="18"/>
+            <to id="rwEight@450:430" number="0" type="gate"/>
+            <point node="false" number="0" x="1270" y="650"/>
+            <point node="false" number="1" x="370" y="650"/>
+            <point node="false" number="2" x="370" y="440"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@1410:-10" number="18"/>
+            <to id="rwEight@450:270" number="0" type="gate"/>
+            <point node="false" number="0" x="1270" y="660"/>
+            <point node="false" number="1" x="360" y="660"/>
+            <point node="false" number="2" x="360" y="280"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@1410:-10" number="18"/>
+            <to id="rwEight@450:110" number="0" type="gate"/>
+            <point node="false" number="0" x="1270" y="670"/>
+            <point node="false" number="1" x="350" y="670"/>
+            <point node="false" number="2" x="350" y="120"/>
+        </wire>
+        <wire>
+            <from id="arbuffer8@1410:-10" number="18"/>
+            <to id="rwEight@450:-50" number="0" type="gate"/>
+            <point node="false" number="0" x="1270" y="680"/>
+            <point node="false" number="1" x="340" y="680"/>
+            <point node="false" number="2" x="340" y="-40"/>
+        </wire>
+        <wire>
+            <from id="buffer@190:-150" number="1"/>
+            <to id="rwEight@450:430" number="2" type="gate"/>
+            <point node="false" number="0" x="390" y="-120"/>
+            <point node="false" number="1" x="390" y="460"/>
+        </wire>
+        <wire>
+            <from id="buffer@190:-150" number="1"/>
+            <to id="rwEight@450:270" number="2" type="gate"/>
+            <point node="false" number="0" x="400" y="-120"/>
+            <point node="false" number="1" x="400" y="300"/>
+        </wire>
+        <wire>
+            <from id="buffer@190:-150" number="1"/>
+            <to id="rwEight@450:110" number="2" type="gate"/>
+            <point node="false" number="0" x="410" y="-120"/>
+            <point node="false" number="1" x="410" y="140"/>
+        </wire>
+        <wire>
+            <from id="buffer@190:-150" number="1"/>
+            <to id="rwEight@450:-50" number="2" type="gate"/>
+            <point node="false" number="0" x="420" y="-120"/>
+            <point node="false" number="1" x="420" y="-20"/>
+        </wire>
+        <wire>
+            <from id="buffer@-150:1040" number="1"/>
+            <to id="muxEight_fourWay@1040:100" number="32" type="gate"/>
+            <point node="false" number="0" x="660" y="1070"/>
+        </wire>
+        <wire>
+            <from id="buffer@-150:1100" number="1"/>
+            <to id="muxEight_fourWay@1040:100" number="33" type="gate"/>
+            <point node="false" number="0" x="660" y="1130"/>
+        </wire>
+        <wire>
+            <from id="buffer@-150:1160" number="1"/>
+            <to id="muxEight_fourWay@1040:100" number="34" type="gate"/>
+            <point node="false" number="0" x="660" y="1190"/>
+        </wire>
+        <wire>
+            <from id="buffer@-150:1220" number="1"/>
+            <to id="muxEight_fourWay@1040:100" number="35" type="gate"/>
+            <point node="false" number="0" x="660" y="1250"/>
+        </wire>
+        <wire>
+            <from id="celement@50:560" number="2"/>
+            <to id="or@350:710" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@50:670" number="2"/>
+            <to id="or@350:710" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@50:890" number="2"/>
+            <to id="or@350:860" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@50:780" number="2"/>
+            <to id="or@350:860" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="or@350:710" number="0"/>
+            <to id="or@460:780" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="or@350:860" number="0"/>
+            <to id="or@460:780" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="or@990:-380" number="0"/>
+            <to id="celement@1210:-240" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@1210:-240" number="2"/>
+            <to id="arbuffer8@1410:-10" number="8" type="gate"/>
+            <point node="false" number="0" x="1470" y="-190"/>
+        </wire>
+        <wire>
+            <from id="or@460:780" number="0"/>
+            <to id="celement@1210:-240" number="1" type="gate"/>
+        </wire>
+    </wires>
+</logicsim>

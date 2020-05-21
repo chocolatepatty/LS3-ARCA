@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<logicsim version="3">
+    <info/>
+    <gates>
+        <gate type="demuxEight" x="1320" y="470">
+            <io iotype="output" label="A4_1" number="10">
+                <properties>
+                    <property key="text">AA4_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="A4_0" number="11">
+                <properties>
+                    <property key="text">AA4_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="A3_1" number="12">
+                <properties>
+                    <property key="text">AA3_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="A3_0" number="13">
+                <properties>
+                    <property key="text">AA3_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="A2_1" number="14">
+                <properties>
+                    <property key="text">AA2_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="A2_0" number="15">
+                <properties>
+                    <property key="text">AA2_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="A1_1" number="16">
+                <properties>
+                    <property key="text">AA1_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="A1_0" number="17">
+                <properties>
+                    <property key="text">AA1_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="B4_1" number="18">
+                <properties>
+                    <property key="text">AB4_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="B4_0" number="19">
+                <properties>
+                    <property key="text">AB4_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="B3_1" number="20">
+                <properties>
+                    <property key="text">AB3_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="B3_0" number="21">
+                <properties>
+                    <property key="text">AB3_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="B2_1" number="22">
+                <properties>
+                    <property key="text">AB2_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="B2_0" number="23">
+                <properties>
+                    <property key="text">AB2_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="B1_1" number="24">
+                <properties>
+                    <property key="text">AB1_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="B1_0" number="25">
+                <properties>
+                    <property key="text">AB1_0</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="demuxEight" x="1320" y="1270">
+            <io iotype="output" label="A4_1" number="10">
+                <properties>
+                    <property key="text">BA4_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="A4_0" number="11">
+                <properties>
+                    <property key="text">BA4_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="A3_1" number="12">
+                <properties>
+                    <property key="text">BA3_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="A3_0" number="13">
+                <properties>
+                    <property key="text">BA3_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="A2_1" number="14">
+                <properties>
+                    <property key="text">BA2_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="A2_0" number="15">
+                <properties>
+                    <property key="text">BA2_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="A1_1" number="16">
+                <properties>
+                    <property key="text">BA1_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="A1_0" number="17">
+                <properties>
+                    <property key="text">BA1_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="B4_1" number="18">
+                <properties>
+                    <property key="text">BB4_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="B4_0" number="19">
+                <properties>
+                    <property key="text">BB4_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="B3_1" number="20">
+                <properties>
+                    <property key="text">BB3_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="B3_0" number="21">
+                <properties>
+                    <property key="text">BB3_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="B2_1" number="22">
+                <properties>
+                    <property key="text">BB2_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="B2_0" number="23">
+                <properties>
+                    <property key="text">BB2_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="B1_1" number="24">
+                <properties>
+                    <property key="text">BB1_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="B1_0" number="25">
+                <properties>
+                    <property key="text">BB1_0</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="demuxEight" x="680" y="470">
+            <io iotype="input" label="in4_1" number="0">
+                <properties>
+                    <property key="text">in4_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="in4_0" number="1">
+                <properties>
+                    <property key="text">in4_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="in3_1" number="2">
+                <properties>
+                    <property key="text">in3_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="in3_0" number="3">
+                <properties>
+                    <property key="text">in3_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="in2_1" number="4">
+                <properties>
+                    <property key="text">in2_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="in2_0" number="5">
+                <properties>
+                    <property key="text">in2_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="in1_1" number="6">
+                <properties>
+                    <property key="text">in1_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="in1_0" number="7">
+                <properties>
+                    <property key="text">in1_0</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="buffer" x="60" y="500">
+            <io iotype="input" number="0">
+                <properties>
+                    <property key="text">RAXin</property>
+                </properties>
+            </io>
+            <io iotype="output" number="1">
+                <properties>
+                    <property key="text">RAX</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="buffer" x="60" y="620">
+            <io iotype="input" number="0">
+                <properties>
+                    <property key="text">RBXin</property>
+                </properties>
+            </io>
+            <io iotype="output" number="1">
+                <properties>
+                    <property key="text">RBX</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="buffer" x="40" y="820">
+            <io iotype="input" number="0">
+                <properties>
+                    <property key="text">RXAin</property>
+                </properties>
+            </io>
+            <io iotype="output" number="1">
+                <properties>
+                    <property key="text">RXA</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="buffer" x="40" y="940">
+            <io iotype="input" number="0">
+                <properties>
+                    <property key="text">RXBin</property>
+                </properties>
+            </io>
+            <io iotype="output" number="1">
+                <properties>
+                    <property key="text">RXB</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="celement" x="210" y="520">
+            <io iotype="output" label="S" number="2">
+                <properties>
+                    <property key="text">RAA</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="celement" x="210" y="640">
+            <io iotype="output" label="S" number="2">
+                <properties>
+                    <property key="text">RAB</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="celement" x="210" y="760">
+            <io iotype="output" label="S" number="2">
+                <properties>
+                    <property key="text">RBA</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="celement" x="210" y="880">
+            <io iotype="output" label="S" number="2">
+                <properties>
+                    <property key="text">RBB</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="or" x="390" y="630"/>
+        <gate type="or" x="390" y="530"/>
+        <gate type="or" x="390" y="810"/>
+        <gate type="or" x="390" y="910"/>
+        <gate type="buffer" x="1550" y="670">
+            <io iotype="output" number="1">
+                <properties>
+                    <property key="text">RABout</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="buffer" x="1540" y="1470">
+            <properties>
+                <property key="text">faef</property>
+            </properties>
+            <io iotype="output" number="1">
+                <properties>
+                    <property key="text">RBBout</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="buffer" x="1540" y="1430">
+            <io iotype="output" number="1">
+                <properties>
+                    <property key="text">RBAout</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="buffer" x="1550" y="630">
+            <io iotype="output" number="1">
+                <properties>
+                    <property key="text">RAAout</property>
+                </properties>
+            </io>
+        </gate>
+    </gates>
+    <wires>
+        <wire>
+            <from id="demuxEight@680:470" number="18"/>
+            <to id="demuxEight@1320:1270" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight@680:470" number="19"/>
+            <to id="demuxEight@1320:1270" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight@680:470" number="20"/>
+            <to id="demuxEight@1320:1270" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight@680:470" number="21"/>
+            <to id="demuxEight@1320:1270" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight@680:470" number="22"/>
+            <to id="demuxEight@1320:1270" number="4" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight@680:470" number="23"/>
+            <to id="demuxEight@1320:1270" number="5" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight@680:470" number="24"/>
+            <to id="demuxEight@1320:1270" number="6" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight@680:470" number="25"/>
+            <to id="demuxEight@1320:1270" number="7" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight@680:470" number="10"/>
+            <to id="demuxEight@1320:470" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight@680:470" number="11"/>
+            <to id="demuxEight@1320:470" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight@680:470" number="12"/>
+            <to id="demuxEight@1320:470" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight@680:470" number="13"/>
+            <to id="demuxEight@1320:470" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight@680:470" number="14"/>
+            <to id="demuxEight@1320:470" number="4" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight@680:470" number="15"/>
+            <to id="demuxEight@1320:470" number="5" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight@680:470" number="16"/>
+            <to id="demuxEight@1320:470" number="6" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight@680:470" number="17"/>
+            <to id="demuxEight@1320:470" number="7" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@60:500" number="1"/>
+            <to id="celement@210:520" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@60:500" number="1"/>
+            <to id="celement@210:640" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@60:620" number="1"/>
+            <to id="celement@210:760" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@60:620" number="1"/>
+            <to id="celement@210:880" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@40:820" number="1"/>
+            <to id="celement@210:520" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@40:820" number="1"/>
+            <to id="celement@210:760" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@40:940" number="1"/>
+            <to id="celement@210:640" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@40:940" number="1"/>
+            <to id="celement@210:880" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@210:520" number="2"/>
+            <to id="or@390:530" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@210:640" number="2"/>
+            <to id="or@390:530" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@210:760" number="2"/>
+            <to id="or@390:630" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@210:880" number="2"/>
+            <to id="or@390:630" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@210:520" number="2"/>
+            <to id="or@390:810" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@210:880" number="2"/>
+            <to id="or@390:910" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@210:760" number="2"/>
+            <to id="or@390:810" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@210:640" number="2"/>
+            <to id="or@390:910" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="or@390:530" number="0"/>
+            <to id="demuxEight@680:470" number="8" type="gate"/>
+        </wire>
+        <wire>
+            <from id="or@390:630" number="0"/>
+            <to id="demuxEight@680:470" number="9" type="gate"/>
+            <point node="false" number="0" x="560" y="570"/>
+        </wire>
+        <wire>
+            <from id="or@390:810" number="0"/>
+            <to id="demuxEight@1320:470" number="8" type="gate"/>
+            <point node="false" number="0" x="1000" y="800"/>
+            <point node="false" number="1" x="1000" y="560"/>
+        </wire>
+        <wire>
+            <from id="or@390:910" number="0"/>
+            <to id="demuxEight@1320:470" number="9" type="gate"/>
+            <point node="false" number="0" x="1010" y="910"/>
+            <point node="false" number="1" x="1010" y="570"/>
+        </wire>
+        <wire>
+            <from id="or@390:810" number="0"/>
+            <to id="demuxEight@1320:1270" number="8" type="gate"/>
+            <point node="false" number="0" x="970" y="840"/>
+            <point node="false" number="1" x="970" y="1360"/>
+        </wire>
+        <wire>
+            <from id="or@390:910" number="0"/>
+            <to id="demuxEight@1320:1270" number="9" type="gate"/>
+            <point node="false" number="0" x="960" y="940"/>
+            <point node="false" number="1" x="960" y="1370"/>
+        </wire>
+        <wire>
+            <from id="celement@210:640" number="2"/>
+            <to id="buffer@1550:670" number="0" type="gate"/>
+            <point node="false" number="0" x="340" y="700"/>
+            <properties>
+                <property key="text">RAB</property>
+            </properties>
+        </wire>
+        <wire>
+            <from id="celement@210:760" number="2"/>
+            <to id="buffer@1540:1430" number="0" type="gate"/>
+            <point node="false" number="0" x="570" y="1460"/>
+            <properties>
+                <property key="text">RBA</property>
+            </properties>
+        </wire>
+        <wire>
+            <from id="celement@210:880" number="2"/>
+            <to id="buffer@1540:1470" number="0" type="gate"/>
+            <point node="false" number="0" x="570" y="1500"/>
+            <point node="false" number="1" x="1400" y="1500"/>
+            <properties>
+                <property key="text">RBB</property>
+            </properties>
+        </wire>
+        <wire>
+            <from id="celement@210:520" number="2"/>
+            <to id="buffer@1550:630" number="0" type="gate"/>
+            <point node="false" number="0" x="640" y="660"/>
+            <properties>
+                <property key="text">RAA</property>
+            </properties>
+        </wire>
+    </wires>
+</logicsim>

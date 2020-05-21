@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<logicsim version="3">
+    <info/>
+    <gates>
+        <gate type="arbuffer4" x="240" y="130"/>
+        <gate type="arbuffer4" x="240" y="440"/>
+        <gate type="dr_xor" x="560" y="210"/>
+        <gate type="dr_and" x="560" y="310"/>
+        <gate type="dr_xor" x="560" y="440"/>
+        <gate type="dr_and" x="560" y="540"/>
+        <gate type="arbuffer4" x="880" y="270"/>
+        <gate type="dr_xor" x="730" y="280"/>
+    </gates>
+    <wires>
+        <wire>
+            <from id="arbuffer4@240:440" number="6"/>
+            <to id="dr_xor@560:210" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@240:440" number="7"/>
+            <to id="dr_xor@560:210" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@240:440" number="6"/>
+            <to id="dr_and@560:310" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@240:440" number="7"/>
+            <to id="dr_and@560:310" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@240:130" number="6"/>
+            <to id="dr_xor@560:210" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@240:130" number="7"/>
+            <to id="dr_xor@560:210" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@240:130" number="6"/>
+            <to id="dr_and@560:310" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@240:130" number="7"/>
+            <to id="dr_and@560:310" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@240:130" number="8"/>
+            <to id="dr_xor@560:440" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@240:130" number="9"/>
+            <to id="dr_xor@560:440" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@240:440" number="8"/>
+            <to id="dr_xor@560:440" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@240:440" number="9"/>
+            <to id="dr_xor@560:440" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@240:130" number="8"/>
+            <to id="dr_and@560:540" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@240:130" number="9"/>
+            <to id="dr_and@560:540" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@240:440" number="8"/>
+            <to id="dr_and@560:540" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@240:440" number="9"/>
+            <to id="dr_and@560:540" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@240:440" number="11"/>
+            <to id="arbuffer4@880:270" number="4" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@880:270" number="10"/>
+            <to id="arbuffer4@240:440" number="5" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@880:270" number="10"/>
+            <to id="arbuffer4@240:130" number="5" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_xor@560:210" number="4"/>
+            <to id="dr_xor@730:280" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_xor@560:210" number="5"/>
+            <to id="dr_xor@730:280" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_and@560:540" number="4"/>
+            <to id="dr_xor@730:280" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_and@560:540" number="5"/>
+            <to id="dr_xor@730:280" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_xor@730:280" number="4"/>
+            <to id="arbuffer4@880:270" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_xor@730:280" number="5"/>
+            <to id="arbuffer4@880:270" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_xor@560:440" number="4"/>
+            <to id="arbuffer4@880:270" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_xor@560:440" number="5"/>
+            <to id="arbuffer4@880:270" number="3" type="gate"/>
+        </wire>
+    </wires>
+</logicsim>

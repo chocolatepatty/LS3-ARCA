@@ -1,0 +1,1854 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<logicsim version="3">
+    <info/>
+    <gates>
+        <gate type="muxEight" x="240" y="720">
+            <io iotype="input" label="A4_1" number="0">
+                <properties>
+                    <property key="text">AAAA4_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A4_0" number="1">
+                <properties>
+                    <property key="text">AAAA4_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A3_1" number="2">
+                <properties>
+                    <property key="text">AAAA3_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A3_0" number="3">
+                <properties>
+                    <property key="text">AAAA3_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A2_1" number="4">
+                <properties>
+                    <property key="text">AAAA2_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A2_0" number="5">
+                <properties>
+                    <property key="text">AAAA2_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A1_1" number="6">
+                <properties>
+                    <property key="text">AAAA1_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A1_0" number="7">
+                <properties>
+                    <property key="text">AAAA1_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B4_1" number="8">
+                <properties>
+                    <property key="text">AAAB4_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B4_0" number="9">
+                <properties>
+                    <property key="text">AAAB4_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B3_1" number="10">
+                <properties>
+                    <property key="text">AAAB3_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B3_0" number="11">
+                <properties>
+                    <property key="text">AAAB3_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B2_1" number="12">
+                <properties>
+                    <property key="text">AAAB2_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B2_0" number="13">
+                <properties>
+                    <property key="text">AAAB2_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B1_1" number="14">
+                <properties>
+                    <property key="text">AAAB1_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B1_0" number="15">
+                <properties>
+                    <property key="text">AAAB1_0</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="muxEight" x="240" y="920">
+            <io iotype="input" label="A4_1" number="0">
+                <properties>
+                    <property key="text">AABA4_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A4_0" number="1">
+                <properties>
+                    <property key="text">AABA4_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A3_1" number="2">
+                <properties>
+                    <property key="text">AABA3_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A3_0" number="3">
+                <properties>
+                    <property key="text">AABA3_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A2_1" number="4">
+                <properties>
+                    <property key="text">AABA2_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A2_0" number="5">
+                <properties>
+                    <property key="text">AABA2_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A1_1" number="6">
+                <properties>
+                    <property key="text">AABA1_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A1_0" number="7">
+                <properties>
+                    <property key="text">AABA1_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B4_1" number="8">
+                <properties>
+                    <property key="text">AABB4_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B4_0" number="9">
+                <properties>
+                    <property key="text">AABB4_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B3_1" number="10">
+                <properties>
+                    <property key="text">AABB3_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B3_0" number="11">
+                <properties>
+                    <property key="text">AABB3_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B2_1" number="12">
+                <properties>
+                    <property key="text">AABB2_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B2_0" number="13">
+                <properties>
+                    <property key="text">AABB2_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B1_1" number="14">
+                <properties>
+                    <property key="text">AABB1_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B1_0" number="15">
+                <properties>
+                    <property key="text">AABB1_0</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="muxEight" x="240" y="1130">
+            <io iotype="input" label="A4_1" number="0">
+                <properties>
+                    <property key="text">ABAA4_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A4_0" number="1">
+                <properties>
+                    <property key="text">ABAA4_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A3_1" number="2">
+                <properties>
+                    <property key="text">ABAA3_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A3_0" number="3">
+                <properties>
+                    <property key="text">ABAA3_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A2_1" number="4">
+                <properties>
+                    <property key="text">ABAA2_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A2_0" number="5">
+                <properties>
+                    <property key="text">ABAA2_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A1_1" number="6">
+                <properties>
+                    <property key="text">ABAA1_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A1_0" number="7">
+                <properties>
+                    <property key="text">ABAA1_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B4_1" number="8">
+                <properties>
+                    <property key="text">ABAB4_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B4_0" number="9">
+                <properties>
+                    <property key="text">ABAB4_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B3_1" number="10">
+                <properties>
+                    <property key="text">ABAB3_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B3_0" number="11">
+                <properties>
+                    <property key="text">ABAB3_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B2_1" number="12">
+                <properties>
+                    <property key="text">ABAB2_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B2_0" number="13">
+                <properties>
+                    <property key="text">ABAB2_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B1_1" number="14">
+                <properties>
+                    <property key="text">ABAB1_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B1_0" number="15">
+                <properties>
+                    <property key="text">ABAB1_0</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="muxEight" x="240" y="1340">
+            <io iotype="input" label="A4_1" number="0">
+                <properties>
+                    <property key="text">ABBA4_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A4_0" number="1">
+                <properties>
+                    <property key="text">ABBA4_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A3_1" number="2">
+                <properties>
+                    <property key="text">ABBA3_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A3_0" number="3">
+                <properties>
+                    <property key="text">ABBA3_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A2_1" number="4">
+                <properties>
+                    <property key="text">ABBA2_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A2_0" number="5">
+                <properties>
+                    <property key="text">ABBA2_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A1_1" number="6">
+                <properties>
+                    <property key="text">ABBA1_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A1_0" number="7">
+                <properties>
+                    <property key="text">ABBA1_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B4_1" number="8">
+                <properties>
+                    <property key="text">ABBB4_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B4_0" number="9">
+                <properties>
+                    <property key="text">ABBA4_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B3_1" number="10">
+                <properties>
+                    <property key="text">ABBA3_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B3_0" number="11">
+                <properties>
+                    <property key="text">ABBA3_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B2_1" number="12">
+                <properties>
+                    <property key="text">ABBA2_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B2_0" number="13">
+                <properties>
+                    <property key="text">ABBA2_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B1_1" number="14">
+                <properties>
+                    <property key="text">ABBA1_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B1_0" number="15">
+                <properties>
+                    <property key="text">ABBA1_0</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="muxEight" x="240" y="1550">
+            <io iotype="input" label="A4_1" number="0">
+                <properties>
+                    <property key="text">BAAA4_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A4_0" number="1">
+                <properties>
+                    <property key="text">BAAA4_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A3_1" number="2">
+                <properties>
+                    <property key="text">BAAA3_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A3_0" number="3">
+                <properties>
+                    <property key="text">BAAA3_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A2_1" number="4">
+                <properties>
+                    <property key="text">BAAA2_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A2_0" number="5">
+                <properties>
+                    <property key="text">BAAA2_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A1_1" number="6">
+                <properties>
+                    <property key="text">BAAA1_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A1_0" number="7">
+                <properties>
+                    <property key="text">BAAA1_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B4_1" number="8">
+                <properties>
+                    <property key="text">BAAB4_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B4_0" number="9">
+                <properties>
+                    <property key="text">BAAB4_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B3_1" number="10">
+                <properties>
+                    <property key="text">BAAB3_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B3_0" number="11">
+                <properties>
+                    <property key="text">BAAB3_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B2_1" number="12">
+                <properties>
+                    <property key="text">BAAB2_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B2_0" number="13">
+                <properties>
+                    <property key="text">BAAB2_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B1_1" number="14">
+                <properties>
+                    <property key="text">BAAB1_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B1_0" number="15">
+                <properties>
+                    <property key="text">BAAB1_0</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="muxEight" x="240" y="1770">
+            <io iotype="input" label="A4_1" number="0">
+                <properties>
+                    <property key="text">BABA4_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A4_0" number="1">
+                <properties>
+                    <property key="text">BABA4_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A3_1" number="2">
+                <properties>
+                    <property key="text">BABA3_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A3_0" number="3">
+                <properties>
+                    <property key="text">BABA3_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A2_1" number="4">
+                <properties>
+                    <property key="text">BABA2_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A2_0" number="5">
+                <properties>
+                    <property key="text">BABA2_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A1_1" number="6">
+                <properties>
+                    <property key="text">BABA1_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A1_0" number="7">
+                <properties>
+                    <property key="text">BABA1_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B4_1" number="8">
+                <properties>
+                    <property key="text">BABB4_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B4_0" number="9">
+                <properties>
+                    <property key="text">BABB4_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B3_1" number="10">
+                <properties>
+                    <property key="text">BABB3_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B3_0" number="11">
+                <properties>
+                    <property key="text">BABB3_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B2_1" number="12">
+                <properties>
+                    <property key="text">BABB2_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B2_0" number="13">
+                <properties>
+                    <property key="text">BABB2_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B1_1" number="14">
+                <properties>
+                    <property key="text">BABB1_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B1_0" number="15">
+                <properties>
+                    <property key="text">BABB1_0</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="muxEight" x="240" y="1990">
+            <io iotype="input" label="A4_1" number="0">
+                <properties>
+                    <property key="text">BBAA4_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A4_0" number="1">
+                <properties>
+                    <property key="text">BBAA4_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A3_1" number="2">
+                <properties>
+                    <property key="text">BBAA3_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A3_0" number="3">
+                <properties>
+                    <property key="text">BBAA3_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A2_1" number="4">
+                <properties>
+                    <property key="text">BBAA2_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A2_0" number="5">
+                <properties>
+                    <property key="text">BBAA2_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A1_1" number="6">
+                <properties>
+                    <property key="text">BBAA1_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A1_0" number="7">
+                <properties>
+                    <property key="text">BBAA1_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B4_1" number="8">
+                <properties>
+                    <property key="text">BBAB4_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B4_0" number="9">
+                <properties>
+                    <property key="text">BBAB4_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B3_1" number="10">
+                <properties>
+                    <property key="text">BBAB3_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B3_0" number="11">
+                <properties>
+                    <property key="text">BBAB3_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B2_1" number="12">
+                <properties>
+                    <property key="text">BBAB2_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B2_0" number="13">
+                <properties>
+                    <property key="text">BBAB2_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B1_1" number="14">
+                <properties>
+                    <property key="text">BBAB1_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B1_0" number="15">
+                <properties>
+                    <property key="text">BBAB1_0</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="muxEight" x="240" y="2200">
+            <io iotype="input" label="A4_1" number="0">
+                <properties>
+                    <property key="text">BBBA4_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A4_0" number="1">
+                <properties>
+                    <property key="text">BBBA4_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A3_1" number="2">
+                <properties>
+                    <property key="text">BBBA3_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A3_0" number="3">
+                <properties>
+                    <property key="text">BBBA3_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A2_1" number="4">
+                <properties>
+                    <property key="text">BBBA2_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A2_0" number="5">
+                <properties>
+                    <property key="text">BBBA2_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A1_1" number="6">
+                <properties>
+                    <property key="text">BBBA1_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A1_0" number="7">
+                <properties>
+                    <property key="text">BBBA1_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B4_1" number="8">
+                <properties>
+                    <property key="text">BBBB4_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B4_0" number="9">
+                <properties>
+                    <property key="text">BBBB4_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B3_1" number="10">
+                <properties>
+                    <property key="text">BBBB3_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B3_0" number="11">
+                <properties>
+                    <property key="text">BBBB3_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B2_1" number="12">
+                <properties>
+                    <property key="text">BBBB2_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B2_0" number="13">
+                <properties>
+                    <property key="text">BBBB2_0</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B1_1" number="14">
+                <properties>
+                    <property key="text">BBBB1_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B1_0" number="15">
+                <properties>
+                    <property key="text">BBBB1_0</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="muxEight" x="700" y="840"/>
+        <gate type="muxEight" x="690" y="1260"/>
+        <gate type="muxEight" x="690" y="1690"/>
+        <gate type="muxEight" x="680" y="2120"/>
+        <gate type="muxEight" x="1110" y="1180"/>
+        <gate type="muxEight" x="1110" y="2040"/>
+        <gate type="muxEight" x="1580" y="1960">
+            <io iotype="output" label="out4_1" number="18">
+                <properties>
+                    <property key="text">out4_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="out4_0" number="19">
+                <properties>
+                    <property key="text">out4_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="out3_1" number="20">
+                <properties>
+                    <property key="text">out3_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="out3_0" number="21">
+                <properties>
+                    <property key="text">out3_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="out2_1" number="22">
+                <properties>
+                    <property key="text">out2_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="out2_0" number="23">
+                <properties>
+                    <property key="text">out2_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="out1_1" number="24">
+                <properties>
+                    <property key="text">out1_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="out1_0" number="25">
+                <properties>
+                    <property key="text">out1_0</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="buffer" x="-2460" y="630">
+            <properties>
+                <property key="text">fawef</property>
+            </properties>
+            <io iotype="input" number="0">
+                <properties>
+                    <property key="text">PAXXXin</property>
+                </properties>
+            </io>
+            <io iotype="output" number="1">
+                <properties>
+                    <property key="text">PAXXX</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="buffer" x="-2460" y="730">
+            <properties>
+                <property key="text">faewf</property>
+            </properties>
+            <io iotype="input" number="0">
+                <properties>
+                    <property key="text">PBXXXin</property>
+                </properties>
+            </io>
+            <io iotype="output" number="1">
+                <properties>
+                    <property key="text">PBXXX</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="buffer" x="-2460" y="960">
+            <io iotype="input" number="0">
+                <properties>
+                    <property key="text">PXAXXin</property>
+                </properties>
+            </io>
+            <io iotype="output" number="1">
+                <properties>
+                    <property key="text">PXAXX</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="buffer" x="-2470" y="1090">
+            <properties>
+                <property key="text">efafe</property>
+            </properties>
+            <io iotype="input" number="0">
+                <properties>
+                    <property key="text">PXBXXin</property>
+                </properties>
+            </io>
+            <io iotype="output" number="1">
+                <properties>
+                    <property key="text">PXBXX</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="buffer" x="-2430" y="2740">
+            <io iotype="input" number="0">
+                <properties>
+                    <property key="text">PXXXBin</property>
+                </properties>
+            </io>
+            <io iotype="output" number="1">
+                <properties>
+                    <property key="text">PXXXB</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="buffer" x="-2430" y="2680">
+            <properties>
+                <property key="text">fawefe</property>
+            </properties>
+            <io iotype="input" number="0">
+                <properties>
+                    <property key="text">PXXXAin</property>
+                </properties>
+            </io>
+            <io iotype="output" number="1">
+                <properties>
+                    <property key="text">PXXXA</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="buffer" x="-2430" y="1610">
+            <io iotype="input" number="0">
+                <properties>
+                    <property key="text">PXXBXin</property>
+                </properties>
+            </io>
+            <io iotype="output" number="1">
+                <properties>
+                    <property key="text">PXXBX</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="buffer" x="-2430" y="1510">
+            <io iotype="input" number="0">
+                <properties>
+                    <property key="text">PXXAXin</property>
+                </properties>
+            </io>
+            <io iotype="output" number="1">
+                <properties>
+                    <property key="text">PXXAX</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="celement" x="-2250" y="650"/>
+        <gate type="celement" x="-2250" y="770"/>
+        <gate type="celement" x="-2250" y="910"/>
+        <gate type="celement" x="-2250" y="1030"/>
+        <gate type="celement" x="-1850" y="650"/>
+        <gate type="celement" x="-1850" y="760"/>
+        <gate type="celement" x="-1850" y="920"/>
+        <gate type="celement" x="-1850" y="1030"/>
+        <gate type="celement" x="-1850" y="1450"/>
+        <gate type="celement" x="-1850" y="1560"/>
+        <gate type="celement" x="-1850" y="1180"/>
+        <gate type="celement" x="-1850" y="1290"/>
+        <gate type="celement" x="-1150" y="640"/>
+        <gate type="celement" x="-1150" y="760"/>
+        <gate type="celement" x="-1150" y="880"/>
+        <gate type="celement" x="-1150" y="1010"/>
+        <gate type="celement" x="-1150" y="1150"/>
+        <gate type="celement" x="-1150" y="1280"/>
+        <gate type="celement" x="-1150" y="1410"/>
+        <gate type="celement" x="-1150" y="1550"/>
+        <gate type="celement" x="-1150" y="1690"/>
+        <gate type="celement" x="-1150" y="1820"/>
+        <gate type="celement" x="-1150" y="1960"/>
+        <gate type="celement" x="-1150" y="2100"/>
+        <gate type="celement" x="-1150" y="2240"/>
+        <gate type="celement" x="-1150" y="2380"/>
+        <gate type="celement" x="-1150" y="2520"/>
+        <gate type="celement" x="-1150" y="2660"/>
+        <gate type="or" x="-960" y="2600"/>
+        <gate type="or" x="-970" y="2330"/>
+        <gate type="or" x="-980" y="2050"/>
+        <gate type="or" x="-980" y="1770"/>
+        <gate type="or" x="-980" y="1490"/>
+        <gate type="or" x="-980" y="1230"/>
+        <gate type="or" x="-980" y="960"/>
+        <gate type="or" x="-980" y="710"/>
+        <gate type="or" x="-810" y="1910"/>
+        <gate type="or" x="-820" y="1370"/>
+        <gate type="or" x="-800" y="2470"/>
+        <gate type="or" x="-830" y="840"/>
+        <gate type="or" x="-650" y="2190"/>
+        <gate type="or" x="-650" y="1110"/>
+    </gates>
+    <wires>
+        <wire>
+            <from id="muxEight@240:720" number="18"/>
+            <to id="muxEight@700:840" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:720" number="19"/>
+            <to id="muxEight@700:840" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:720" number="20"/>
+            <to id="muxEight@700:840" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:720" number="21"/>
+            <to id="muxEight@700:840" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:720" number="22"/>
+            <to id="muxEight@700:840" number="4" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:720" number="23"/>
+            <to id="muxEight@700:840" number="5" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:720" number="24"/>
+            <to id="muxEight@700:840" number="6" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:720" number="25"/>
+            <to id="muxEight@700:840" number="7" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:920" number="18"/>
+            <to id="muxEight@700:840" number="8" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:920" number="19"/>
+            <to id="muxEight@700:840" number="9" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:920" number="20"/>
+            <to id="muxEight@700:840" number="10" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:920" number="21"/>
+            <to id="muxEight@700:840" number="11" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:920" number="22"/>
+            <to id="muxEight@700:840" number="12" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:920" number="23"/>
+            <to id="muxEight@700:840" number="13" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:920" number="24"/>
+            <to id="muxEight@700:840" number="14" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:920" number="25"/>
+            <to id="muxEight@700:840" number="15" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:1130" number="18"/>
+            <to id="muxEight@690:1260" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:1130" number="19"/>
+            <to id="muxEight@690:1260" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:1130" number="20"/>
+            <to id="muxEight@690:1260" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:1130" number="21"/>
+            <to id="muxEight@690:1260" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:1130" number="22"/>
+            <to id="muxEight@690:1260" number="4" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:1130" number="23"/>
+            <to id="muxEight@690:1260" number="5" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:1130" number="24"/>
+            <to id="muxEight@690:1260" number="6" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:1130" number="25"/>
+            <to id="muxEight@690:1260" number="7" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:1340" number="18"/>
+            <to id="muxEight@690:1260" number="8" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:1340" number="19"/>
+            <to id="muxEight@690:1260" number="9" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:1340" number="20"/>
+            <to id="muxEight@690:1260" number="10" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:1340" number="21"/>
+            <to id="muxEight@690:1260" number="11" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:1340" number="22"/>
+            <to id="muxEight@690:1260" number="12" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:1340" number="23"/>
+            <to id="muxEight@690:1260" number="13" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:1340" number="24"/>
+            <to id="muxEight@690:1260" number="14" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:1340" number="25"/>
+            <to id="muxEight@690:1260" number="15" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:1550" number="18"/>
+            <to id="muxEight@690:1690" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:1550" number="19"/>
+            <to id="muxEight@690:1690" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:1550" number="20"/>
+            <to id="muxEight@690:1690" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:1550" number="21"/>
+            <to id="muxEight@690:1690" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:1550" number="22"/>
+            <to id="muxEight@690:1690" number="4" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:1550" number="23"/>
+            <to id="muxEight@690:1690" number="5" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:1550" number="24"/>
+            <to id="muxEight@690:1690" number="6" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:1550" number="25"/>
+            <to id="muxEight@690:1690" number="7" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:1770" number="18"/>
+            <to id="muxEight@690:1690" number="8" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:1770" number="19"/>
+            <to id="muxEight@690:1690" number="9" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:1770" number="20"/>
+            <to id="muxEight@690:1690" number="10" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:1770" number="21"/>
+            <to id="muxEight@690:1690" number="11" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:1770" number="22"/>
+            <to id="muxEight@690:1690" number="12" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:1770" number="23"/>
+            <to id="muxEight@690:1690" number="13" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:1770" number="24"/>
+            <to id="muxEight@690:1690" number="14" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:1770" number="25"/>
+            <to id="muxEight@690:1690" number="15" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:1990" number="18"/>
+            <to id="muxEight@680:2120" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:1990" number="19"/>
+            <to id="muxEight@680:2120" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:1990" number="20"/>
+            <to id="muxEight@680:2120" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:1990" number="21"/>
+            <to id="muxEight@680:2120" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:1990" number="22"/>
+            <to id="muxEight@680:2120" number="4" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:1990" number="23"/>
+            <to id="muxEight@680:2120" number="5" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:1990" number="24"/>
+            <to id="muxEight@680:2120" number="6" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:1990" number="25"/>
+            <to id="muxEight@680:2120" number="7" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:2200" number="18"/>
+            <to id="muxEight@680:2120" number="8" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:2200" number="19"/>
+            <to id="muxEight@680:2120" number="9" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:2200" number="20"/>
+            <to id="muxEight@680:2120" number="10" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:2200" number="21"/>
+            <to id="muxEight@680:2120" number="11" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:2200" number="22"/>
+            <to id="muxEight@680:2120" number="12" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:2200" number="23"/>
+            <to id="muxEight@680:2120" number="13" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:2200" number="24"/>
+            <to id="muxEight@680:2120" number="14" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@240:2200" number="25"/>
+            <to id="muxEight@680:2120" number="15" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@700:840" number="18"/>
+            <to id="muxEight@1110:1180" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@700:840" number="19"/>
+            <to id="muxEight@1110:1180" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@700:840" number="20"/>
+            <to id="muxEight@1110:1180" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@700:840" number="21"/>
+            <to id="muxEight@1110:1180" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@700:840" number="22"/>
+            <to id="muxEight@1110:1180" number="4" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@700:840" number="23"/>
+            <to id="muxEight@1110:1180" number="5" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@700:840" number="24"/>
+            <to id="muxEight@1110:1180" number="6" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@700:840" number="25"/>
+            <to id="muxEight@1110:1180" number="7" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@690:1260" number="18"/>
+            <to id="muxEight@1110:1180" number="8" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@690:1260" number="19"/>
+            <to id="muxEight@1110:1180" number="9" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@690:1260" number="20"/>
+            <to id="muxEight@1110:1180" number="10" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@690:1260" number="21"/>
+            <to id="muxEight@1110:1180" number="11" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@690:1260" number="22"/>
+            <to id="muxEight@1110:1180" number="12" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@690:1260" number="23"/>
+            <to id="muxEight@1110:1180" number="13" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@690:1260" number="24"/>
+            <to id="muxEight@1110:1180" number="14" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@690:1260" number="25"/>
+            <to id="muxEight@1110:1180" number="15" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@690:1690" number="18"/>
+            <to id="muxEight@1110:2040" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@690:1690" number="19"/>
+            <to id="muxEight@1110:2040" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@690:1690" number="20"/>
+            <to id="muxEight@1110:2040" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@690:1690" number="21"/>
+            <to id="muxEight@1110:2040" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@690:1690" number="22"/>
+            <to id="muxEight@1110:2040" number="4" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@690:1690" number="23"/>
+            <to id="muxEight@1110:2040" number="5" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@690:1690" number="24"/>
+            <to id="muxEight@1110:2040" number="6" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@690:1690" number="25"/>
+            <to id="muxEight@1110:2040" number="7" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@680:2120" number="18"/>
+            <to id="muxEight@1110:2040" number="8" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@680:2120" number="19"/>
+            <to id="muxEight@1110:2040" number="9" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@680:2120" number="20"/>
+            <to id="muxEight@1110:2040" number="10" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@680:2120" number="21"/>
+            <to id="muxEight@1110:2040" number="11" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@680:2120" number="22"/>
+            <to id="muxEight@1110:2040" number="12" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@680:2120" number="23"/>
+            <to id="muxEight@1110:2040" number="13" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@680:2120" number="24"/>
+            <to id="muxEight@1110:2040" number="14" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@680:2120" number="25"/>
+            <to id="muxEight@1110:2040" number="15" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@1110:1180" number="18"/>
+            <to id="muxEight@1580:1960" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@1110:1180" number="19"/>
+            <to id="muxEight@1580:1960" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@1110:1180" number="20"/>
+            <to id="muxEight@1580:1960" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@1110:1180" number="21"/>
+            <to id="muxEight@1580:1960" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@1110:1180" number="22"/>
+            <to id="muxEight@1580:1960" number="4" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@1110:1180" number="23"/>
+            <to id="muxEight@1580:1960" number="5" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@1110:1180" number="24"/>
+            <to id="muxEight@1580:1960" number="6" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@1110:1180" number="25"/>
+            <to id="muxEight@1580:1960" number="7" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@1110:2040" number="18"/>
+            <to id="muxEight@1580:1960" number="8" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@1110:2040" number="19"/>
+            <to id="muxEight@1580:1960" number="9" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@1110:2040" number="20"/>
+            <to id="muxEight@1580:1960" number="10" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@1110:2040" number="21"/>
+            <to id="muxEight@1580:1960" number="11" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@1110:2040" number="22"/>
+            <to id="muxEight@1580:1960" number="12" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@1110:2040" number="23"/>
+            <to id="muxEight@1580:1960" number="13" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@1110:2040" number="24"/>
+            <to id="muxEight@1580:1960" number="14" type="gate"/>
+        </wire>
+        <wire>
+            <from id="muxEight@1110:2040" number="25"/>
+            <to id="muxEight@1580:1960" number="15" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2460:630" number="1"/>
+            <to id="celement@-2250:650" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2460:960" number="1"/>
+            <to id="celement@-2250:650" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2460:630" number="1"/>
+            <to id="celement@-2250:770" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2470:1090" number="1"/>
+            <to id="celement@-2250:770" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2460:730" number="1"/>
+            <to id="celement@-2250:910" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2460:960" number="1"/>
+            <to id="celement@-2250:910" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2460:730" number="1"/>
+            <to id="celement@-2250:1030" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2470:1090" number="1"/>
+            <to id="celement@-2250:1030" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2430:1510" number="1"/>
+            <to id="celement@-1850:650" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2430:1610" number="1"/>
+            <to id="celement@-1850:760" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2430:1510" number="1"/>
+            <to id="celement@-1850:920" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2430:1610" number="1"/>
+            <to id="celement@-1850:1030" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2430:1510" number="1"/>
+            <to id="celement@-1850:1180" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2430:1610" number="1"/>
+            <to id="celement@-1850:1290" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2430:1510" number="1"/>
+            <to id="celement@-1850:1450" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2430:1610" number="1"/>
+            <to id="celement@-1850:1560" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-2250:650" number="2"/>
+            <to id="celement@-1850:650" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-2250:650" number="2"/>
+            <to id="celement@-1850:760" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-2250:770" number="2"/>
+            <to id="celement@-1850:920" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-2250:770" number="2"/>
+            <to id="celement@-1850:1030" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-2250:910" number="2"/>
+            <to id="celement@-1850:1180" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-2250:910" number="2"/>
+            <to id="celement@-1850:1290" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-2250:1030" number="2"/>
+            <to id="celement@-1850:1450" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-2250:1030" number="2"/>
+            <to id="celement@-1850:1560" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-1850:650" number="2"/>
+            <to id="celement@-1150:640" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-1850:650" number="2"/>
+            <to id="celement@-1150:760" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-1850:760" number="2"/>
+            <to id="celement@-1150:880" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-1850:760" number="2"/>
+            <to id="celement@-1150:1010" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-1850:920" number="2"/>
+            <to id="celement@-1150:1150" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-1850:920" number="2"/>
+            <to id="celement@-1150:1280" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-1850:1030" number="2"/>
+            <to id="celement@-1150:1410" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-1850:1030" number="2"/>
+            <to id="celement@-1150:1550" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-1850:1180" number="2"/>
+            <to id="celement@-1150:1690" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-1850:1180" number="2"/>
+            <to id="celement@-1150:1820" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-1850:1290" number="2"/>
+            <to id="celement@-1150:1960" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-1850:1290" number="2"/>
+            <to id="celement@-1150:2100" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-1850:1450" number="2"/>
+            <to id="celement@-1150:2240" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-1850:1450" number="2"/>
+            <to id="celement@-1150:2380" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-1850:1560" number="2"/>
+            <to id="celement@-1150:2520" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-1850:1560" number="2"/>
+            <to id="celement@-1150:2660" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2430:2680" number="1"/>
+            <to id="celement@-1150:2520" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2430:2680" number="1"/>
+            <to id="celement@-1150:2240" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2430:2680" number="1"/>
+            <to id="celement@-1150:1960" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2430:2680" number="1"/>
+            <to id="celement@-1150:1690" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2430:2680" number="1"/>
+            <to id="celement@-1150:1410" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2430:2680" number="1"/>
+            <to id="celement@-1150:1150" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2430:2680" number="1"/>
+            <to id="celement@-1150:880" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2430:2680" number="1"/>
+            <to id="celement@-1150:640" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2430:2740" number="1"/>
+            <to id="celement@-1150:760" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2430:2740" number="1"/>
+            <to id="celement@-1150:1010" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2430:2740" number="1"/>
+            <to id="celement@-1150:1280" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2430:2740" number="1"/>
+            <to id="celement@-1150:1550" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2430:2740" number="1"/>
+            <to id="celement@-1150:1820" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2430:2740" number="1"/>
+            <to id="celement@-1150:2100" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2430:2740" number="1"/>
+            <to id="celement@-1150:2380" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2430:2740" number="1"/>
+            <to id="celement@-1150:2660" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-1150:2660" number="2"/>
+            <to id="muxEight@240:2200" number="17" type="gate"/>
+            <point node="false" number="0" x="150" y="2700"/>
+            <point node="false" number="1" x="150" y="2380"/>
+        </wire>
+        <wire>
+            <from id="celement@-1150:2520" number="2"/>
+            <to id="muxEight@240:2200" number="16" type="gate"/>
+            <point node="false" number="0" x="140" y="2560"/>
+            <point node="false" number="1" x="140" y="2370"/>
+        </wire>
+        <wire>
+            <from id="celement@-1150:2380" number="2"/>
+            <to id="muxEight@240:1990" number="17" type="gate"/>
+            <point node="false" number="0" x="130" y="2430"/>
+            <point node="false" number="1" x="130" y="2170"/>
+        </wire>
+        <wire>
+            <from id="celement@-1150:2240" number="2"/>
+            <to id="muxEight@240:1990" number="16" type="gate"/>
+            <point node="false" number="0" x="120" y="2290"/>
+            <point node="false" number="1" x="120" y="2160"/>
+        </wire>
+        <wire>
+            <from id="celement@-1150:2100" number="2"/>
+            <to id="muxEight@240:1770" number="17" type="gate"/>
+            <point node="false" number="0" x="110" y="2150"/>
+            <point node="false" number="1" x="110" y="1950"/>
+        </wire>
+        <wire>
+            <from id="celement@-1150:1960" number="2"/>
+            <to id="muxEight@240:1770" number="16" type="gate"/>
+            <point node="false" number="0" x="100" y="2010"/>
+            <point node="false" number="1" x="100" y="1940"/>
+        </wire>
+        <wire>
+            <from id="celement@-1150:1820" number="2"/>
+            <to id="muxEight@240:1550" number="17" type="gate"/>
+            <point node="false" number="0" x="90" y="1880"/>
+            <point node="false" number="1" x="90" y="1730"/>
+        </wire>
+        <wire>
+            <from id="celement@-1150:1690" number="2"/>
+            <to id="muxEight@240:1550" number="16" type="gate"/>
+            <point node="false" number="0" x="80" y="1740"/>
+            <point node="false" number="1" x="80" y="1720"/>
+        </wire>
+        <wire>
+            <from id="celement@-1150:1550" number="2"/>
+            <to id="muxEight@240:1340" number="17" type="gate"/>
+            <point node="false" number="0" x="70" y="1600"/>
+            <point node="false" number="1" x="70" y="1520"/>
+        </wire>
+        <wire>
+            <from id="celement@-1150:1410" number="2"/>
+            <to id="muxEight@240:1340" number="16" type="gate"/>
+            <point node="false" number="0" x="60" y="1460"/>
+            <point node="false" number="1" x="60" y="1510"/>
+        </wire>
+        <wire>
+            <from id="celement@-1150:1280" number="2"/>
+            <to id="muxEight@240:1130" number="17" type="gate"/>
+            <point node="false" number="0" x="50" y="1340"/>
+            <point node="false" number="1" x="50" y="1310"/>
+        </wire>
+        <wire>
+            <from id="celement@-1150:1150" number="2"/>
+            <to id="muxEight@240:1130" number="16" type="gate"/>
+            <point node="false" number="0" x="40" y="1200"/>
+            <point node="false" number="1" x="40" y="1300"/>
+        </wire>
+        <wire>
+            <from id="celement@-1150:1010" number="2"/>
+            <to id="muxEight@240:920" number="17" type="gate"/>
+            <point node="false" number="0" x="30" y="1060"/>
+            <point node="false" number="1" x="30" y="1100"/>
+        </wire>
+        <wire>
+            <from id="celement@-1150:880" number="2"/>
+            <to id="muxEight@240:920" number="16" type="gate"/>
+            <point node="false" number="0" x="40" y="930"/>
+            <point node="false" number="1" x="40" y="1090"/>
+        </wire>
+        <wire>
+            <from id="celement@-1150:760" number="2"/>
+            <to id="muxEight@240:720" number="17" type="gate"/>
+            <point node="false" number="0" x="50" y="810"/>
+            <point node="false" number="1" x="50" y="900"/>
+        </wire>
+        <wire>
+            <from id="celement@-1150:640" number="2"/>
+            <to id="muxEight@240:720" number="16" type="gate"/>
+            <point node="false" number="0" x="60" y="690"/>
+            <point node="false" number="1" x="60" y="890"/>
+        </wire>
+        <wire>
+            <from id="celement@-1150:640" number="2"/>
+            <to id="or@-980:710" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-1150:760" number="2"/>
+            <to id="or@-980:710" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-1150:880" number="2"/>
+            <to id="or@-980:960" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-1150:1010" number="2"/>
+            <to id="or@-980:960" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-1150:1150" number="2"/>
+            <to id="or@-980:1230" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-1150:1280" number="2"/>
+            <to id="or@-980:1230" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-1150:1410" number="2"/>
+            <to id="or@-980:1490" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-1150:1550" number="2"/>
+            <to id="or@-980:1490" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-1150:1690" number="2"/>
+            <to id="or@-980:1770" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-1150:1820" number="2"/>
+            <to id="or@-980:1770" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-1150:1960" number="2"/>
+            <to id="or@-980:2050" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-1150:2100" number="2"/>
+            <to id="or@-980:2050" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-1150:2240" number="2"/>
+            <to id="or@-970:2330" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-1150:2380" number="2"/>
+            <to id="or@-970:2330" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-1150:2520" number="2"/>
+            <to id="or@-960:2600" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-1150:2660" number="2"/>
+            <to id="or@-960:2600" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="or@-980:710" number="0"/>
+            <to id="muxEight@700:840" number="16" type="gate"/>
+            <point node="false" number="0" x="-10" y="740"/>
+            <point node="false" number="1" x="-10" y="2740"/>
+            <point node="false" number="2" x="570" y="2740"/>
+            <point node="false" number="3" x="570" y="1010"/>
+        </wire>
+        <wire>
+            <from id="or@-980:960" number="0"/>
+            <to id="muxEight@700:840" number="17" type="gate"/>
+            <point node="false" number="0" x="-20" y="990"/>
+            <point node="false" number="1" x="-20" y="2750"/>
+            <point node="false" number="2" x="580" y="2750"/>
+            <point node="false" number="3" x="580" y="1020"/>
+        </wire>
+        <wire>
+            <from id="or@-980:1230" number="0"/>
+            <to id="muxEight@690:1260" number="16" type="gate"/>
+            <point node="false" number="0" x="-30" y="1260"/>
+            <point node="false" number="1" x="-30" y="2760"/>
+            <point node="false" number="2" x="590" y="2760"/>
+            <point node="false" number="3" x="590" y="1430"/>
+        </wire>
+        <wire>
+            <from id="or@-980:1490" number="0"/>
+            <to id="muxEight@690:1260" number="17" type="gate"/>
+            <point node="false" number="0" x="-40" y="1520"/>
+            <point node="false" number="1" x="-40" y="2770"/>
+            <point node="false" number="2" x="600" y="2770"/>
+            <point node="false" number="3" x="600" y="1440"/>
+        </wire>
+        <wire>
+            <from id="or@-980:1770" number="0"/>
+            <to id="muxEight@690:1690" number="16" type="gate"/>
+            <point node="false" number="0" x="-50" y="1800"/>
+            <point node="false" number="1" x="-50" y="2780"/>
+            <point node="false" number="2" x="610" y="2780"/>
+            <point node="false" number="3" x="610" y="1860"/>
+        </wire>
+        <wire>
+            <from id="or@-980:2050" number="0"/>
+            <to id="muxEight@690:1690" number="17" type="gate"/>
+            <point node="false" number="0" x="-60" y="2080"/>
+            <point node="false" number="1" x="-60" y="2790"/>
+            <point node="false" number="2" x="620" y="2790"/>
+            <point node="false" number="3" x="620" y="1870"/>
+        </wire>
+        <wire>
+            <from id="or@-970:2330" number="0"/>
+            <to id="muxEight@680:2120" number="16" type="gate"/>
+            <point node="false" number="0" x="-70" y="2360"/>
+            <point node="false" number="1" x="-70" y="2800"/>
+            <point node="false" number="2" x="630" y="2800"/>
+            <point node="false" number="3" x="630" y="2290"/>
+        </wire>
+        <wire>
+            <from id="or@-960:2600" number="0"/>
+            <to id="muxEight@680:2120" number="17" type="gate"/>
+            <point node="false" number="0" x="-80" y="2630"/>
+            <point node="false" number="1" x="-80" y="2810"/>
+            <point node="false" number="2" x="640" y="2810"/>
+            <point node="false" number="3" x="640" y="2300"/>
+        </wire>
+        <wire>
+            <from id="or@-970:2330" number="0"/>
+            <to id="or@-800:2470" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="or@-960:2600" number="0"/>
+            <to id="or@-800:2470" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="or@-980:2050" number="0"/>
+            <to id="or@-810:1910" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="or@-980:1770" number="0"/>
+            <to id="or@-810:1910" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="or@-980:1490" number="0"/>
+            <to id="or@-820:1370" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="or@-980:1230" number="0"/>
+            <to id="or@-820:1370" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="or@-980:710" number="0"/>
+            <to id="or@-830:840" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="or@-980:960" number="0"/>
+            <to id="or@-830:840" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="or@-830:840" number="0"/>
+            <to id="muxEight@1110:1180" number="16" type="gate"/>
+            <point node="false" number="0" x="-190" y="870"/>
+            <point node="false" number="1" x="-190" y="2840"/>
+            <point node="false" number="2" x="990" y="2840"/>
+            <point node="false" number="3" x="990" y="1350"/>
+        </wire>
+        <wire>
+            <from id="or@-820:1370" number="0"/>
+            <to id="muxEight@1110:1180" number="17" type="gate"/>
+            <point node="false" number="0" x="-200" y="1400"/>
+            <point node="false" number="1" x="-200" y="2850"/>
+            <point node="false" number="2" x="1000" y="2850"/>
+            <point node="false" number="3" x="1000" y="1360"/>
+        </wire>
+        <wire>
+            <from id="or@-810:1910" number="0"/>
+            <to id="muxEight@1110:2040" number="16" type="gate"/>
+            <point node="false" number="0" x="-210" y="1940"/>
+            <point node="false" number="1" x="-210" y="2860"/>
+            <point node="false" number="2" x="1010" y="2860"/>
+            <point node="false" number="3" x="1010" y="2210"/>
+        </wire>
+        <wire>
+            <from id="or@-800:2470" number="0"/>
+            <to id="muxEight@1110:2040" number="17" type="gate"/>
+            <point node="false" number="0" x="-220" y="2500"/>
+            <point node="false" number="1" x="-220" y="2870"/>
+            <point node="false" number="2" x="1020" y="2870"/>
+            <point node="false" number="3" x="1020" y="2220"/>
+        </wire>
+        <wire>
+            <from id="or@-830:840" number="0"/>
+            <to id="or@-650:1110" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="or@-820:1370" number="0"/>
+            <to id="or@-650:1110" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="or@-810:1910" number="0"/>
+            <to id="or@-650:2190" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="or@-800:2470" number="0"/>
+            <to id="or@-650:2190" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="or@-650:1110" number="0"/>
+            <to id="muxEight@1580:1960" number="16" type="gate"/>
+            <point node="false" number="0" x="-340" y="1140"/>
+            <point node="false" number="1" x="-340" y="2930"/>
+            <point node="false" number="2" x="1450" y="2930"/>
+            <point node="false" number="3" x="1450" y="2130"/>
+        </wire>
+        <wire>
+            <from id="or@-650:2190" number="0"/>
+            <to id="muxEight@1580:1960" number="17" type="gate"/>
+            <point node="false" number="0" x="-350" y="2220"/>
+            <point node="false" number="1" x="-350" y="2940"/>
+            <point node="false" number="2" x="1460" y="2940"/>
+            <point node="false" number="3" x="1460" y="2140"/>
+        </wire>
+    </wires>
+</logicsim>

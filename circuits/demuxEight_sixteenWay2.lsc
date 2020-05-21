@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<logicsim version="3">
+    <info/>
+    <gates>
+        <gate type="demuxEight_fourWay" x="-530" y="-450"/>
+        <gate type="demuxEight_fourWay" x="840" y="-10"/>
+        <gate type="demuxEight_fourWay" x="840" y="-410"/>
+        <gate type="demuxEight_fourWay" x="840" y="-810"/>
+        <gate type="demuxEight_fourWay" x="830" y="-1210"/>
+        <gate type="buffer" x="-790" y="-450"/>
+        <gate type="buffer" x="-790" y="-410"/>
+        <gate type="buffer" x="-790" y="-320"/>
+        <gate type="buffer" x="-790" y="-280"/>
+        <gate type="buffer" x="-480" y="430"/>
+        <gate type="buffer" x="-480" y="390"/>
+        <gate type="celement" x="380" y="920"/>
+        <gate type="celement" x="380" y="660"/>
+        <gate type="celement" x="380" y="800"/>
+        <gate type="celement" x="380" y="540"/>
+        <gate type="celement" x="380" y="280"/>
+        <gate type="celement" x="380" y="400"/>
+        <gate type="celement" x="380" y="20"/>
+        <gate type="celement" x="380" y="140"/>
+        <gate type="buffer" x="-480" y="520"/>
+        <gate type="buffer" x="-480" y="560"/>
+    </gates>
+    <wires>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="36"/>
+            <to id="demuxEight_fourWay@840:-10" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="37"/>
+            <to id="demuxEight_fourWay@840:-10" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="38"/>
+            <to id="demuxEight_fourWay@840:-10" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="39"/>
+            <to id="demuxEight_fourWay@840:-10" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="40"/>
+            <to id="demuxEight_fourWay@840:-10" number="4" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="41"/>
+            <to id="demuxEight_fourWay@840:-10" number="5" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="42"/>
+            <to id="demuxEight_fourWay@840:-10" number="6" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="43"/>
+            <to id="demuxEight_fourWay@840:-10" number="7" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="28"/>
+            <to id="demuxEight_fourWay@840:-410" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="29"/>
+            <to id="demuxEight_fourWay@840:-410" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="30"/>
+            <to id="demuxEight_fourWay@840:-410" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="31"/>
+            <to id="demuxEight_fourWay@840:-410" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="32"/>
+            <to id="demuxEight_fourWay@840:-410" number="4" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="33"/>
+            <to id="demuxEight_fourWay@840:-410" number="5" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="34"/>
+            <to id="demuxEight_fourWay@840:-410" number="6" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="35"/>
+            <to id="demuxEight_fourWay@840:-410" number="7" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="20"/>
+            <to id="demuxEight_fourWay@840:-810" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="21"/>
+            <to id="demuxEight_fourWay@840:-810" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="22"/>
+            <to id="demuxEight_fourWay@840:-810" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="23"/>
+            <to id="demuxEight_fourWay@840:-810" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="24"/>
+            <to id="demuxEight_fourWay@840:-810" number="4" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="25"/>
+            <to id="demuxEight_fourWay@840:-810" number="5" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="26"/>
+            <to id="demuxEight_fourWay@840:-810" number="6" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="27"/>
+            <to id="demuxEight_fourWay@840:-810" number="7" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="12"/>
+            <to id="demuxEight_fourWay@830:-1210" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="13"/>
+            <to id="demuxEight_fourWay@830:-1210" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="14"/>
+            <to id="demuxEight_fourWay@830:-1210" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="15"/>
+            <to id="demuxEight_fourWay@830:-1210" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="16"/>
+            <to id="demuxEight_fourWay@830:-1210" number="4" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="17"/>
+            <to id="demuxEight_fourWay@830:-1210" number="5" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="18"/>
+            <to id="demuxEight_fourWay@830:-1210" number="6" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="19"/>
+            <to id="demuxEight_fourWay@830:-1210" number="7" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-790:-450" number="1"/>
+            <to id="demuxEight_fourWay@-530:-450" number="8" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-790:-410" number="1"/>
+            <to id="demuxEight_fourWay@-530:-450" number="9" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-790:-320" number="1"/>
+            <to id="demuxEight_fourWay@-530:-450" number="10" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-790:-280" number="1"/>
+            <to id="demuxEight_fourWay@-530:-450" number="11" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="44"/>
+            <to id="celement@380:20" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="44"/>
+            <to id="celement@380:140" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="45"/>
+            <to id="celement@380:280" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="46"/>
+            <to id="celement@380:540" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="46"/>
+            <to id="celement@380:660" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="45"/>
+            <to id="celement@380:400" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="47"/>
+            <to id="celement@380:800" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="47"/>
+            <to id="celement@380:920" number="0" type="gate"/>
+        </wire>
+    </wires>
+</logicsim>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<logicsim version="3">
+    <info/>
+    <gates>
+        <gate type="celement" x="1070" y="370">
+            <io iotype="input" label="B" number="1">
+                <properties>
+                    <property key="text">in2_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="S" number="2">
+                <properties>
+                    <property key="text">out2_1</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="celement" x="1070" y="480">
+            <io iotype="input" label="B" number="1">
+                <properties>
+                    <property key="text">in2_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="S" number="2">
+                <properties>
+                    <property key="text">out2_0</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="celement" x="1070" y="640">
+            <io iotype="input" label="B" number="1">
+                <properties>
+                    <property key="text">in1_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="S" number="2">
+                <properties>
+                    <property key="text">out1_1</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="celement" x="1070" y="750">
+            <io iotype="input" label="B" number="1">
+                <properties>
+                    <property key="text">in1_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="S" number="2">
+                <properties>
+                    <property key="text">out1_0</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="buffer" x="830" y="350">
+            <io iotype="input" number="0">
+                <properties>
+                    <property key="text">C</property>
+                </properties>
+            </io>
+        </gate>
+    </gates>
+    <wires>
+        <wire>
+            <from id="buffer@830:350" number="1"/>
+            <to id="celement@1070:370" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@830:350" number="1"/>
+            <to id="celement@1070:480" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@830:350" number="1"/>
+            <to id="celement@1070:640" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@830:350" number="1"/>
+            <to id="celement@1070:750" number="0" type="gate"/>
+        </wire>
+    </wires>
+</logicsim>

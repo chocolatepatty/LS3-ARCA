@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<logicsim version="3">
+    <info/>
+    <gates>
+        <gate type="arbuffer4" x="240" y="140"/>
+        <gate type="arbuffer4" x="240" y="440"/>
+        <gate type="dr_xor" x="560" y="210"/>
+        <gate type="dr_and" x="560" y="300"/>
+        <gate type="dr_xor" x="560" y="430"/>
+        <gate type="dr_and" x="560" y="530"/>
+        <gate type="arbuffer4" x="880" y="270"/>
+        <gate type="dr_xor" x="730" y="300"/>
+        <gate type="celement" x="710" y="100"/>
+        <gate type="arbuffer4" x="880" y="610"/>
+        <gate rotate="180" type="celement" x="470" y="680"/>
+        <gate type="arbuffer2" x="880" y="940">
+            <io iotype="input" label="Ldata1_1" number="0" type="low"/>
+            <io iotype="input" label="Ldata1_0" number="1" type="low"/>
+            <io iotype="input" label="Lreq" number="2" type="low"/>
+        </gate>
+        <gate type="dr_and" x="1180" y="230"/>
+        <gate type="dr_and" x="1180" y="310"/>
+        <gate type="dr_and" x="1220" y="670"/>
+        <gate type="dr_and" x="1230" y="590"/>
+        <gate type="dr_or" x="1410" y="420"/>
+        <gate type="dr_or" x="1410" y="500"/>
+        <gate type="arbuffer4" x="1520" y="390"/>
+        <gate type="celement" x="1320" y="100"/>
+        <gate type="celement" x="1060" y="890"/>
+        <gate rotate="180" type="celement" x="0" y="800"/>
+    </gates>
+    <wires>
+        <wire>
+            <from id="arbuffer4@240:440" number="6"/>
+            <to id="dr_xor@560:210" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@240:440" number="7"/>
+            <to id="dr_xor@560:210" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@240:440" number="6"/>
+            <to id="dr_and@560:300" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@240:440" number="7"/>
+            <to id="dr_and@560:300" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@240:140" number="6"/>
+            <to id="dr_xor@560:210" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@240:140" number="7"/>
+            <to id="dr_xor@560:210" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@240:140" number="6"/>
+            <to id="dr_and@560:300" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@240:140" number="7"/>
+            <to id="dr_and@560:300" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@240:140" number="8"/>
+            <to id="dr_xor@560:430" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@240:140" number="9"/>
+            <to id="dr_xor@560:430" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@240:440" number="8"/>
+            <to id="dr_xor@560:430" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@240:440" number="9"/>
+            <to id="dr_xor@560:430" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@240:140" number="8"/>
+            <to id="dr_and@560:530" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@240:140" number="9"/>
+            <to id="dr_and@560:530" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@240:440" number="8"/>
+            <to id="dr_and@560:530" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@240:440" number="9"/>
+            <to id="dr_and@560:530" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_xor@730:300" number="4"/>
+            <to id="arbuffer4@880:270" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_xor@730:300" number="5"/>
+            <to id="arbuffer4@880:270" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_and@560:530" number="4"/>
+            <to id="dr_xor@730:300" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_and@560:530" number="5"/>
+            <to id="dr_xor@730:300" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_xor@560:210" number="4"/>
+            <to id="dr_xor@730:300" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_xor@560:210" number="5"/>
+            <to id="dr_xor@730:300" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_xor@560:430" number="4"/>
+            <to id="arbuffer4@880:270" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_xor@560:430" number="5"/>
+            <to id="arbuffer4@880:270" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@240:140" number="11"/>
+            <to id="celement@710:100" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@240:440" number="11"/>
+            <to id="celement@710:100" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@240:140" number="6"/>
+            <to id="arbuffer4@880:610" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@240:140" number="7"/>
+            <to id="arbuffer4@880:610" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@240:140" number="9"/>
+            <to id="arbuffer4@880:610" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@240:140" number="8"/>
+            <to id="arbuffer4@880:610" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@470:680" number="2"/>
+            <to id="arbuffer4@240:140" number="5" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@880:270" number="10"/>
+            <to id="celement@470:680" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@880:610" number="10"/>
+            <to id="celement@470:680" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@710:100" number="2"/>
+            <to id="arbuffer4@880:270" number="4" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@880:270" number="10"/>
+            <to id="arbuffer4@240:440" number="5" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@240:140" number="11"/>
+            <to id="arbuffer4@880:610" number="4" type="gate"/>
+            <point node="false" number="0" x="930" y="610"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@880:270" number="6"/>
+            <to id="dr_and@1180:230" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@880:270" number="7"/>
+            <to id="dr_and@1180:230" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@880:270" number="9"/>
+            <to id="dr_and@1180:310" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@880:270" number="8"/>
+            <to id="dr_and@1180:310" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@880:610" number="8"/>
+            <to id="dr_and@1220:670" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@880:610" number="9"/>
+            <to id="dr_and@1220:670" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@880:610" number="6"/>
+            <to id="dr_and@1230:590" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@880:610" number="7"/>
+            <to id="dr_and@1230:590" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer2@880:940" number="4"/>
+            <to id="dr_and@1180:230" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer2@880:940" number="5"/>
+            <to id="dr_and@1180:230" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer2@880:940" number="4"/>
+            <to id="dr_and@1180:310" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer2@880:940" number="5"/>
+            <to id="dr_and@1180:310" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer2@880:940" number="4"/>
+            <to id="dr_and@1230:590" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer2@880:940" number="5"/>
+            <to id="dr_and@1230:590" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer2@880:940" number="4"/>
+            <to id="dr_and@1220:670" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer2@880:940" number="5"/>
+            <to id="dr_and@1220:670" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_and@1180:230" number="4"/>
+            <to id="dr_or@1410:420" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_and@1180:230" number="5"/>
+            <to id="dr_or@1410:420" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_and@1230:590" number="4"/>
+            <to id="dr_or@1410:420" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_and@1230:590" number="5"/>
+            <to id="dr_or@1410:420" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_and@1180:310" number="4"/>
+            <to id="dr_or@1410:500" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_and@1180:310" number="5"/>
+            <to id="dr_or@1410:500" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_and@1220:670" number="4"/>
+            <to id="dr_or@1410:500" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_and@1220:670" number="5"/>
+            <to id="dr_or@1410:500" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@880:270" number="11"/>
+            <to id="celement@1320:100" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer2@880:940" number="7"/>
+            <to id="celement@1060:890" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@880:610" number="11"/>
+            <to id="celement@1060:890" number="0" type="gate"/>
+            <point node="false" number="0" x="1050" y="900"/>
+        </wire>
+        <wire>
+            <from id="celement@1060:890" number="2"/>
+            <to id="celement@1320:100" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@1520:390" number="10"/>
+            <to id="arbuffer4@880:270" number="5" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@1520:390" number="10"/>
+            <to id="arbuffer4@880:610" number="5" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@1520:390" number="7"/>
+            <to id="led@1640:470" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@1520:390" number="10"/>
+            <to id="arbuffer2@880:940" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@1520:390" number="6"/>
+            <to id="arbuffer4@240:140" number="0" type="gate"/>
+            <point node="false" number="0" x="1700" y="480"/>
+            <point node="false" number="1" x="1700" y="0"/>
+            <point node="false" number="2" x="190" y="10"/>
+            <point node="false" number="3" x="190" y="230"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@1520:390" number="7"/>
+            <to id="arbuffer4@240:140" number="1" type="gate"/>
+            <point node="false" number="0" x="1710" y="490"/>
+            <point node="false" number="1" x="1710" y="10"/>
+            <point node="false" number="2" x="170" y="20"/>
+            <point node="false" number="3" x="170" y="240"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@1520:390" number="8"/>
+            <to id="arbuffer4@240:140" number="2" type="gate"/>
+            <point node="false" number="0" x="1730" y="520"/>
+            <point node="false" number="1" x="1730" y="30"/>
+            <point node="false" number="2" x="130" y="40"/>
+            <point node="false" number="3" x="130" y="270"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@1520:390" number="9"/>
+            <to id="arbuffer4@240:140" number="3" type="gate"/>
+            <point node="false" number="0" x="1740" y="530"/>
+            <point node="false" number="1" x="1740" y="50"/>
+            <point node="false" number="2" x="100" y="60"/>
+            <point node="false" number="3" x="100" y="280"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@1520:390" number="6"/>
+            <to id="arbuffer4@240:440" number="0" type="gate"/>
+            <point node="false" number="0" x="1840" y="480"/>
+            <point node="false" number="1" x="1840" y="-80"/>
+            <point node="false" number="2" x="60" y="-80"/>
+            <point node="false" number="3" x="60" y="530"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@1520:390" number="9"/>
+            <to id="arbuffer4@240:440" number="3" type="gate"/>
+            <point node="false" number="0" x="1930" y="530"/>
+            <point node="false" number="1" x="1940" y="-20"/>
+            <point node="false" number="2" x="-40" y="-10"/>
+            <point node="false" number="3" x="-40" y="590"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@1520:390" number="8"/>
+            <to id="arbuffer4@240:440" number="2" type="gate"/>
+            <point node="false" number="0" x="1910" y="520"/>
+            <point node="false" number="1" x="1920" y="-30"/>
+            <point node="false" number="2" x="-10" y="-20"/>
+            <point node="false" number="3" x="-10" y="570"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@1520:390" number="7"/>
+            <to id="arbuffer4@240:440" number="1" type="gate"/>
+            <point node="false" number="0" x="1870" y="490"/>
+            <point node="false" number="1" x="1870" y="-50"/>
+            <point node="false" number="2" x="30" y="-40"/>
+            <point node="false" number="3" x="30" y="540"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@1520:390" number="11"/>
+            <to id="arbuffer4@240:140" number="4" type="gate"/>
+            <point node="false" number="0" x="1580" y="680"/>
+            <point node="false" number="1" x="1980" y="680"/>
+            <point node="false" number="2" x="1980" y="-170"/>
+            <point node="false" number="3" x="310" y="-160"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@1520:390" number="11"/>
+            <to id="arbuffer4@240:440" number="4" type="gate"/>
+            <point node="false" number="0" x="1580" y="710"/>
+            <point node="false" number="1" x="2010" y="710"/>
+            <point node="false" number="2" x="2020" y="-220"/>
+            <point node="false" number="3" x="180" y="-200"/>
+            <point node="false" number="4" x="180" y="430"/>
+        </wire>
+        <wire>
+            <from id="dr_or@1410:420" number="4"/>
+            <to id="arbuffer4@1520:390" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_or@1410:420" number="5"/>
+            <to id="arbuffer4@1520:390" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_or@1410:500" number="4"/>
+            <to id="arbuffer4@1520:390" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_or@1410:500" number="5"/>
+            <to id="arbuffer4@1520:390" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@1320:100" number="2"/>
+            <to id="arbuffer4@1520:390" number="4" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@240:140" number="10"/>
+            <to id="celement@0:800" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@240:440" number="10"/>
+            <to id="celement@0:800" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@0:800" number="2"/>
+            <to id="arbuffer4@1520:390" number="5" type="gate"/>
+            <point node="false" number="0" x="0" y="1260"/>
+            <point node="false" number="1" x="1640" y="1240"/>
+        </wire>
+    </wires>
+</logicsim>

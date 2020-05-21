@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<logicsim version="3">
+    <info/>
+    <gates>
+        <gate type="xor" x="-190" y="-230">
+            <io iotype="input" number="2" type="low"/>
+        </gate>
+    </gates>
+    <wires>
+        <wire>
+            <from id="xor@-190:-230" number="0"/>
+            <to id="nor@-100:-240" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="nor@-100:-240" number="0"/>
+            <to id="xor@-190:-230" number="2" type="gate"/>
+            <point node="false" number="0" x="-60" y="-160"/>
+            <point node="false" number="1" x="-180" y="-160"/>
+            <point node="false" number="2" x="-180" y="-170"/>
+        </wire>
+        <wire>
+            <from id="xor@-190:-230" number="0"/>
+            <to id="nor@-100:-240" number="2" type="gate"/>
+        </wire>
+    </wires>
+</logicsim>

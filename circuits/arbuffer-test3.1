@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<logicsim version="3">
+    <info/>
+    <gates>
+        <gate type="arbuffer4" x="150" y="100">
+            <io iotype="input" label="Rack" number="5" type="low"/>
+        </gate>
+        <gate type="led" x="290" y="170"/>
+        <gate type="led" x="310" y="180"/>
+        <gate type="led" x="290" y="210"/>
+        <gate type="led" x="310" y="220"/>
+        <gate type="arbuffer4" x="-10" y="100"/>
+        <gate type="arbuffer4" x="-160" y="100"/>
+        <gate type="arbuffer4" x="-320" y="100"/>
+        <gate type="arbuffer4" x="-490" y="100">
+            <io iotype="input" number="0" type="high"/>
+            <io iotype="input" number="1" type="low"/>
+            <io iotype="input" number="3" type="high"/>
+            <io iotype="input" label="Lreq" number="4" type="high"/>
+        </gate>
+    </gates>
+    <wires>
+        <wire>
+            <from id="arbuffer4@150:100" number="6"/>
+            <to id="led@290:170" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@150:100" number="7"/>
+            <to id="led@310:180" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@150:100" number="8"/>
+            <to id="led@290:210" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@150:100" number="9"/>
+            <to id="led@310:220" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@-10:100" number="11"/>
+            <to id="arbuffer4@150:100" number="4" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@-10:100" number="6"/>
+            <to id="arbuffer4@150:100" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@-10:100" number="7"/>
+            <to id="arbuffer4@150:100" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@-10:100" number="8"/>
+            <to id="arbuffer4@150:100" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@-10:100" number="9"/>
+            <to id="arbuffer4@150:100" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@150:100" number="10"/>
+            <to id="arbuffer4@-10:100" number="5" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@-160:100" number="11"/>
+            <to id="arbuffer4@-10:100" number="4" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@-160:100" number="6"/>
+            <to id="arbuffer4@-10:100" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@-160:100" number="7"/>
+            <to id="arbuffer4@-10:100" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@-160:100" number="8"/>
+            <to id="arbuffer4@-10:100" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@-160:100" number="9"/>
+            <to id="arbuffer4@-10:100" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@-10:100" number="10"/>
+            <to id="arbuffer4@-160:100" number="5" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@-320:100" number="6"/>
+            <to id="arbuffer4@-160:100" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@-320:100" number="7"/>
+            <to id="arbuffer4@-160:100" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@-320:100" number="8"/>
+            <to id="arbuffer4@-160:100" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@-320:100" number="9"/>
+            <to id="arbuffer4@-160:100" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@-160:100" number="10"/>
+            <to id="arbuffer4@-320:100" number="5" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@-320:100" number="11"/>
+            <to id="arbuffer4@-160:100" number="4" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@-490:100" number="11"/>
+            <to id="arbuffer4@-320:100" number="4" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@-490:100" number="6"/>
+            <to id="arbuffer4@-320:100" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@-490:100" number="7"/>
+            <to id="arbuffer4@-320:100" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@-490:100" number="8"/>
+            <to id="arbuffer4@-320:100" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@-490:100" number="9"/>
+            <to id="arbuffer4@-320:100" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer4@-320:100" number="10"/>
+            <to id="arbuffer4@-490:100" number="5" type="gate"/>
+        </wire>
+    </wires>
+</logicsim>

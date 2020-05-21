@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<logicsim version="3">
+    <info/>
+    <gates>
+        <gate type="dr_and" x="270" y="20">
+            <io iotype="input" number="0" type="high"/>
+            <io iotype="input" number="1" type="low"/>
+            <io iotype="input" number="2" type="low"/>
+            <io iotype="input" number="3" type="high"/>
+        </gate>
+        <gate type="dr_nor" x="270" y="350">
+            <io iotype="input" number="0" type="high"/>
+            <io iotype="input" number="1" type="low"/>
+            <io iotype="input" number="2" type="low"/>
+            <io iotype="input" number="3" type="high"/>
+        </gate>
+        <gate type="dr_or" x="270" y="100">
+            <io iotype="input" number="0" type="high"/>
+            <io iotype="input" number="1" type="low"/>
+            <io iotype="input" number="2" type="low"/>
+            <io iotype="input" number="3" type="high"/>
+        </gate>
+        <gate type="dr_nand" x="270" y="270">
+            <io iotype="input" number="0" type="high"/>
+            <io iotype="input" number="1" type="low"/>
+            <io iotype="input" number="2" type="low"/>
+            <io iotype="input" number="3" type="high"/>
+        </gate>
+        <gate type="dr_xnor" x="270" y="440">
+            <io iotype="input" number="0" type="high"/>
+            <io iotype="input" number="1" type="low"/>
+            <io iotype="input" number="2" type="low"/>
+            <io iotype="input" number="3" type="high"/>
+        </gate>
+        <gate type="dr_xor" x="270" y="190">
+            <io iotype="input" number="0" type="high"/>
+            <io iotype="input" number="1" type="low"/>
+            <io iotype="input" number="2" type="low"/>
+            <io iotype="input" number="3" type="high"/>
+        </gate>
+        <gate type="led" x="370" y="270"/>
+        <gate type="led" x="370" y="300"/>
+        <gate type="led" x="370" y="350"/>
+        <gate type="led" x="370" y="380"/>
+        <gate type="led" x="370" y="440"/>
+        <gate type="led" x="370" y="470"/>
+        <gate type="led" x="370" y="20"/>
+        <gate type="led" x="370" y="50"/>
+        <gate type="led" x="370" y="100"/>
+        <gate type="led" x="370" y="130"/>
+        <gate type="led" x="370" y="190"/>
+        <gate type="led" x="370" y="220"/>
+        <gate type="dr_xnor" x="100" y="440">
+            <io iotype="input" number="0" type="low"/>
+            <io iotype="input" number="1" type="high"/>
+            <io iotype="input" number="2" type="low"/>
+            <io iotype="input" number="3" type="high"/>
+        </gate>
+        <gate type="dr_nor" x="100" y="350">
+            <io iotype="input" number="0" type="low"/>
+            <io iotype="input" number="1" type="high"/>
+            <io iotype="input" number="2" type="low"/>
+            <io iotype="input" number="3" type="high"/>
+        </gate>
+        <gate type="dr_or" x="100" y="100">
+            <io iotype="input" number="0" type="low"/>
+            <io iotype="input" number="1" type="high"/>
+            <io iotype="input" number="2" type="low"/>
+            <io iotype="input" number="3" type="high"/>
+        </gate>
+        <gate type="dr_and" x="100" y="20">
+            <io iotype="input" number="0" type="low"/>
+            <io iotype="input" number="1" type="high"/>
+            <io iotype="input" number="2" type="low"/>
+            <io iotype="input" number="3" type="high"/>
+        </gate>
+        <gate type="dr_xor" x="100" y="190">
+            <io iotype="input" number="0" type="low"/>
+            <io iotype="input" number="1" type="high"/>
+            <io iotype="input" number="2" type="low"/>
+            <io iotype="input" number="3" type="high"/>
+        </gate>
+        <gate type="dr_nand" x="100" y="270">
+            <io iotype="input" number="0" type="low"/>
+            <io iotype="input" number="1" type="high"/>
+            <io iotype="input" number="2" type="low"/>
+            <io iotype="input" number="3" type="high"/>
+        </gate>
+        <gate type="led" x="200" y="20"/>
+        <gate type="led" x="200" y="50"/>
+        <gate type="led" x="200" y="100"/>
+        <gate type="led" x="200" y="130"/>
+        <gate type="led" x="200" y="190"/>
+        <gate type="led" x="200" y="220"/>
+        <gate type="led" x="200" y="270"/>
+        <gate type="led" x="200" y="300"/>
+        <gate type="led" x="200" y="350"/>
+        <gate type="led" x="200" y="470"/>
+        <gate type="led" x="200" y="440"/>
+        <gate type="led" x="200" y="380"/>
+        <gate type="dr_xnor" x="-70" y="430">
+            <io iotype="input" number="0" type="low"/>
+            <io iotype="input" number="1" type="high"/>
+            <io iotype="input" number="2" type="high"/>
+            <io iotype="input" number="3" type="low"/>
+        </gate>
+        <gate type="dr_nor" x="-70" y="350">
+            <io iotype="input" number="0" type="low"/>
+            <io iotype="input" number="1" type="high"/>
+            <io iotype="input" number="2" type="high"/>
+            <io iotype="input" number="3" type="low"/>
+        </gate>
+        <gate type="dr_or" x="-70" y="100">
+            <io iotype="input" number="0" type="low"/>
+            <io iotype="input" number="1" type="high"/>
+            <io iotype="input" number="2" type="high"/>
+            <io iotype="input" number="3" type="low"/>
+        </gate>
+        <gate type="dr_and" x="-70" y="20">
+            <io iotype="input" number="0" type="low"/>
+            <io iotype="input" number="1" type="high"/>
+            <io iotype="input" number="2" type="high"/>
+            <io iotype="input" number="3" type="low"/>
+        </gate>
+        <gate type="dr_xor" x="-70" y="190">
+            <io iotype="input" number="0" type="low"/>
+            <io iotype="input" number="1" type="high"/>
+            <io iotype="input" number="2" type="high"/>
+            <io iotype="input" number="3" type="low"/>
+        </gate>
+        <gate type="dr_nand" x="-70" y="270">
+            <io iotype="input" number="0" type="low"/>
+            <io iotype="input" number="1" type="high"/>
+            <io iotype="input" number="2" type="high"/>
+            <io iotype="input" number="3" type="low"/>
+        </gate>
+        <gate type="dr_xnor" x="-250" y="430">
+            <io iotype="input" number="0" type="high"/>
+            <io iotype="input" number="1" type="low"/>
+            <io iotype="input" number="2" type="high"/>
+            <io iotype="input" number="3" type="low"/>
+        </gate>
+        <gate type="dr_nor" x="-250" y="350">
+            <io iotype="input" number="0" type="high"/>
+            <io iotype="input" number="1" type="low"/>
+            <io iotype="input" number="2" type="high"/>
+            <io iotype="input" number="3" type="low"/>
+        </gate>
+        <gate type="dr_or" x="-250" y="100">
+            <io iotype="input" number="0" type="high"/>
+            <io iotype="input" number="1" type="low"/>
+            <io iotype="input" number="2" type="high"/>
+            <io iotype="input" number="3" type="low"/>
+        </gate>
+        <gate type="dr_and" x="-250" y="20">
+            <io iotype="input" number="0" type="high"/>
+            <io iotype="input" number="1" type="low"/>
+            <io iotype="input" number="2" type="high"/>
+            <io iotype="input" number="3" type="low"/>
+        </gate>
+        <gate type="dr_xor" x="-250" y="190">
+            <io iotype="input" number="0" type="high"/>
+            <io iotype="input" number="1" type="low"/>
+            <io iotype="input" number="2" type="high"/>
+            <io iotype="input" number="3" type="low"/>
+        </gate>
+        <gate type="dr_nand" x="-250" y="270">
+            <io iotype="input" number="0" type="high"/>
+            <io iotype="input" number="1" type="low"/>
+            <io iotype="input" number="2" type="high"/>
+            <io iotype="input" number="3" type="low"/>
+        </gate>
+        <gate type="led" x="30" y="130"/>
+        <gate type="led" x="30" y="100"/>
+        <gate type="led" x="30" y="50"/>
+        <gate type="led" x="30" y="20"/>
+        <gate type="led" x="30" y="350"/>
+        <gate type="led" x="30" y="270"/>
+        <gate type="led" x="30" y="300"/>
+        <gate type="led" x="30" y="190"/>
+        <gate type="led" x="30" y="220"/>
+        <gate type="led" x="30" y="430"/>
+        <gate type="led" x="30" y="460"/>
+        <gate type="led" x="30" y="380"/>
+        <gate type="led" x="-150" y="270"/>
+        <gate type="led" x="-150" y="190"/>
+        <gate type="led" x="-150" y="100"/>
+        <gate type="led" x="-150" y="20"/>
+        <gate type="led" x="-150" y="130"/>
+        <gate type="led" x="-150" y="50"/>
+        <gate type="led" x="-150" y="430"/>
+        <gate type="led" x="-150" y="350"/>
+        <gate type="led" x="-150" y="380"/>
+        <gate type="led" x="-150" y="300"/>
+        <gate type="led" x="-150" y="220"/>
+        <gate type="led" x="-150" y="460"/>
+    </gates>
+    <wires>
+        <wire>
+            <from id="dr_xnor@270:440" number="5"/>
+            <to id="led@370:470" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_xnor@270:440" number="4"/>
+            <to id="led@370:440" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_nor@270:350" number="5"/>
+            <to id="led@370:380" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_nor@270:350" number="4"/>
+            <to id="led@370:350" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_nand@270:270" number="5"/>
+            <to id="led@370:300" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_nand@270:270" number="4"/>
+            <to id="led@370:270" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_xor@270:190" number="5"/>
+            <to id="led@370:220" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_xor@270:190" number="4"/>
+            <to id="led@370:190" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_or@270:100" number="5"/>
+            <to id="led@370:130" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_or@270:100" number="4"/>
+            <to id="led@370:100" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_and@270:20" number="5"/>
+            <to id="led@370:50" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_and@270:20" number="4"/>
+            <to id="led@370:20" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_and@100:20" number="4"/>
+            <to id="led@200:20" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_and@100:20" number="5"/>
+            <to id="led@200:50" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_or@100:100" number="4"/>
+            <to id="led@200:100" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_or@100:100" number="5"/>
+            <to id="led@200:130" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_xor@100:190" number="4"/>
+            <to id="led@200:190" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_xor@100:190" number="5"/>
+            <to id="led@200:220" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_nand@100:270" number="4"/>
+            <to id="led@200:270" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_nand@100:270" number="5"/>
+            <to id="led@200:300" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_nor@100:350" number="4"/>
+            <to id="led@200:350" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_nor@100:350" number="5"/>
+            <to id="led@200:380" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_xnor@100:440" number="4"/>
+            <to id="led@200:440" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_xnor@100:440" number="5"/>
+            <to id="led@200:470" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_and@-70:20" number="4"/>
+            <to id="led@30:20" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_and@-70:20" number="5"/>
+            <to id="led@30:50" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_or@-70:100" number="4"/>
+            <to id="led@30:100" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_or@-70:100" number="5"/>
+            <to id="led@30:130" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_xor@-70:190" number="5"/>
+            <to id="led@30:220" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_xor@-70:190" number="4"/>
+            <to id="led@30:190" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_nand@-70:270" number="5"/>
+            <to id="led@30:300" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_nand@-70:270" number="4"/>
+            <to id="led@30:270" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_nor@-70:350" number="4"/>
+            <to id="led@30:350" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_nor@-70:350" number="5"/>
+            <to id="led@30:380" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_xnor@-70:430" number="5"/>
+            <to id="led@30:460" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_xnor@-70:430" number="4"/>
+            <to id="led@30:430" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_and@-250:20" number="4"/>
+            <to id="led@-150:20" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_or@-250:100" number="4"/>
+            <to id="led@-150:100" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_xor@-250:190" number="4"/>
+            <to id="led@-150:190" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_nand@-250:270" number="4"/>
+            <to id="led@-150:270" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_nor@-250:350" number="4"/>
+            <to id="led@-150:350" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_xnor@-250:430" number="4"/>
+            <to id="led@-150:430" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_and@-250:20" number="5"/>
+            <to id="led@-150:50" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_or@-250:100" number="5"/>
+            <to id="led@-150:130" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_xor@-250:190" number="5"/>
+            <to id="led@-150:220" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_nand@-250:270" number="5"/>
+            <to id="led@-150:300" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_nor@-250:350" number="5"/>
+            <to id="led@-150:380" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_xnor@-250:430" number="5"/>
+            <to id="led@-150:460" number="0" type="gate"/>
+        </wire>
+    </wires>
+</logicsim>

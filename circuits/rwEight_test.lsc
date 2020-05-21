@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<logicsim version="3">
+    <info/>
+    <gates>
+        <gate type="rwEight" x="240" y="170">
+            <io iotype="input" label="MreadLreq" number="1" type="low"/>
+            <io iotype="input" label="Minit" number="2" type="high"/>
+            <io iotype="input" label="MwriteLreq" number="3" type="low"/>
+            <io iotype="input" label="MwriteLdata4_1" number="4" type="low"/>
+            <io iotype="input" label="MwriteLdata4_0" number="5" type="low"/>
+            <io iotype="input" label="MwriteLdata3_1" number="6" type="low"/>
+        </gate>
+        <gate type="led" x="500" y="170"/>
+        <gate type="led" x="500" y="110"/>
+        <gate type="led" x="520" y="250"/>
+        <gate type="led" x="510" y="280"/>
+        <gate type="led" x="520" y="370"/>
+        <gate type="led" x="520" y="310"/>
+    </gates>
+    <wires>
+        <wire>
+            <from id="rwEight@240:170" number="12"/>
+            <to id="led@500:110" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="rwEight@240:170" number="13"/>
+            <to id="led@500:170" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="rwEight@240:170" number="24"/>
+            <to id="led@510:280" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="rwEight@240:170" number="23"/>
+            <to id="led@520:250" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="rwEight@240:170" number="25"/>
+            <to id="led@520:310" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="rwEight@240:170" number="26"/>
+            <to id="led@520:370" number="0" type="gate"/>
+        </wire>
+    </wires>
+</logicsim>

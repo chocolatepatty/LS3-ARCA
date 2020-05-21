@@ -1,0 +1,1420 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<logicsim version="3">
+    <info/>
+    <gates>
+        <gate type="demuxEight_fourWay" x="-530" y="-450"/>
+        <gate type="demuxEight_fourWay" x="840" y="-10">
+            <io iotype="output" label="AA4_1" number="12">
+                <properties>
+                    <property key="text">BBAA4_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AA4_0" number="13">
+                <properties>
+                    <property key="text">BBAA4_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AA3_1" number="14">
+                <properties>
+                    <property key="text">BBAA3_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AA3_0" number="15">
+                <properties>
+                    <property key="text">BBAA3_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AA2_1" number="16">
+                <properties>
+                    <property key="text">BBAA2_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AA2_0" number="17">
+                <properties>
+                    <property key="text">BBAA2_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AA1_1" number="18">
+                <properties>
+                    <property key="text">BBAA1_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AA1_0" number="19">
+                <properties>
+                    <property key="text">BBAA1_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AB4_1" number="20">
+                <properties>
+                    <property key="text">BBAB4_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AB4_0" number="21">
+                <properties>
+                    <property key="text">BBAB4_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AB3_1" number="22">
+                <properties>
+                    <property key="text">BBAB3_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AB3_0" number="23">
+                <properties>
+                    <property key="text">BBAB3_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AB2_1" number="24">
+                <properties>
+                    <property key="text">BBAB2_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AB2_0" number="25">
+                <properties>
+                    <property key="text">BBAB2_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AB1_1" number="26">
+                <properties>
+                    <property key="text">BBAB1_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AB1_0" number="27">
+                <properties>
+                    <property key="text">BBAB1_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BA4_1" number="28">
+                <properties>
+                    <property key="text">BBBA4_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BA4_0" number="29">
+                <properties>
+                    <property key="text">BBBA4_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BA3_1" number="30">
+                <properties>
+                    <property key="text">BBBA3_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BA3_0" number="31">
+                <properties>
+                    <property key="text">BBBA3_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BA2_1" number="32">
+                <properties>
+                    <property key="text">BBBA2_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BA2_0" number="33">
+                <properties>
+                    <property key="text">BBBA2_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BA1_1" number="34">
+                <properties>
+                    <property key="text">BBBA1_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BA1_0" number="35">
+                <properties>
+                    <property key="text">BBBA1_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BB4_1" number="36">
+                <properties>
+                    <property key="text">BBBB4_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BB4_0" number="37">
+                <properties>
+                    <property key="text">BBBB4_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BB3_1" number="38">
+                <properties>
+                    <property key="text">BBBB3_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BB3_0" number="39">
+                <properties>
+                    <property key="text">BBBB3_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BB2_1" number="40">
+                <properties>
+                    <property key="text">BBBB2_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BB2_0" number="41">
+                <properties>
+                    <property key="text">BBBB2_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BB1_1" number="42">
+                <properties>
+                    <property key="text">BBBB1_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BB1_0" number="43">
+                <properties>
+                    <property key="text">BBBB1_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="RAA" number="44">
+                <properties>
+                    <property key="text">_out</property>
+                </properties>
+            </io>
+            <io iotype="output" label="RAB" number="45">
+                <properties>
+                    <property key="text">_out</property>
+                </properties>
+            </io>
+            <io iotype="output" label="RBA" number="46">
+                <properties>
+                    <property key="text">_out</property>
+                </properties>
+            </io>
+            <io iotype="output" label="RBB" number="47">
+                <properties>
+                    <property key="text">_out</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="demuxEight_fourWay" x="840" y="-410">
+            <io iotype="output" label="AA4_1" number="12">
+                <properties>
+                    <property key="text">BAAA4_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AA4_0" number="13">
+                <properties>
+                    <property key="text">BAAA4_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AA3_1" number="14">
+                <properties>
+                    <property key="text">BAAA3_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AA3_0" number="15">
+                <properties>
+                    <property key="text">BAAA3_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AA2_1" number="16">
+                <properties>
+                    <property key="text">BAAA2_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AA2_0" number="17">
+                <properties>
+                    <property key="text">BAAA2_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AA1_1" number="18">
+                <properties>
+                    <property key="text">BAAA1_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AA1_0" number="19">
+                <properties>
+                    <property key="text">BAAA1_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AB4_1" number="20">
+                <properties>
+                    <property key="text">BAAB4_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AB4_0" number="21">
+                <properties>
+                    <property key="text">BAAB4_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AB3_1" number="22">
+                <properties>
+                    <property key="text">BAAB3_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AB3_0" number="23">
+                <properties>
+                    <property key="text">BAAB3_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AB2_1" number="24">
+                <properties>
+                    <property key="text">BAAB2_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AB2_0" number="25">
+                <properties>
+                    <property key="text">BAAB2_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AB1_1" number="26">
+                <properties>
+                    <property key="text">BAAB1_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AB1_0" number="27">
+                <properties>
+                    <property key="text">BAAB1_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BA4_1" number="28">
+                <properties>
+                    <property key="text">BABA4_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BA4_0" number="29">
+                <properties>
+                    <property key="text">BABA4_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BA3_1" number="30">
+                <properties>
+                    <property key="text">BABA3_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BA3_0" number="31">
+                <properties>
+                    <property key="text">BABA3_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BA2_1" number="32">
+                <properties>
+                    <property key="text">BABA2_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BA2_0" number="33">
+                <properties>
+                    <property key="text">BABA2_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BA1_1" number="34">
+                <properties>
+                    <property key="text">BABA1_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BA1_0" number="35">
+                <properties>
+                    <property key="text">BABA1_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BB4_1" number="36">
+                <properties>
+                    <property key="text">BABB4_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BB4_0" number="37">
+                <properties>
+                    <property key="text">BABB4_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BB3_1" number="38">
+                <properties>
+                    <property key="text">BABB3_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BB3_0" number="39">
+                <properties>
+                    <property key="text">BABB3_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BB2_1" number="40">
+                <properties>
+                    <property key="text">BABB2_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BB2_0" number="41">
+                <properties>
+                    <property key="text">BABB2_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BB1_1" number="42">
+                <properties>
+                    <property key="text">BABB1_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BB1_0" number="43">
+                <properties>
+                    <property key="text">BABB1_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="RAA" number="44">
+                <properties>
+                    <property key="text">_out</property>
+                </properties>
+            </io>
+            <io iotype="output" label="RAB" number="45">
+                <properties>
+                    <property key="text">_out</property>
+                </properties>
+            </io>
+            <io iotype="output" label="RBA" number="46">
+                <properties>
+                    <property key="text">_out</property>
+                </properties>
+            </io>
+            <io iotype="output" label="RBB" number="47">
+                <properties>
+                    <property key="text">_out</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="demuxEight_fourWay" x="840" y="-810">
+            <io iotype="output" label="AA4_1" number="12">
+                <properties>
+                    <property key="text">ABAA4_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AA4_0" number="13">
+                <properties>
+                    <property key="text">ABAA4_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AA3_1" number="14">
+                <properties>
+                    <property key="text">ABAA3_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AA3_0" number="15">
+                <properties>
+                    <property key="text">ABAA3_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AA2_1" number="16">
+                <properties>
+                    <property key="text">ABAA2_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AA2_0" number="17">
+                <properties>
+                    <property key="text">ABAA2_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AA1_1" number="18">
+                <properties>
+                    <property key="text">ABAA1_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AA1_0" number="19">
+                <properties>
+                    <property key="text">ABAA1_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AB4_1" number="20">
+                <properties>
+                    <property key="text">ABAB4_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AB4_0" number="21">
+                <properties>
+                    <property key="text">ABAB4_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AB3_1" number="22">
+                <properties>
+                    <property key="text">ABAB3_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AB3_0" number="23">
+                <properties>
+                    <property key="text">ABAB3_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AB2_1" number="24">
+                <properties>
+                    <property key="text">ABAB2_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AB2_0" number="25">
+                <properties>
+                    <property key="text">ABAB2_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AB1_1" number="26">
+                <properties>
+                    <property key="text">ABAB1_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AB1_0" number="27">
+                <properties>
+                    <property key="text">ABAB1_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BA4_1" number="28">
+                <properties>
+                    <property key="text">ABBA4_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BA4_0" number="29">
+                <properties>
+                    <property key="text">ABBA4_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BA3_1" number="30">
+                <properties>
+                    <property key="text">ABBA3_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BA3_0" number="31">
+                <properties>
+                    <property key="text">ABBA3_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BA2_1" number="32">
+                <properties>
+                    <property key="text">ABBA2_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BA2_0" number="33">
+                <properties>
+                    <property key="text">ABBA2_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BA1_1" number="34">
+                <properties>
+                    <property key="text">ABBA1_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BA1_0" number="35">
+                <properties>
+                    <property key="text">ABBA1_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BB4_1" number="36">
+                <properties>
+                    <property key="text">ABBB4_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BB4_0" number="37">
+                <properties>
+                    <property key="text">ABBB4_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BB3_1" number="38">
+                <properties>
+                    <property key="text">ABBB3_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BB3_0" number="39">
+                <properties>
+                    <property key="text">ABBB3_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BB2_1" number="40">
+                <properties>
+                    <property key="text">ABBB2_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BB2_0" number="41">
+                <properties>
+                    <property key="text">ABBB2_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BB1_1" number="42">
+                <properties>
+                    <property key="text">ABBB1_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BB1_0" number="43">
+                <properties>
+                    <property key="text">ABBB1_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="RAA" number="44">
+                <properties>
+                    <property key="text">_out</property>
+                </properties>
+            </io>
+            <io iotype="output" label="RAB" number="45">
+                <properties>
+                    <property key="text">_out</property>
+                </properties>
+            </io>
+            <io iotype="output" label="RBA" number="46">
+                <properties>
+                    <property key="text">_out</property>
+                </properties>
+            </io>
+            <io iotype="output" label="RBB" number="47">
+                <properties>
+                    <property key="text">_out</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="demuxEight_fourWay" x="840" y="-1210">
+            <io iotype="output" label="AA4_1" number="12">
+                <properties>
+                    <property key="text">AAAA4_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AA4_0" number="13">
+                <properties>
+                    <property key="text">AAAA4_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AA3_1" number="14">
+                <properties>
+                    <property key="text">AAAA3_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AA3_0" number="15">
+                <properties>
+                    <property key="text">AAAA3_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AA2_1" number="16">
+                <properties>
+                    <property key="text">AAAA2_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AA2_0" number="17">
+                <properties>
+                    <property key="text">AAAA2_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AA1_1" number="18">
+                <properties>
+                    <property key="text">AAAA1_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AA1_0" number="19">
+                <properties>
+                    <property key="text">AAAA1_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AB4_1" number="20">
+                <properties>
+                    <property key="text">AAAB4_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AB4_0" number="21">
+                <properties>
+                    <property key="text">AAAB4_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AB3_1" number="22">
+                <properties>
+                    <property key="text">AAAB3_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AB3_0" number="23">
+                <properties>
+                    <property key="text">AAAB3_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AB2_1" number="24">
+                <properties>
+                    <property key="text">AAAB2_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AB2_0" number="25">
+                <properties>
+                    <property key="text">AAAB2_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AB1_1" number="26">
+                <properties>
+                    <property key="text">AAAB1_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="AB1_0" number="27">
+                <properties>
+                    <property key="text">AAAB1_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BA4_1" number="28">
+                <properties>
+                    <property key="text">AABA4_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BA4_0" number="29">
+                <properties>
+                    <property key="text">AABA4_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BA3_1" number="30">
+                <properties>
+                    <property key="text">AABA3_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BA3_0" number="31">
+                <properties>
+                    <property key="text">AABA3_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BA2_1" number="32">
+                <properties>
+                    <property key="text">AABA2_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BA2_0" number="33">
+                <properties>
+                    <property key="text">AABA2_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BA1_1" number="34">
+                <properties>
+                    <property key="text">AABA1_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BA1_0" number="35">
+                <properties>
+                    <property key="text">AABA1_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BB4_1" number="36">
+                <properties>
+                    <property key="text">AABB4_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BB4_0" number="37">
+                <properties>
+                    <property key="text">AABB4_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BB3_1" number="38">
+                <properties>
+                    <property key="text">AABB3_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BB3_0" number="39">
+                <properties>
+                    <property key="text">AABB3_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BB2_1" number="40">
+                <properties>
+                    <property key="text">AABB2_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BB2_0" number="41">
+                <properties>
+                    <property key="text">AABB2_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BB1_1" number="42">
+                <properties>
+                    <property key="text">AABB1_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="BB1_0" number="43">
+                <properties>
+                    <property key="text">AABB1_0</property>
+                </properties>
+            </io>
+            <io iotype="output" label="RAA" number="44">
+                <properties>
+                    <property key="text">_out</property>
+                </properties>
+            </io>
+            <io iotype="output" label="RAB" number="45">
+                <properties>
+                    <property key="text">_out</property>
+                </properties>
+            </io>
+            <io iotype="output" label="RBA" number="46">
+                <properties>
+                    <property key="text">_out</property>
+                </properties>
+            </io>
+            <io iotype="output" label="RBB" number="47">
+                <properties>
+                    <property key="text">_out</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="buffer" x="-790" y="-450">
+            <properties>
+                <property key="text">fawef</property>
+            </properties>
+            <io iotype="input" number="0">
+                <properties>
+                    <property key="text">RAXXXin</property>
+                </properties>
+            </io>
+            <io iotype="output" number="1">
+                <properties>
+                    <property key="text">RAXXX</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="buffer" x="-790" y="-410">
+            <io iotype="input" number="0">
+                <properties>
+                    <property key="text">RBXXXin</property>
+                </properties>
+            </io>
+            <io iotype="output" number="1">
+                <properties>
+                    <property key="text">RBXXX</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="buffer" x="-700" y="-210">
+            <properties>
+                <property key="text">faef</property>
+            </properties>
+            <io iotype="input" number="0">
+                <properties>
+                    <property key="text">RXAXXin</property>
+                </properties>
+            </io>
+            <io iotype="output" number="1">
+                <properties>
+                    <property key="text">RXAXX</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="buffer" x="-700" y="-170">
+            <properties>
+                <property key="text">fawef</property>
+            </properties>
+            <io iotype="input" number="0">
+                <properties>
+                    <property key="text">RXBXXin</property>
+                </properties>
+            </io>
+            <io iotype="output" number="1">
+                <properties>
+                    <property key="text">RXBXX</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="buffer" x="-550" y="290">
+            <io iotype="input" number="0">
+                <properties>
+                    <property key="text">RXXBXin</property>
+                </properties>
+            </io>
+            <io iotype="output" number="1">
+                <properties>
+                    <property key="text">RXXBX</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="buffer" x="-550" y="250">
+            <io iotype="input" number="0">
+                <properties>
+                    <property key="text">RXXAXin</property>
+                </properties>
+            </io>
+            <io iotype="output" number="1">
+                <properties>
+                    <property key="text">RXXAX</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="celement" x="0" y="850"/>
+        <gate type="celement" x="0" y="590"/>
+        <gate type="celement" x="0" y="730"/>
+        <gate type="celement" x="0" y="470"/>
+        <gate type="celement" x="0" y="210"/>
+        <gate type="celement" x="0" y="330"/>
+        <gate type="celement" x="0" y="-50"/>
+        <gate type="celement" x="0" y="70"/>
+        <gate type="buffer" x="20" y="1290">
+            <io iotype="input" number="0">
+                <properties>
+                    <property key="text">RXXXAin</property>
+                </properties>
+            </io>
+            <io iotype="output" number="1">
+                <properties>
+                    <property key="text">RXXXA</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="buffer" x="20" y="1340">
+            <io iotype="input" number="0">
+                <properties>
+                    <property key="text">RXXXBin</property>
+                </properties>
+            </io>
+            <io iotype="output" number="1">
+                <properties>
+                    <property key="text">RXXXB</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="or" x="190" y="-10"/>
+        <gate type="or" x="190" y="120"/>
+        <gate type="or" x="170" y="510"/>
+        <gate type="or" x="160" y="650"/>
+        <gate type="or" x="330" y="120"/>
+        <gate type="or" x="330" y="40"/>
+        <gate type="celement" x="630" y="490">
+            <io iotype="output" label="S" number="2">
+                <properties>
+                    <property key="text">RAAAA</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="celement" x="630" y="620">
+            <io iotype="output" label="S" number="2">
+                <properties>
+                    <property key="text">RAAAB</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="celement" x="640" y="750">
+            <io iotype="output" label="S" number="2">
+                <properties>
+                    <property key="text">RAABA</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="celement" x="640" y="880">
+            <io iotype="output" label="S" number="2">
+                <properties>
+                    <property key="text">RAABB</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="celement" x="630" y="1030">
+            <io iotype="output" label="S" number="2">
+                <properties>
+                    <property key="text">RABAA</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="celement" x="620" y="1170">
+            <io iotype="output" label="S" number="2">
+                <properties>
+                    <property key="text">RABAB</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="celement" x="640" y="1300">
+            <io iotype="output" label="S" number="2">
+                <properties>
+                    <property key="text">RABBA</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="celement" x="640" y="1450">
+            <io iotype="output" label="S" number="2">
+                <properties>
+                    <property key="text">RABBB</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="celement" x="620" y="1580">
+            <io iotype="output" label="S" number="2">
+                <properties>
+                    <property key="text">RBAAA</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="celement" x="610" y="1710">
+            <io iotype="output" label="S" number="2">
+                <properties>
+                    <property key="text">RBAAB</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="celement" x="610" y="1830">
+            <io iotype="output" label="S" number="2">
+                <properties>
+                    <property key="text">RBABA</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="celement" x="610" y="1970">
+            <io iotype="output" label="S" number="2">
+                <properties>
+                    <property key="text">RBABB</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="celement" x="600" y="2100">
+            <io iotype="output" label="S" number="2">
+                <properties>
+                    <property key="text">RBBAA</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="celement" x="600" y="2230">
+            <io iotype="output" label="S" number="2">
+                <properties>
+                    <property key="text">RBBAB</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="celement" x="600" y="2360">
+            <io iotype="output" label="S" number="2">
+                <properties>
+                    <property key="text">RBBBA</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="celement" x="610" y="2490">
+            <io iotype="output" label="S" number="2">
+                <properties>
+                    <property key="text">RBBBB</property>
+                </properties>
+            </io>
+        </gate>
+    </gates>
+    <wires>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="36"/>
+            <to id="demuxEight_fourWay@840:-10" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="37"/>
+            <to id="demuxEight_fourWay@840:-10" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="38"/>
+            <to id="demuxEight_fourWay@840:-10" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="39"/>
+            <to id="demuxEight_fourWay@840:-10" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="40"/>
+            <to id="demuxEight_fourWay@840:-10" number="4" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="41"/>
+            <to id="demuxEight_fourWay@840:-10" number="5" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="42"/>
+            <to id="demuxEight_fourWay@840:-10" number="6" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="43"/>
+            <to id="demuxEight_fourWay@840:-10" number="7" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="28"/>
+            <to id="demuxEight_fourWay@840:-410" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="29"/>
+            <to id="demuxEight_fourWay@840:-410" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="30"/>
+            <to id="demuxEight_fourWay@840:-410" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="31"/>
+            <to id="demuxEight_fourWay@840:-410" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="32"/>
+            <to id="demuxEight_fourWay@840:-410" number="4" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="33"/>
+            <to id="demuxEight_fourWay@840:-410" number="5" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="34"/>
+            <to id="demuxEight_fourWay@840:-410" number="6" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="35"/>
+            <to id="demuxEight_fourWay@840:-410" number="7" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="20"/>
+            <to id="demuxEight_fourWay@840:-810" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="21"/>
+            <to id="demuxEight_fourWay@840:-810" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="22"/>
+            <to id="demuxEight_fourWay@840:-810" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="23"/>
+            <to id="demuxEight_fourWay@840:-810" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="24"/>
+            <to id="demuxEight_fourWay@840:-810" number="4" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="25"/>
+            <to id="demuxEight_fourWay@840:-810" number="5" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="26"/>
+            <to id="demuxEight_fourWay@840:-810" number="6" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="27"/>
+            <to id="demuxEight_fourWay@840:-810" number="7" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="12"/>
+            <to id="demuxEight_fourWay@840:-1210" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="13"/>
+            <to id="demuxEight_fourWay@840:-1210" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="14"/>
+            <to id="demuxEight_fourWay@840:-1210" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="15"/>
+            <to id="demuxEight_fourWay@840:-1210" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="16"/>
+            <to id="demuxEight_fourWay@840:-1210" number="4" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="17"/>
+            <to id="demuxEight_fourWay@840:-1210" number="5" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="18"/>
+            <to id="demuxEight_fourWay@840:-1210" number="6" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="19"/>
+            <to id="demuxEight_fourWay@840:-1210" number="7" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-790:-450" number="1"/>
+            <to id="demuxEight_fourWay@-530:-450" number="8" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-790:-410" number="1"/>
+            <to id="demuxEight_fourWay@-530:-450" number="9" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-700:-210" number="1"/>
+            <to id="demuxEight_fourWay@-530:-450" number="10" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-700:-170" number="1"/>
+            <to id="demuxEight_fourWay@-530:-450" number="11" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="44"/>
+            <to id="celement@0:-50" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="44"/>
+            <to id="celement@0:70" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="45"/>
+            <to id="celement@0:210" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="46"/>
+            <to id="celement@0:470" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="46"/>
+            <to id="celement@0:590" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="45"/>
+            <to id="celement@0:330" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="47"/>
+            <to id="celement@0:730" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@-530:-450" number="47"/>
+            <to id="celement@0:850" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-550:250" number="1"/>
+            <to id="celement@0:-50" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-550:290" number="1"/>
+            <to id="celement@0:70" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-550:250" number="1"/>
+            <to id="celement@0:210" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-550:290" number="1"/>
+            <to id="celement@0:330" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-550:250" number="1"/>
+            <to id="celement@0:470" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-550:290" number="1"/>
+            <to id="celement@0:590" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-550:250" number="1"/>
+            <to id="celement@0:730" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-550:290" number="1"/>
+            <to id="celement@0:850" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@20:1290" number="1"/>
+            <to id="demuxEight_fourWay@840:-1210" number="10" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@20:1340" number="1"/>
+            <to id="demuxEight_fourWay@840:-1210" number="11" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@20:1290" number="1"/>
+            <to id="demuxEight_fourWay@840:-810" number="10" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@20:1340" number="1"/>
+            <to id="demuxEight_fourWay@840:-810" number="11" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@20:1290" number="1"/>
+            <to id="demuxEight_fourWay@840:-410" number="10" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@20:1340" number="1"/>
+            <to id="demuxEight_fourWay@840:-410" number="11" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@20:1290" number="1"/>
+            <to id="demuxEight_fourWay@840:-10" number="10" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@20:1340" number="1"/>
+            <to id="demuxEight_fourWay@840:-10" number="11" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@0:-50" number="2"/>
+            <to id="or@190:-10" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@0:210" number="2"/>
+            <to id="or@190:-10" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@0:70" number="2"/>
+            <to id="or@190:120" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@0:330" number="2"/>
+            <to id="or@190:120" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@0:470" number="2"/>
+            <to id="or@170:510" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@0:730" number="2"/>
+            <to id="or@170:510" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@0:590" number="2"/>
+            <to id="or@160:650" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@0:850" number="2"/>
+            <to id="or@160:650" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="or@190:-10" number="0"/>
+            <to id="or@330:40" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="or@170:510" number="0"/>
+            <to id="or@330:40" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="or@190:120" number="0"/>
+            <to id="or@330:120" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="or@160:650" number="0"/>
+            <to id="or@330:120" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="or@330:40" number="0"/>
+            <to id="demuxEight_fourWay@840:-1210" number="8" type="gate"/>
+        </wire>
+        <wire>
+            <from id="or@330:120" number="0"/>
+            <to id="demuxEight_fourWay@840:-1210" number="9" type="gate"/>
+        </wire>
+        <wire>
+            <from id="or@330:40" number="0"/>
+            <to id="demuxEight_fourWay@840:-810" number="8" type="gate"/>
+        </wire>
+        <wire>
+            <from id="or@330:120" number="0"/>
+            <to id="demuxEight_fourWay@840:-810" number="9" type="gate"/>
+        </wire>
+        <wire>
+            <from id="or@330:40" number="0"/>
+            <to id="demuxEight_fourWay@840:-410" number="8" type="gate"/>
+        </wire>
+        <wire>
+            <from id="or@330:120" number="0"/>
+            <to id="demuxEight_fourWay@840:-410" number="9" type="gate"/>
+        </wire>
+        <wire>
+            <from id="or@330:40" number="0"/>
+            <to id="demuxEight_fourWay@840:-10" number="8" type="gate"/>
+        </wire>
+        <wire>
+            <from id="or@330:120" number="0"/>
+            <to id="demuxEight_fourWay@840:-10" number="9" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@0:-50" number="2"/>
+            <to id="celement@630:490" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@0:-50" number="2"/>
+            <to id="celement@630:620" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@0:70" number="2"/>
+            <to id="celement@640:750" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@0:70" number="2"/>
+            <to id="celement@640:880" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@0:210" number="2"/>
+            <to id="celement@630:1030" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@0:210" number="2"/>
+            <to id="celement@620:1170" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@0:330" number="2"/>
+            <to id="celement@640:1300" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@0:330" number="2"/>
+            <to id="celement@640:1450" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@0:470" number="2"/>
+            <to id="celement@620:1580" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@0:470" number="2"/>
+            <to id="celement@610:1710" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@0:590" number="2"/>
+            <to id="celement@610:1830" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@0:590" number="2"/>
+            <to id="celement@610:1970" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@0:730" number="2"/>
+            <to id="celement@600:2100" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@0:730" number="2"/>
+            <to id="celement@600:2230" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@0:850" number="2"/>
+            <to id="celement@600:2360" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@0:850" number="2"/>
+            <to id="celement@610:2490" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@20:1290" number="1"/>
+            <to id="celement@630:490" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@20:1290" number="1"/>
+            <to id="celement@640:750" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@20:1290" number="1"/>
+            <to id="celement@630:1030" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@20:1290" number="1"/>
+            <to id="celement@640:1300" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@20:1290" number="1"/>
+            <to id="celement@620:1580" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@20:1290" number="1"/>
+            <to id="celement@610:1830" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@20:1290" number="1"/>
+            <to id="celement@600:2100" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@20:1290" number="1"/>
+            <to id="celement@600:2360" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@20:1340" number="1"/>
+            <to id="celement@630:620" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@20:1340" number="1"/>
+            <to id="celement@640:880" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@20:1340" number="1"/>
+            <to id="celement@620:1170" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@20:1340" number="1"/>
+            <to id="celement@640:1450" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@20:1340" number="1"/>
+            <to id="celement@610:1710" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@20:1340" number="1"/>
+            <to id="celement@610:1970" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@20:1340" number="1"/>
+            <to id="celement@600:2230" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@20:1340" number="1"/>
+            <to id="celement@610:2490" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="demuxEight_fourWay@840:-810" number="27"/>
+            <to id="demuxEight_fourWay@840:-810" number="27" type="gate"/>
+        </wire>
+    </wires>
+</logicsim>

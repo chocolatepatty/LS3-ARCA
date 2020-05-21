@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<logicsim version="3">
+    <info/>
+    <gates>
+        <gate type="dr_and" x="270" y="20"/>
+        <gate type="dr_nor" x="270" y="350"/>
+        <gate type="dr_or" x="270" y="100"/>
+        <gate type="dr_nand" x="270" y="270"/>
+        <gate type="dr_xnor" x="270" y="440"/>
+        <gate type="dr_xor" x="270" y="190"/>
+        <gate type="led" x="370" y="270"/>
+        <gate type="led" x="370" y="300"/>
+        <gate type="led" x="370" y="350"/>
+        <gate type="led" x="370" y="380"/>
+        <gate type="led" x="370" y="440"/>
+        <gate type="led" x="370" y="470"/>
+        <gate type="led" x="370" y="20"/>
+        <gate type="led" x="370" y="50"/>
+        <gate type="led" x="370" y="100"/>
+        <gate type="led" x="370" y="130"/>
+        <gate type="led" x="370" y="190"/>
+        <gate type="led" x="370" y="220"/>
+    </gates>
+    <wires>
+        <wire>
+            <from id="dr_xnor@270:440" number="5"/>
+            <to id="led@370:470" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_xnor@270:440" number="4"/>
+            <to id="led@370:440" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_nor@270:350" number="5"/>
+            <to id="led@370:380" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_nor@270:350" number="4"/>
+            <to id="led@370:350" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_nand@270:270" number="5"/>
+            <to id="led@370:300" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_nand@270:270" number="4"/>
+            <to id="led@370:270" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_xor@270:190" number="5"/>
+            <to id="led@370:220" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_xor@270:190" number="4"/>
+            <to id="led@370:190" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_or@270:100" number="5"/>
+            <to id="led@370:130" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_or@270:100" number="4"/>
+            <to id="led@370:100" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_and@270:20" number="5"/>
+            <to id="led@370:50" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_and@270:20" number="4"/>
+            <to id="led@370:20" number="0" type="gate"/>
+        </wire>
+    </wires>
+</logicsim>

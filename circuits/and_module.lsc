@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<logicsim version="3">
+    <info/>
+    <gates>
+        <gate module="true" type="test" x="20" y="20">
+            <io iotype="input" number="1" type="high"/>
+            <io iotype="input" number="6" type="high"/>
+            <io iotype="input" number="10" type="high"/>
+        </gate>
+        <gate type="led" x="160" y="30"/>
+    </gates>
+    <wires>
+        <wire>
+            <from id="test@20:20" number="23"/>
+            <to id="led@160:30" number="0" type="gate"/>
+        </wire>
+    </wires>
+</logicsim>

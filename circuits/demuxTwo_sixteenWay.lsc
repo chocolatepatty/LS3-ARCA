@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<logicsim version="3">
+    <info/>
+    <gates>
+        <gate type="buffer" x="-2460" y="630">
+            <properties>
+                <property key="text">fawef</property>
+            </properties>
+            <io iotype="input" number="0">
+                <properties>
+                    <property key="text">RAXXXin</property>
+                </properties>
+            </io>
+            <io iotype="output" number="1">
+                <properties>
+                    <property key="text">RAXXX</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="buffer" x="-2460" y="730">
+            <properties>
+                <property key="text">faewf</property>
+            </properties>
+            <io iotype="input" number="0">
+                <properties>
+                    <property key="text">RBXXXin</property>
+                </properties>
+            </io>
+            <io iotype="output" number="1">
+                <properties>
+                    <property key="text">RBXXX</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="buffer" x="-2460" y="960">
+            <io iotype="input" number="0">
+                <properties>
+                    <property key="text">RXAXXin</property>
+                </properties>
+            </io>
+            <io iotype="output" number="1">
+                <properties>
+                    <property key="text">RXAXX</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="buffer" x="-2470" y="1090">
+            <properties>
+                <property key="text">efafe</property>
+            </properties>
+            <io iotype="input" number="0">
+                <properties>
+                    <property key="text">RXBXXin</property>
+                </properties>
+            </io>
+            <io iotype="output" number="1">
+                <properties>
+                    <property key="text">RXBXX</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="buffer" x="-2430" y="2740">
+            <io iotype="input" number="0">
+                <properties>
+                    <property key="text">RXXXBin</property>
+                </properties>
+            </io>
+            <io iotype="output" number="1">
+                <properties>
+                    <property key="text">RXXXB</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="buffer" x="-2430" y="2680">
+            <properties>
+                <property key="text">fawefe</property>
+            </properties>
+            <io iotype="input" number="0">
+                <properties>
+                    <property key="text">RXXXAin</property>
+                </properties>
+            </io>
+            <io iotype="output" number="1">
+                <properties>
+                    <property key="text">RXXXA</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="buffer" x="-2430" y="1610">
+            <io iotype="input" number="0">
+                <properties>
+                    <property key="text">RXXBXin</property>
+                </properties>
+            </io>
+            <io iotype="output" number="1">
+                <properties>
+                    <property key="text">RXXBX</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="buffer" x="-2430" y="1510">
+            <io iotype="input" number="0">
+                <properties>
+                    <property key="text">RXXAXin</property>
+                </properties>
+            </io>
+            <io iotype="output" number="1">
+                <properties>
+                    <property key="text">RXXAX</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="celement" x="-2250" y="650"/>
+        <gate type="celement" x="-2250" y="770"/>
+        <gate type="celement" x="-2250" y="910"/>
+        <gate type="celement" x="-2250" y="1030"/>
+        <gate type="celement" x="-1850" y="650"/>
+        <gate type="celement" x="-1850" y="760"/>
+        <gate type="celement" x="-1850" y="920"/>
+        <gate type="celement" x="-1850" y="1030"/>
+        <gate type="celement" x="-1850" y="1450"/>
+        <gate type="celement" x="-1850" y="1560"/>
+        <gate type="celement" x="-1850" y="1180"/>
+        <gate type="celement" x="-1850" y="1290"/>
+        <gate type="celement" x="-1190" y="580">
+            <io iotype="output" label="S" number="2">
+                <properties>
+                    <property key="text">RAAAA</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="celement" x="-1190" y="700">
+            <io iotype="output" label="S" number="2">
+                <properties>
+                    <property key="text">RAAAB</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="celement" x="-1190" y="820">
+            <io iotype="output" label="S" number="2">
+                <properties>
+                    <property key="text">RAABA</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="celement" x="-1190" y="950">
+            <io iotype="output" label="S" number="2">
+                <properties>
+                    <property key="text">RAABB</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="celement" x="-1190" y="1090">
+            <io iotype="output" label="S" number="2">
+                <properties>
+                    <property key="text">RABAA</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="celement" x="-1190" y="1220">
+            <io iotype="output" label="S" number="2">
+                <properties>
+                    <property key="text">RABAB</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="celement" x="-1190" y="1350">
+            <io iotype="output" label="S" number="2">
+                <properties>
+                    <property key="text">RABBA</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="celement" x="-1190" y="1490">
+            <io iotype="output" label="S" number="2">
+                <properties>
+                    <property key="text">RABBB</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="celement" x="-1190" y="1630">
+            <io iotype="output" label="S" number="2">
+                <properties>
+                    <property key="text">RBAAA</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="celement" x="-1190" y="1760">
+            <io iotype="output" label="S" number="2">
+                <properties>
+                    <property key="text">RBAAB</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="celement" x="-1190" y="1900">
+            <io iotype="output" label="S" number="2">
+                <properties>
+                    <property key="text">RBABA</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="celement" x="-1190" y="2040">
+            <io iotype="output" label="S" number="2">
+                <properties>
+                    <property key="text">RBABB</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="celement" x="-1190" y="2180">
+            <io iotype="output" label="S" number="2">
+                <properties>
+                    <property key="text">RBBAA</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="celement" x="-1190" y="2320">
+            <io iotype="output" label="S" number="2">
+                <properties>
+                    <property key="text">RBBAB</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="celement" x="-1190" y="2460">
+            <io iotype="output" label="S" number="2">
+                <properties>
+                    <property key="text">RBBBA</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="celement" x="-1190" y="2600">
+            <io iotype="output" label="S" number="2">
+                <properties>
+                    <property key="text">RBBBB</property>
+                </properties>
+            </io>
+        </gate>
+    </gates>
+    <wires>
+        <wire>
+            <from id="buffer@-2460:630" number="1"/>
+            <to id="celement@-2250:650" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2460:960" number="1"/>
+            <to id="celement@-2250:650" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2460:630" number="1"/>
+            <to id="celement@-2250:770" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2470:1090" number="1"/>
+            <to id="celement@-2250:770" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2460:730" number="1"/>
+            <to id="celement@-2250:910" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2460:960" number="1"/>
+            <to id="celement@-2250:910" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2460:730" number="1"/>
+            <to id="celement@-2250:1030" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2470:1090" number="1"/>
+            <to id="celement@-2250:1030" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2430:1510" number="1"/>
+            <to id="celement@-1850:650" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2430:1610" number="1"/>
+            <to id="celement@-1850:760" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2430:1510" number="1"/>
+            <to id="celement@-1850:920" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2430:1610" number="1"/>
+            <to id="celement@-1850:1030" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2430:1510" number="1"/>
+            <to id="celement@-1850:1180" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2430:1610" number="1"/>
+            <to id="celement@-1850:1290" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2430:1510" number="1"/>
+            <to id="celement@-1850:1450" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2430:1610" number="1"/>
+            <to id="celement@-1850:1560" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-2250:650" number="2"/>
+            <to id="celement@-1850:650" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-2250:650" number="2"/>
+            <to id="celement@-1850:760" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-2250:770" number="2"/>
+            <to id="celement@-1850:920" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-2250:770" number="2"/>
+            <to id="celement@-1850:1030" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-2250:910" number="2"/>
+            <to id="celement@-1850:1180" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-2250:910" number="2"/>
+            <to id="celement@-1850:1290" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-2250:1030" number="2"/>
+            <to id="celement@-1850:1450" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-2250:1030" number="2"/>
+            <to id="celement@-1850:1560" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-1850:650" number="2"/>
+            <to id="celement@-1190:580" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-1850:650" number="2"/>
+            <to id="celement@-1190:700" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-1850:760" number="2"/>
+            <to id="celement@-1190:820" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-1850:760" number="2"/>
+            <to id="celement@-1190:950" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-1850:920" number="2"/>
+            <to id="celement@-1190:1090" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-1850:920" number="2"/>
+            <to id="celement@-1190:1220" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-1850:1030" number="2"/>
+            <to id="celement@-1190:1350" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-1850:1030" number="2"/>
+            <to id="celement@-1190:1490" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-1850:1180" number="2"/>
+            <to id="celement@-1190:1630" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-1850:1180" number="2"/>
+            <to id="celement@-1190:1760" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-1850:1290" number="2"/>
+            <to id="celement@-1190:1900" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-1850:1290" number="2"/>
+            <to id="celement@-1190:2040" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-1850:1450" number="2"/>
+            <to id="celement@-1190:2180" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-1850:1450" number="2"/>
+            <to id="celement@-1190:2320" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-1850:1560" number="2"/>
+            <to id="celement@-1190:2460" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@-1850:1560" number="2"/>
+            <to id="celement@-1190:2600" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2430:2680" number="1"/>
+            <to id="celement@-1190:2460" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2430:2680" number="1"/>
+            <to id="celement@-1190:2180" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2430:2680" number="1"/>
+            <to id="celement@-1190:1900" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2430:2680" number="1"/>
+            <to id="celement@-1190:1630" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2430:2680" number="1"/>
+            <to id="celement@-1190:1350" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2430:2680" number="1"/>
+            <to id="celement@-1190:1090" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2430:2680" number="1"/>
+            <to id="celement@-1190:820" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2430:2680" number="1"/>
+            <to id="celement@-1190:580" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2430:2740" number="1"/>
+            <to id="celement@-1190:700" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2430:2740" number="1"/>
+            <to id="celement@-1190:950" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2430:2740" number="1"/>
+            <to id="celement@-1190:1220" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2430:2740" number="1"/>
+            <to id="celement@-1190:1490" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2430:2740" number="1"/>
+            <to id="celement@-1190:1760" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2430:2740" number="1"/>
+            <to id="celement@-1190:2040" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2430:2740" number="1"/>
+            <to id="celement@-1190:2320" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@-2430:2740" number="1"/>
+            <to id="celement@-1190:2600" number="1" type="gate"/>
+        </wire>
+    </wires>
+</logicsim>

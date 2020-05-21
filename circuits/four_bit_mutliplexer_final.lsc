@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<logicsim version="3">
+    <info/>
+    <gates>
+        <gate type="dr_and" x="1130" y="220">
+            <io iotype="input" label="A1" number="2">
+                <properties>
+                    <property key="text">A4_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A0" number="3">
+                <properties>
+                    <property key="text">A4_0</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="dr_and" x="1120" y="700">
+            <io iotype="input" label="B1" number="0">
+                <properties>
+                    <property key="text">B4_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B0" number="1">
+                <properties>
+                    <property key="text">B4_0</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="buffer" x="740" y="860">
+            <io iotype="input" number="0">
+                <properties>
+                    <property key="text">PBin</property>
+                </properties>
+            </io>
+            <io iotype="output" number="1">
+                <properties>
+                    <property key="text">PB</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="buffer" x="740" y="640">
+            <io iotype="input" number="0">
+                <properties>
+                    <property key="text">PAin</property>
+                </properties>
+            </io>
+            <io iotype="output" number="1">
+                <properties>
+                    <property key="text">PA</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="dr_and" x="1120" y="910">
+            <io iotype="input" label="B1" number="0">
+                <properties>
+                    <property key="text">B1_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B0" number="1">
+                <properties>
+                    <property key="text">B1_0</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="dr_and" x="1120" y="840">
+            <io iotype="input" label="B1" number="0">
+                <properties>
+                    <property key="text">B2_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B0" number="1">
+                <properties>
+                    <property key="text">B2_0</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="dr_and" x="1120" y="770">
+            <io iotype="input" label="B1" number="0">
+                <properties>
+                    <property key="text">B3_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="B0" number="1">
+                <properties>
+                    <property key="text">B3_0</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="dr_and" x="1130" y="430">
+            <io iotype="input" label="A1" number="2">
+                <properties>
+                    <property key="text">A1_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A0" number="3">
+                <properties>
+                    <property key="text">A1_0</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="dr_and" x="1130" y="360">
+            <io iotype="input" label="A1" number="2">
+                <properties>
+                    <property key="text">A2_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A0" number="3">
+                <properties>
+                    <property key="text">A2_0</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="dr_and" x="1130" y="290">
+            <io iotype="input" label="A1" number="2">
+                <properties>
+                    <property key="text">A3_1</property>
+                </properties>
+            </io>
+            <io iotype="input" label="A0" number="3">
+                <properties>
+                    <property key="text">A3_0</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="dr_or" x="1490" y="650">
+            <io iotype="output" label="S1" number="4">
+                <properties>
+                    <property key="text">out1_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="S0" number="5">
+                <properties>
+                    <property key="text">out1_0</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="dr_or" x="1490" y="530">
+            <io iotype="output" label="S1" number="4">
+                <properties>
+                    <property key="text">out2_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="S0" number="5">
+                <properties>
+                    <property key="text">out2_0</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="dr_or" x="1490" y="400">
+            <io iotype="output" label="S1" number="4">
+                <properties>
+                    <property key="text">out3_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="S0" number="5">
+                <properties>
+                    <property key="text">out3_0</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="dr_or" x="1490" y="270">
+            <io iotype="output" label="S1" number="4">
+                <properties>
+                    <property key="text">out4_1</property>
+                </properties>
+            </io>
+            <io iotype="output" label="S0" number="5">
+                <properties>
+                    <property key="text">out4_0</property>
+                </properties>
+            </io>
+        </gate>
+        <gate type="or" x="1300" y="170"/>
+        <gate type="or" x="1300" y="110"/>
+        <gate type="or" x="1300" y="50"/>
+        <gate type="or" x="1300" y="-10"/>
+        <gate type="or" x="1290" y="1140"/>
+        <gate type="or" x="1290" y="1080"/>
+        <gate type="or" x="1290" y="1020"/>
+        <gate type="or" x="1290" y="960"/>
+    </gates>
+    <wires>
+        <wire>
+            <from id="buffer@740:860" number="1"/>
+            <to id="dr_and@1120:700" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@740:640" number="1"/>
+            <to id="dr_and@1120:700" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@740:640" number="1"/>
+            <to id="dr_and@1130:220" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@740:860" number="1"/>
+            <to id="dr_and@1130:220" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@740:640" number="1"/>
+            <to id="dr_and@1130:290" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@740:860" number="1"/>
+            <to id="dr_and@1130:290" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@740:640" number="1"/>
+            <to id="dr_and@1130:360" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@740:860" number="1"/>
+            <to id="dr_and@1130:360" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@740:640" number="1"/>
+            <to id="dr_and@1130:430" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@740:860" number="1"/>
+            <to id="dr_and@1130:430" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@740:640" number="1"/>
+            <to id="dr_and@1120:770" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@740:640" number="1"/>
+            <to id="dr_and@1120:840" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@740:640" number="1"/>
+            <to id="dr_and@1120:910" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@740:860" number="1"/>
+            <to id="dr_and@1120:770" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@740:860" number="1"/>
+            <to id="dr_and@1120:840" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@740:860" number="1"/>
+            <to id="dr_and@1120:910" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_and@1130:220" number="4"/>
+            <to id="dr_or@1490:270" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_and@1130:290" number="4"/>
+            <to id="dr_or@1490:400" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_and@1130:360" number="4"/>
+            <to id="dr_or@1490:530" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_and@1130:430" number="4"/>
+            <to id="dr_or@1490:650" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_and@1120:700" number="4"/>
+            <to id="dr_or@1490:270" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_and@1120:770" number="4"/>
+            <to id="dr_or@1490:400" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_and@1120:840" number="4"/>
+            <to id="dr_or@1490:530" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_and@1120:910" number="4"/>
+            <to id="dr_or@1490:650" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="or@1300:-10" number="0"/>
+            <to id="dr_or@1490:270" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="or@1300:50" number="0"/>
+            <to id="dr_or@1490:400" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="or@1300:110" number="0"/>
+            <to id="dr_or@1490:530" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="or@1300:170" number="0"/>
+            <to id="dr_or@1490:650" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="or@1290:960" number="0"/>
+            <to id="dr_or@1490:270" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="or@1290:1020" number="0"/>
+            <to id="dr_or@1490:400" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="or@1290:1080" number="0"/>
+            <to id="dr_or@1490:530" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="or@1290:1140" number="0"/>
+            <to id="dr_or@1490:650" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_and@1130:220" number="5"/>
+            <to id="or@1300:-10" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_and@1130:290" number="5"/>
+            <to id="or@1300:50" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_and@1130:360" number="5"/>
+            <to id="or@1300:110" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_and@1130:430" number="5"/>
+            <to id="or@1300:170" number="2" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_and@1120:700" number="5"/>
+            <to id="or@1290:960" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_and@1120:770" number="5"/>
+            <to id="or@1290:1020" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_and@1120:840" number="5"/>
+            <to id="or@1290:1080" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="dr_and@1120:910" number="5"/>
+            <to id="or@1290:1140" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="buffer@740:860" number="1"/>
+            <to id="or@1300:-10" number="1" type="gate"/>
+            <point node="false" number="0" x="860" y="670"/>
+            <point node="false" number="1" x="1030" y="150"/>
+        </wire>
+        <wire>
+            <from id="buffer@740:860" number="1"/>
+            <to id="or@1300:50" number="1" type="gate"/>
+            <point node="false" number="0" x="870" y="670"/>
+            <point node="false" number="1" x="1040" y="170"/>
+        </wire>
+        <wire>
+            <from id="buffer@740:860" number="1"/>
+            <to id="or@1300:110" number="1" type="gate"/>
+            <point node="false" number="0" x="880" y="670"/>
+            <point node="false" number="1" x="1050" y="190"/>
+        </wire>
+        <wire>
+            <from id="buffer@740:860" number="1"/>
+            <to id="or@1300:170" number="1" type="gate"/>
+            <point node="false" number="0" x="890" y="670"/>
+            <point node="false" number="1" x="1060" y="210"/>
+        </wire>
+        <wire>
+            <from id="buffer@740:640" number="1"/>
+            <to id="or@1290:1140" number="2" type="gate"/>
+            <point node="false" number="0" x="850" y="930"/>
+            <point node="false" number="1" x="950" y="1060"/>
+        </wire>
+        <wire>
+            <from id="buffer@740:640" number="1"/>
+            <to id="or@1290:1080" number="2" type="gate"/>
+            <point node="false" number="0" x="860" y="930"/>
+            <point node="false" number="1" x="950" y="1030"/>
+        </wire>
+        <wire>
+            <from id="buffer@740:640" number="1"/>
+            <to id="or@1290:1020" number="2" type="gate"/>
+            <point node="false" number="0" x="870" y="930"/>
+            <point node="false" number="1" x="950" y="1000"/>
+        </wire>
+        <wire>
+            <from id="buffer@740:640" number="1"/>
+            <to id="or@1290:960" number="2" type="gate"/>
+            <point node="false" number="0" x="880" y="930"/>
+            <point node="false" number="1" x="950" y="970"/>
+        </wire>
+    </wires>
+</logicsim>

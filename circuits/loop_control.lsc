@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<logicsim version="3">
+    <info/>
+    <gates>
+        <gate type="arbuffer2" x="700" y="580"/>
+        <gate type="arbuffer2" x="950" y="580"/>
+        <gate type="arbuffer2" x="1190" y="580"/>
+        <gate type="arbuffer2" x="820" y="890">
+            <io iotype="input" label="Ldata1_1" number="0" type="low"/>
+            <io iotype="input" label="Lreq" number="2" type="low"/>
+        </gate>
+        <gate type="celement" x="1010" y="860"/>
+    </gates>
+    <wires>
+        <wire>
+            <from id="arbuffer2@1190:580" number="4"/>
+            <to id="arbuffer2@700:580" number="0" type="gate"/>
+            <point node="false" number="0" x="1380" y="670"/>
+            <point node="false" number="1" x="1380" y="500"/>
+            <point node="false" number="2" x="650" y="500"/>
+            <point node="false" number="3" x="650" y="660"/>
+            <point node="false" number="4" x="650" y="670"/>
+        </wire>
+        <wire>
+            <from id="arbuffer2@1190:580" number="5"/>
+            <to id="arbuffer2@700:580" number="1" type="gate"/>
+            <point node="false" number="0" x="1370" y="680"/>
+            <point node="false" number="1" x="1370" y="510"/>
+            <point node="false" number="2" x="640" y="510"/>
+            <point node="false" number="3" x="640" y="680"/>
+        </wire>
+        <wire>
+            <from id="arbuffer2@950:580" number="6"/>
+            <to id="arbuffer2@700:580" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer2@950:580" number="7"/>
+            <to id="celement@1010:860" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer2@820:890" number="7"/>
+            <to id="celement@1010:860" number="1" type="gate"/>
+            <point node="false" number="0" x="880" y="1170"/>
+            <point node="false" number="1" x="1010" y="1170"/>
+        </wire>
+        <wire>
+            <from id="arbuffer2@1190:580" number="6"/>
+            <to id="arbuffer2@950:580" number="3" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer2@1190:580" number="6"/>
+            <to id="arbuffer2@820:890" number="3" type="gate"/>
+            <point node="false" number="0" x="1210" y="1130"/>
+        </wire>
+        <wire>
+            <from id="arbuffer2@700:580" number="6"/>
+            <to id="arbuffer2@1190:580" number="3" type="gate"/>
+            <point node="false" number="0" x="720" y="1290"/>
+            <point node="false" number="1" x="1290" y="1280"/>
+        </wire>
+        <wire>
+            <from id="arbuffer2@950:580" number="4"/>
+            <to id="arbuffer2@1190:580" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer2@950:580" number="5"/>
+            <to id="arbuffer2@1190:580" number="1" type="gate"/>
+        </wire>
+        <wire>
+            <from id="celement@1010:860" number="2"/>
+            <to id="arbuffer2@1190:580" number="2" type="gate"/>
+            <point node="false" number="0" x="1110" y="550"/>
+            <point node="false" number="1" x="1250" y="550"/>
+        </wire>
+        <wire>
+            <from id="arbuffer2@700:580" number="7"/>
+            <to id="arbuffer2@950:580" number="2" type="gate"/>
+            <point node="false" number="0" x="760" y="850"/>
+            <point node="false" number="1" x="880" y="850"/>
+            <point node="false" number="2" x="880" y="550"/>
+            <point node="false" number="3" x="1010" y="550"/>
+        </wire>
+        <wire>
+            <from id="arbuffer2@1190:580" number="7"/>
+            <to id="arbuffer2@700:580" number="2" type="gate"/>
+            <point node="false" number="0" x="1250" y="850"/>
+            <point node="false" number="1" x="1430" y="850"/>
+            <point node="false" number="2" x="1430" y="520"/>
+            <point node="false" number="3" x="760" y="520"/>
+        </wire>
+        <wire>
+            <from id="arbuffer2@700:580" number="4"/>
+            <to id="arbuffer2@950:580" number="0" type="gate"/>
+        </wire>
+        <wire>
+            <from id="arbuffer2@700:580" number="5"/>
+            <to id="arbuffer2@950:580" number="1" type="gate"/>
+        </wire>
+    </wires>
+</logicsim>
