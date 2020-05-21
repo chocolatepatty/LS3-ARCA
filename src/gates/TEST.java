@@ -19,10 +19,10 @@ public class TEST extends Gate {
 
 	public TEST() {
 		super("test");
-		label = "TEST";
-		type = "test";
-		width = 80;
-		height = 80;
+		this.label = "TEST";
+		this.type = "test";
+		this.width = 80;
+		this.height = 80;
 		createInputs(4);
 		createOutputs(4);
 		int offset = 30;

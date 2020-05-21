@@ -29,13 +29,13 @@ public class ARBUFFER4 extends Gate {
 
 	private int throughput = 4;
 	private int inpNo = throughput + 2;
-	private int outNo = 2 + throughput + 3;
+	private int outNo = 2 + throughput + 1;
 	
 	public ARBUFFER4() {
 		super("basic");
 		label = "ARBUFFER4";
-		labelOffsetX = 0;
-		labelOffsetY = -30;
+		labelOffsetX = 20;
+		labelOffsetY = 60;
 		type = "arbuffer4";
 		
 		width = 120;
@@ -47,6 +47,7 @@ public class ARBUFFER4 extends Gate {
 		
 		for (int i = 0; i < throughput; i++) {
 			getPin(i).moveTo(getX(), getY() + 90 + i*20 - 10*(i % 2));
+			getPin(i).label = "Ldata" + Integer.toString(throughput/2 - i/2) + "_" + Integer.toString(1 - i % 2);
 		}
 		
 		getPin(throughput).moveTo(getX() + getWidth()/2, getY());
@@ -59,6 +60,7 @@ public class ARBUFFER4 extends Gate {
 		
 		for (int i = 0; i < throughput; i++) {
 			getPin(inpNo + i).moveTo(getX() + getWidth(), getY() + 90 + i*20 - 10*(i % 2));
+			getPin(inpNo + i).label = "Rdata" + Integer.toString(throughput/2 - i/2) + "_" + Integer.toString(1 - i % 2);
 		}
 		
 		getPin(inpNo + throughput).moveTo(getX() + getWidth() / 2 - offset, getY() + getHeight());
@@ -71,18 +73,13 @@ public class ARBUFFER4 extends Gate {
 		
 		getPin(inpNo + throughput + 2).moveTo(getX() + 30, getY() + 40);
 		getPin(inpNo + throughput + 2).setDirection(Pin.UP);
-
-		getPin(inpNo + throughput + 3).moveTo(getX() + 50, getY() + 40);
-		getPin(inpNo + throughput + 3).setDirection(Pin.UP);
-		
-		getPin(inpNo + throughput + 4).moveTo(getX() + 40, getY() + 60);
-		getPin(inpNo + throughput + 4).setDirection(Pin.UP);
+		getPin(inpNo + throughput + 2).label = "_c";
 		
 		reset();
 		loadProperties();
 	}
 	
-	static final String TEXT = "text";
+	/*static final String TEXT = "text";
 
 	static final String TEXT_DEFAULT = "<Label>";
 	
@@ -108,7 +105,7 @@ public class ARBUFFER4 extends Gate {
 			setProperty(TEXT, text);
 		}
 		return true;
-	}
+	}*/
 
 	@Override
 	public void draw(Graphics2D g2) {
@@ -128,38 +125,23 @@ public class ARBUFFER4 extends Gate {
 			g2.setTransform(old);
 		}
 		drawIO(g2);
-		g2.drawString(text, getX() + 20, getY() + height / 2 + 60);
+		g2.drawString(text, getX() + 20, getY() + 160);
 	}
 
 	
 	@Override
 	public void simulate() {
 		super.simulate();
+
 		
-		boolean ZA = true;
-		boolean ZO = false;
-		for (int i = 0; i < throughput; i = i + 2) {
-			ZA = ZA && (getPin(i).getLevel() || getPin(i+1).getLevel());
-			ZO = ZO || (getPin(i).getLevel() || getPin(i+1).getLevel());
-		}
-		
-		boolean signalComplete = getPin(inpNo + throughput + 2).getInternalLevel();
-		boolean oldSignalComplete = signalComplete;
-		if (ZA == ZO)
-			signalComplete = ZA;
-		
-		boolean captureRequest = getPin(inpNo + throughput + 3).getInternalLevel();
-		boolean oldCaptureRequest = captureRequest;
-		if (getPin(throughput).getLevel() != getPin(throughput + 1).getLevel()) {
-			captureRequest = getPin(throughput).getLevel();
-		}
-		
-		boolean capture = getPin(inpNo + throughput + 4).getInternalLevel();
+		boolean capture = getPin(inpNo + throughput + 2).getInternalLevel();
 		boolean oldCapture = capture;
-		if (signalComplete == captureRequest) {
-			capture = signalComplete;
+		if (getPin(throughput).getLevel() != getPin(throughput + 1).getLevel()) {
+			capture = getPin(throughput).getLevel();
 		}
-		
+		if (capture != oldCapture) {
+			getPin(inpNo + throughput + 2).changedLevel(new LSLevelEvent(this, capture));
+		}
 		
 		boolean[] data = new boolean [throughput];
 		boolean[] oldData = new boolean [throughput];
@@ -181,32 +163,34 @@ public class ARBUFFER4 extends Gate {
 		boolean oldLack = getPin(inpNo + throughput).getInternalLevel();
 		boolean oldRreq = getPin(inpNo + throughput + 1).getInternalLevel();
 
-		if (signalComplete != oldSignalComplete) {
-			getPin(inpNo + throughput + 2).changedLevel(new LSLevelEvent(this, signalComplete));
-		}
-		if (captureRequest != oldCaptureRequest) {
-			getPin(inpNo + throughput + 3).changedLevel(new LSLevelEvent(this, captureRequest));
-		}
-		if (capture != oldCapture) {
-			getPin(inpNo + throughput + 4).changedLevel(new LSLevelEvent(this, capture));
-		}
+
 		for (int i = 0; i < throughput; i++) {
 			if (oldData[i] != data[i]) {
 				getPin(inpNo + i).changedLevel(new LSLevelEvent(this, data[i]));
 			}
 		}
 		
-		if (oldLack != capture) {
+		boolean ZA = true;
+		boolean ZO = false;
+		for (int i = 0; i < throughput; i = i + 2) {
+			ZA = ZA && (getPin(inpNo + i).getLevel() || getPin(inpNo + i+1).getLevel());
+			ZO = ZO || (getPin(inpNo + i).getLevel() || getPin(inpNo + i+1).getLevel());
+		}
+		boolean signalRecieved = getPin(inpNo + throughput).getInternalLevel();
+		boolean oldSignalRecieved = signalRecieved;
+		if (ZA == ZO)
+			signalRecieved = ZA;
+		if (oldLack != signalRecieved) {
 			getPin(inpNo + throughput).changedLevel(new LSLevelEvent(this, capture));
 		}
-		if (oldRreq != capture) {
+		if (oldRreq != signalRecieved) {
 			getPin(inpNo + throughput + 1).changedLevel(new LSLevelEvent(this, capture));
 		}
 	}
 	
 	@Override
 	protected void drawLabel(Graphics2D g2, String lbl, Font font) {
-		super.drawLabelWithOffset(g2, label, bigFont, labelOffsetX, labelOffsetY);
+		super.drawLabelWithOffsetFromCorner(g2, label, bigFont, labelOffsetX, labelOffsetY);
 	}
 	
 	@Override

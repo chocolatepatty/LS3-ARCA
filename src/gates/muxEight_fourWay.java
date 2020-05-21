@@ -24,55 +24,73 @@ import logicsim.Pin;
  * @author Peter Gabriel
  * @author Matthew Lister April 2020
  */
-public class ARBUFFER8 extends Gate {
+public class muxEight_fourWay extends Gate {
 	static final long serialVersionUID = 4521959944440523564L;
 
-	private int throughput = 8;
-	private int inpNo = throughput + 2;
-	private int outNo = 2 + throughput + 1;
+	int inpNo = 32 + 4;
+	int outNo = 8;
 	
-	public ARBUFFER8() {
+	public muxEight_fourWay() {
 		super("basic");
-		label = "ARBUFFER8";
-		labelOffsetX = 20;
+		label = "muxEight_fourWay";
+		labelOffsetX = 100;
 		labelOffsetY = 60;
-		type = "arbuffer8";
+		type = "muxEight_fourWay";
 		
-		width = 120;
-		height = Math.max(240, 20*throughput + 100);
+		width = 280;
+		height = 370;
 		createInputs(inpNo);
 		createOutputs(outNo);
 		
 		int offset = 40;
 		
-		for (int i = 0; i < throughput; i++) {
-			getPin(i).moveTo(getX(), getY() + 90 + i*20 - 10*(i % 2));
-			getPin(i).label = "Ldata" + Integer.toString(throughput/2 - i/2) + "_" + Integer.toString(1 - i % 2);
+		String l = "";
+		for (int i = 0; i < 32; i++) {
+			l = "";
+
+			if (((i) / 16) % 2 == 0) l = l + "A";
+			else l = l + "B";
+			
+			if (((i) / 8) % 2 == 0) l = l + "A";
+			else l = l + "B";
+			
+			switch ((i) % 8) {
+				case 0: l = l + "4_1";
+					break;
+				case 1: l = l + "4_0"; 
+					break;
+				case 2: l = l + "3_1"; 
+					break;
+				case 3: l = l + "3_0"; 
+					break;
+				case 4: l = l + "2_1"; 
+					break;
+				case 5: l = l + "2_0"; 
+					break;
+				case 6: l = l + "1_1"; 
+					break;
+				case 7: l = l + "1_0"; 
+					break;
+			}
+			
+			getPin(i).label = l;
 		}
 		
-		getPin(throughput).moveTo(getX() + getWidth()/2, getY());
-		getPin(throughput).setDirection(Pin.DOWN);
-		getPin(throughput).label = "Lreq";
 		
-		getPin(throughput + 1).moveTo(getX() + getWidth() / 2 + offset, getY() + getHeight());
-		getPin(throughput + 1).setDirection(Pin.UP);
-		getPin(throughput + 1).label = "Rack";
+		getPin(32 + 0).label = "PAX";
+		getPin(32 + 1).label = "PBX";
+		getPin(32 + 2).label = "PXA";
+		getPin(32 + 3).label = "PXB";
+
 		
-		for (int i = 0; i < throughput; i++) {
-			getPin(inpNo + i).moveTo(getX() + getWidth(), getY() + 90 + i*20 - 10*(i % 2));
-			getPin(inpNo + i).label = "Rdata" + Integer.toString(throughput/2 - i/2) + "_" + Integer.toString(1 - i % 2);
-		}
-		
-		getPin(inpNo + throughput).moveTo(getX() + getWidth() / 2 - offset, getY() + getHeight());
-		getPin(inpNo + throughput).setDirection(Pin.UP);
-		getPin(inpNo + throughput).label = "Lack";
-		
-		getPin(inpNo + throughput + 1).moveTo(getX() + getWidth() / 2, getY() + getHeight());
-		getPin(inpNo + throughput + 1).setDirection(Pin.UP);
-		getPin(inpNo + throughput + 1).label = "Rreq";
-		
-		getPin(inpNo + throughput + 2).moveTo(getX() + 30, getY() + 40);
-		getPin(inpNo + throughput + 2).setDirection(Pin.UP);
+		getPin(inpNo + 0).label = "out4_1";
+		getPin(inpNo + 1).label = "out4_0";
+		getPin(inpNo + 2).label = "out3_1";
+		getPin(inpNo + 3).label = "out3_0";
+		getPin(inpNo + 4).label = "out2_1";
+		getPin(inpNo + 5).label = "out2_0";
+		getPin(inpNo + 6).label = "out1_1";
+		getPin(inpNo + 7).label = "out1_0";
 		
 		reset();
 		loadProperties();
@@ -124,16 +142,37 @@ public class ARBUFFER8 extends Gate {
 			g2.setTransform(old);
 		}
 		drawIO(g2);
-		g2.drawString(text, getX() + 20, getY() + 160);
+		g2.drawString(text, getX() + 100, getY() + 100);
 	}
 
 	
 	@Override
 	public void simulate() {
 		super.simulate();
+		
+		if ((getPin(32 + 0).getLevel() || getPin(32 + 1).getLevel()) && (getPin(32 + 2).getLevel() || getPin(32 + 3).getLevel())) {
+
+			getPin(inpNo+0).changedLevel(new LSLevelEvent (this, (getPin(8*(2*(getPin(32 + 1).getLevel()? 1 : 0) + (getPin(32 + 3).getLevel()? 1:0))).getLevel())));
+			getPin(inpNo+1).changedLevel(new LSLevelEvent (this, (getPin(8*(2*(getPin(32 + 1).getLevel()? 1 : 0) + (getPin(32 + 3).getLevel()? 1:0)) + 1).getLevel())));
+			getPin(inpNo+2).changedLevel(new LSLevelEvent (this, (getPin(8*(2*(getPin(32 + 1).getLevel()? 1 : 0) + (getPin(32 + 3).getLevel()? 1:0)) + 2).getLevel())));
+			getPin(inpNo+3).changedLevel(new LSLevelEvent (this, (getPin(8*(2*(getPin(32 + 1).getLevel()? 1 : 0) + (getPin(32 + 3).getLevel()? 1:0)) + 3).getLevel())));
+			getPin(inpNo+4).changedLevel(new LSLevelEvent (this, (getPin(8*(2*(getPin(32 + 1).getLevel()? 1 : 0) + (getPin(32 + 3).getLevel()? 1:0)) + 4).getLevel())));
+			getPin(inpNo+5).changedLevel(new LSLevelEvent (this, (getPin(8*(2*(getPin(32 + 1).getLevel()? 1 : 0) + (getPin(32 + 3).getLevel()? 1:0)) + 5).getLevel())));
+			getPin(inpNo+6).changedLevel(new LSLevelEvent (this, (getPin(8*(2*(getPin(32 + 1).getLevel()? 1 : 0) + (getPin(32 + 3).getLevel()? 1:0)) + 6).getLevel())));
+			getPin(inpNo+7).changedLevel(new LSLevelEvent (this, (getPin(8*(2*(getPin(32 + 1).getLevel()? 1 : 0) + (getPin(32 + 3).getLevel()? 1:0)) + 7).getLevel())));
 
 		
-		boolean capture = getPin(inpNo + throughput + 2).getInternalLevel();
+		}
+		
+		if (!(getPin(32 + 0).getLevel() || getPin(32 + 1).getLevel()) && !(getPin(32 + 2).getLevel() || getPin(32 + 3).getLevel())) {
+
+			for (int i = inpNo; i < inpNo + outNo; i++) {
+				getPin(i).changedLevel(new LSLevelEvent(this, false));
+			}
+		}
+		
+		
+		/*boolean capture = getPin(inpNo + throughput + 2).getInternalLevel();
 		boolean oldCapture = capture;
 		if (getPin(throughput).getLevel() != getPin(throughput + 1).getLevel()) {
 			capture = getPin(throughput).getLevel();
@@ -184,7 +223,7 @@ public class ARBUFFER8 extends Gate {
 		}
 		if (oldRreq != signalRecieved) {
 			getPin(inpNo + throughput + 1).changedLevel(new LSLevelEvent(this, capture));
-		}
+		}*/
 	}
 	
 	@Override
@@ -228,8 +267,7 @@ public class ARBUFFER8 extends Gate {
 
 	@Override
 	public void loadLanguage() {
-		I18N.addGate(I18N.ALL, type, I18N.TITLE, "ARBUFFER8");
-		I18N.addGate(I18N.ALL, type, I18N.DESCRIPTION, "8-bit Acknowledge Request Buffer");
-		I18N.addGate("de", type, I18N.DESCRIPTION, "ARPuffer8");
+		I18N.addGate(I18N.ALL, type, I18N.TITLE, "muxEight_fourWay");
+		I18N.addGate(I18N.ALL, type, I18N.DESCRIPTION, "4-bit 4-way multiplexer");
 	}
 }

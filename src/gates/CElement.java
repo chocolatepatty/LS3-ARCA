@@ -35,12 +35,17 @@ public class CElement extends Gate {
 		int outNo = 1;
 		createInputs(inpNo);
 		createOutputs(outNo);
-		//variableInputCountSupported = true;
+		//variableInputCountSupported = true;		
+
+		getPin(0).label = "A";
+		getPin(1).label = "B";
+		getPin(2).label = "S";
+		
 		reset();
 		loadProperties();
 	}
 	
-	static final String TEXT = "text";
+	/*static final String TEXT = "text";
 
 	static final String TEXT_DEFAULT = "<Label>";
 	
@@ -65,7 +70,7 @@ public class CElement extends Gate {
 			setProperty(TEXT, text);
 		}
 		return true;
-	}
+	}*/
 
 	@Override
 	public void simulate() {

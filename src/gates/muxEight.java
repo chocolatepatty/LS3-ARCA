@@ -24,55 +24,55 @@ import logicsim.Pin;
  * @author Peter Gabriel
  * @author Matthew Lister April 2020
  */
-public class ARBUFFER8 extends Gate {
+public class muxEight extends Gate {
 	static final long serialVersionUID = 4521959944440523564L;
 
-	private int throughput = 8;
-	private int inpNo = throughput + 2;
-	private int outNo = 2 + throughput + 1;
+	int inpNo = 18;
+	int outNo = 8;
 	
-	public ARBUFFER8() {
+	public muxEight() {
 		super("basic");
-		label = "ARBUFFER8";
-		labelOffsetX = 20;
+		label = "muxEight";
+		labelOffsetX = 100;
 		labelOffsetY = 60;
-		type = "arbuffer8";
+		type = "muxEight";
 		
-		width = 120;
-		height = Math.max(240, 20*throughput + 100);
+		width = 280;
+		height = 190;
 		createInputs(inpNo);
 		createOutputs(outNo);
 		
 		int offset = 40;
+
+		getPin(0).label = "A4_1";
+		getPin(1).label = "A4_0";
+		getPin(2).label = "A3_1";
+		getPin(3).label = "A3_0";
+		getPin(4).label = "A2_1";
+		getPin(5).label = "A2_0";
+		getPin(6).label = "A1_1";
+		getPin(7).label = "A1_0";
 		
-		for (int i = 0; i < throughput; i++) {
-			getPin(i).moveTo(getX(), getY() + 90 + i*20 - 10*(i % 2));
-			getPin(i).label = "Ldata" + Integer.toString(throughput/2 - i/2) + "_" + Integer.toString(1 - i % 2);
-		}
+		getPin(8).label = "B4_1";
+		getPin(9).label = "B4_0";
+		getPin(10).label = "B3_1";
+		getPin(11).label = "B3_0";
+		getPin(12).label = "B2_1";
+		getPin(13).label = "B2_0";
+		getPin(14).label = "B1_1";
+		getPin(15).label = "B1_0";
 		
-		getPin(throughput).moveTo(getX() + getWidth()/2, getY());
-		getPin(throughput).setDirection(Pin.DOWN);
-		getPin(throughput).label = "Lreq";
+		getPin(16).label = "PA";
+		getPin(17).label = "PB";
 		
-		getPin(throughput + 1).moveTo(getX() + getWidth() / 2 + offset, getY() + getHeight());
-		getPin(throughput + 1).setDirection(Pin.UP);
-		getPin(throughput + 1).label = "Rack";
-		
-		for (int i = 0; i < throughput; i++) {
-			getPin(inpNo + i).moveTo(getX() + getWidth(), getY() + 90 + i*20 - 10*(i % 2));
-			getPin(inpNo + i).label = "Rdata" + Integer.toString(throughput/2 - i/2) + "_" + Integer.toString(1 - i % 2);
-		}
-		
-		getPin(inpNo + throughput).moveTo(getX() + getWidth() / 2 - offset, getY() + getHeight());
-		getPin(inpNo + throughput).setDirection(Pin.UP);
-		getPin(inpNo + throughput).label = "Lack";
-		
-		getPin(inpNo + throughput + 1).moveTo(getX() + getWidth() / 2, getY() + getHeight());
-		getPin(inpNo + throughput + 1).setDirection(Pin.UP);
-		getPin(inpNo + throughput + 1).label = "Rreq";
-		
-		getPin(inpNo + throughput + 2).moveTo(getX() + 30, getY() + 40);
-		getPin(inpNo + throughput + 2).setDirection(Pin.UP);
+		getPin(inpNo + 0).label = "out4_1";
+		getPin(inpNo + 1).label = "out4_0";
+		getPin(inpNo + 2).label = "out3_1";
+		getPin(inpNo + 3).label = "out3_0";
+		getPin(inpNo + 4).label = "out2_1";
+		getPin(inpNo + 5).label = "out2_0";
+		getPin(inpNo + 6).label = "out1_1";
+		getPin(inpNo + 7).label = "out1_0";
 		
 		reset();
 		loadProperties();
@@ -124,7 +124,7 @@ public class ARBUFFER8 extends Gate {
 			g2.setTransform(old);
 		}
 		drawIO(g2);
-		g2.drawString(text, getX() + 20, getY() + 160);
+		g2.drawString(text, getX() + 100, getY() + 100);
 	}
 
 	
@@ -132,8 +132,60 @@ public class ARBUFFER8 extends Gate {
 	public void simulate() {
 		super.simulate();
 
+		/*boolean in4_1 = getPin(inpNo + outNo + 0).getInternalLevel();
+		boolean in4_0 = getPin(inpNo + outNo + 1).getInternalLevel();
+		boolean in3_1 = getPin(inpNo + outNo + 2).getInternalLevel();
+		boolean in3_0 = getPin(inpNo + outNo + 3).getInternalLevel();
+		boolean in2_1 = getPin(inpNo + outNo + 4).getInternalLevel();
+		boolean in2_0 = getPin(inpNo + outNo + 5).getInternalLevel();
+		boolean in1_1 = getPin(inpNo + outNo + 6).getInternalLevel();
+		boolean in1_0 = getPin(inpNo + outNo + 7).getInternalLevel();
 		
-		boolean capture = getPin(inpNo + throughput + 2).getInternalLevel();
+		boolean oldin4_1 = getPin(inpNo + outNo + 0).getInternalLevel();
+		boolean oldin4_0 = getPin(inpNo + outNo + 1).getInternalLevel();
+		boolean oldin3_1 = getPin(inpNo + outNo + 2).getInternalLevel();
+		boolean oldin3_0 = getPin(inpNo + outNo + 3).getInternalLevel();
+		boolean oldin2_1 = getPin(inpNo + outNo + 4).getInternalLevel();
+		boolean oldin2_0 = getPin(inpNo + outNo + 5).getInternalLevel();
+		boolean oldin1_1 = getPin(inpNo + outNo + 6).getInternalLevel();
+		boolean oldin1_0 = getPin(inpNo + outNo + 7).getInternalLevel();*/
+		
+
+		if (getPin(16).getLevel()) {
+			getPin(inpNo + 0).changedLevel(new LSLevelEvent(this, getPin(0).getLevel()));
+			getPin(inpNo + 1).changedLevel(new LSLevelEvent(this, getPin(1).getLevel()));
+			getPin(inpNo + 2).changedLevel(new LSLevelEvent(this, getPin(2).getLevel()));
+			getPin(inpNo + 3).changedLevel(new LSLevelEvent(this, getPin(3).getLevel()));
+			getPin(inpNo + 4).changedLevel(new LSLevelEvent(this, getPin(4).getLevel()));
+			getPin(inpNo + 5).changedLevel(new LSLevelEvent(this, getPin(5).getLevel()));
+			getPin(inpNo + 6).changedLevel(new LSLevelEvent(this, getPin(6).getLevel()));
+			getPin(inpNo + 7).changedLevel(new LSLevelEvent(this, getPin(7).getLevel()));
+		}
+		
+		if (getPin(17).getLevel()) {
+			getPin(inpNo + 0).changedLevel(new LSLevelEvent(this, getPin(8).getLevel()));
+			getPin(inpNo + 1).changedLevel(new LSLevelEvent(this, getPin(9).getLevel()));
+			getPin(inpNo + 2).changedLevel(new LSLevelEvent(this, getPin(10).getLevel()));
+			getPin(inpNo + 3).changedLevel(new LSLevelEvent(this, getPin(11).getLevel()));
+			getPin(inpNo + 4).changedLevel(new LSLevelEvent(this, getPin(12).getLevel()));
+			getPin(inpNo + 5).changedLevel(new LSLevelEvent(this, getPin(13).getLevel()));
+			getPin(inpNo + 6).changedLevel(new LSLevelEvent(this, getPin(14).getLevel()));
+			getPin(inpNo + 7).changedLevel(new LSLevelEvent(this, getPin(15).getLevel()));
+		}
+		
+		if (!getPin(16).getLevel() && !getPin(17).getLevel()) {
+			getPin(inpNo + 0).changedLevel(new LSLevelEvent(this, false));
+			getPin(inpNo + 1).changedLevel(new LSLevelEvent(this, false));
+			getPin(inpNo + 2).changedLevel(new LSLevelEvent(this, false));
+			getPin(inpNo + 3).changedLevel(new LSLevelEvent(this, false));
+			getPin(inpNo + 4).changedLevel(new LSLevelEvent(this, false));
+			getPin(inpNo + 5).changedLevel(new LSLevelEvent(this, false));
+			getPin(inpNo + 6).changedLevel(new LSLevelEvent(this, false));
+			getPin(inpNo + 7).changedLevel(new LSLevelEvent(this, false));
+		}
+		
+		
+		/*boolean capture = getPin(inpNo + throughput + 2).getInternalLevel();
 		boolean oldCapture = capture;
 		if (getPin(throughput).getLevel() != getPin(throughput + 1).getLevel()) {
 			capture = getPin(throughput).getLevel();
@@ -184,7 +236,7 @@ public class ARBUFFER8 extends Gate {
 		}
 		if (oldRreq != signalRecieved) {
 			getPin(inpNo + throughput + 1).changedLevel(new LSLevelEvent(this, capture));
-		}
+		}*/
 	}
 	
 	@Override
@@ -228,8 +280,7 @@ public class ARBUFFER8 extends Gate {
 
 	@Override
 	public void loadLanguage() {
-		I18N.addGate(I18N.ALL, type, I18N.TITLE, "ARBUFFER8");
-		I18N.addGate(I18N.ALL, type, I18N.DESCRIPTION, "8-bit Acknowledge Request Buffer");
-		I18N.addGate("de", type, I18N.DESCRIPTION, "ARPuffer8");
+		I18N.addGate(I18N.ALL, type, I18N.TITLE, "muxEight");
+		I18N.addGate(I18N.ALL, type, I18N.DESCRIPTION, "4-bit 2-way multiplexer");
 	}
 }

@@ -20,11 +20,7 @@ import logicsim.I18N;
 public class TextLabel extends Gate {
 	static final long serialVersionUID = 6576677427368074734L;
 
-	static final String TEXT = "text";
-
-	static final String TEXT_DEFAULT = "Text";
-
-	String text;
+	/*String TEXT_DEFAULT = "<Text>";*/
 
 	public TextLabel() {
 		super("output");
@@ -34,11 +30,11 @@ public class TextLabel extends Gate {
 		loadProperties();
 	}
 
-	@Override
+	/*@Override
 	protected void loadProperties() {
 		text = getPropertyWithDefault(TEXT, TEXT_DEFAULT);
-	}
-
+	}*/
+	
 	@Override
 	public boolean insideFrame(int mx, int my) {
 		return getBoundingBox().contains(mx, my);
@@ -78,7 +74,7 @@ public class TextLabel extends Gate {
 
 	}
 
-	public boolean hasPropertiesUI() {
+	/*public boolean hasPropertiesUI() {
 		return true;
 	}
 
@@ -90,7 +86,7 @@ public class TextLabel extends Gate {
 			setProperty(TEXT, text);
 		}
 		return true;
-	}
+	}*/
 
 	@Override
 	public void loadLanguage() {

@@ -24,55 +24,50 @@ import logicsim.Pin;
  * @author Peter Gabriel
  * @author Matthew Lister April 2020
  */
-public class ARBUFFER8 extends Gate {
+public class demuxTwo_sixteeenWay extends Gate {
 	static final long serialVersionUID = 4521959944440523564L;
 
-	private int throughput = 8;
-	private int inpNo = throughput + 2;
-	private int outNo = 2 + throughput + 1;
+	int inpNo = 8;
+	int outNo = 16;
 	
-	public ARBUFFER8() {
+	public demuxTwo_sixteeenWay() {
 		super("basic");
-		label = "ARBUFFER8";
-		labelOffsetX = 20;
+		label = "demuxTwo_sixteenWay";
+		labelOffsetX = 100;
 		labelOffsetY = 60;
-		type = "arbuffer8";
+		type = "demuxTwo_sixteenWay";
 		
-		width = 120;
-		height = Math.max(240, 20*throughput + 100);
+		width = 280;
+		height = 170;
 		createInputs(inpNo);
 		createOutputs(outNo);
 		
 		int offset = 40;
+		getPin(0).label = "RAXXX";
+		getPin(1).label = "RBXXX";
+		getPin(2).label = "RXAXX";
+		getPin(3).label = "RXBXX";
+		getPin(4).label = "RXXAX";
+		getPin(5).label = "RXXBX";
+		getPin(6).label = "RXXXA";
+		getPin(7).label = "RXXXB";
 		
-		for (int i = 0; i < throughput; i++) {
-			getPin(i).moveTo(getX(), getY() + 90 + i*20 - 10*(i % 2));
-			getPin(i).label = "Ldata" + Integer.toString(throughput/2 - i/2) + "_" + Integer.toString(1 - i % 2);
-		}
-		
-		getPin(throughput).moveTo(getX() + getWidth()/2, getY());
-		getPin(throughput).setDirection(Pin.DOWN);
-		getPin(throughput).label = "Lreq";
-		
-		getPin(throughput + 1).moveTo(getX() + getWidth() / 2 + offset, getY() + getHeight());
-		getPin(throughput + 1).setDirection(Pin.UP);
-		getPin(throughput + 1).label = "Rack";
-		
-		for (int i = 0; i < throughput; i++) {
-			getPin(inpNo + i).moveTo(getX() + getWidth(), getY() + 90 + i*20 - 10*(i % 2));
-			getPin(inpNo + i).label = "Rdata" + Integer.toString(throughput/2 - i/2) + "_" + Integer.toString(1 - i % 2);
-		}
-		
-		getPin(inpNo + throughput).moveTo(getX() + getWidth() / 2 - offset, getY() + getHeight());
-		getPin(inpNo + throughput).setDirection(Pin.UP);
-		getPin(inpNo + throughput).label = "Lack";
-		
-		getPin(inpNo + throughput + 1).moveTo(getX() + getWidth() / 2, getY() + getHeight());
-		getPin(inpNo + throughput + 1).setDirection(Pin.UP);
-		getPin(inpNo + throughput + 1).label = "Rreq";
-		
-		getPin(inpNo + throughput + 2).moveTo(getX() + 30, getY() + 40);
-		getPin(inpNo + throughput + 2).setDirection(Pin.UP);
+		getPin(inpNo + 0).label = "RAAAA";
+		getPin(inpNo + 1).label = "RAAAB";
+		getPin(inpNo + 2).label = "RAABA";
+		getPin(inpNo + 3).label = "RAABB";
+		getPin(inpNo + 4).label = "RABAA";
+		getPin(inpNo + 5).label = "RABAB";
+		getPin(inpNo + 6).label = "RABBA";
+		getPin(inpNo + 7).label = "RABBB";
+		getPin(inpNo + 8).label = "RBAAA";
+		getPin(inpNo + 9).label = "RBAAB";
+		getPin(inpNo + 10).label = "RBABA";
+		getPin(inpNo + 11).label = "RBABB";
+		getPin(inpNo + 12).label = "RBBAA";
+		getPin(inpNo + 13).label = "RBBAB";
+		getPin(inpNo + 14).label = "RBBBA";
+		getPin(inpNo + 15).label = "RBBBB";
 		
 		reset();
 		loadProperties();
@@ -124,16 +119,30 @@ public class ARBUFFER8 extends Gate {
 			g2.setTransform(old);
 		}
 		drawIO(g2);
-		g2.drawString(text, getX() + 20, getY() + 160);
+		g2.drawString(text, getX() + 100, getY() + 100);
 	}
 
 	
 	@Override
 	public void simulate() {
 		super.simulate();
+		
+		if ((getPin(0).getLevel() || getPin(1).getLevel()) && (getPin(2).getLevel() || getPin(3).getLevel()) && (getPin(4).getLevel() || getPin(5).getLevel()) && (getPin(6).getLevel() || getPin(7).getLevel())) {
+
+			getPin(inpNo + (8*(getPin(1).getLevel()? 1 : 0) + 4*(getPin(3).getLevel()? 1 : 0) + 2*(getPin(5).getLevel()? 1 : 0) + (getPin(7).getLevel()? 1:0))).changedLevel(new LSLevelEvent(this, true));
 
 		
-		boolean capture = getPin(inpNo + throughput + 2).getInternalLevel();
+		}
+		
+		if (!(getPin(0).getLevel() || getPin(1).getLevel()) && !(getPin(2).getLevel() || getPin(3).getLevel()) && !(getPin(4).getLevel() || getPin(5).getLevel()) && !(getPin(6).getLevel() || getPin(7).getLevel())) {
+
+			for (int i = inpNo; i < inpNo + outNo; i++) {
+				getPin(i).changedLevel(new LSLevelEvent(this, false));
+			}
+		}
+		
+		
+		/*boolean capture = getPin(inpNo + throughput + 2).getInternalLevel();
 		boolean oldCapture = capture;
 		if (getPin(throughput).getLevel() != getPin(throughput + 1).getLevel()) {
 			capture = getPin(throughput).getLevel();
@@ -184,7 +193,7 @@ public class ARBUFFER8 extends Gate {
 		}
 		if (oldRreq != signalRecieved) {
 			getPin(inpNo + throughput + 1).changedLevel(new LSLevelEvent(this, capture));
-		}
+		}*/
 	}
 	
 	@Override
@@ -228,8 +237,7 @@ public class ARBUFFER8 extends Gate {
 
 	@Override
 	public void loadLanguage() {
-		I18N.addGate(I18N.ALL, type, I18N.TITLE, "ARBUFFER8");
-		I18N.addGate(I18N.ALL, type, I18N.DESCRIPTION, "8-bit Acknowledge Request Buffer");
-		I18N.addGate("de", type, I18N.DESCRIPTION, "ARPuffer8");
+		I18N.addGate(I18N.ALL, type, I18N.TITLE, "demuxTwo_sixteenWay");
+		I18N.addGate(I18N.ALL, type, I18N.DESCRIPTION, "1-bit 16-way demultiplexer");
 	}
 }
